@@ -1,0 +1,1082 @@
+/* ============================================
+   TRANSLATIONS - Oceanex Marine Industries
+   English & Chinese Language Support
+   ============================================ */
+
+const translations = {
+    en: {
+        // Navbar
+        "nav.home": "Home",
+        "nav.about": "About",
+        "nav.products": "Products",
+        "nav.news": "News",
+        "nav.contact": "Contact",
+        "nav.getQuote": "Get Quote",
+        "nav.contactUs": "Contact Us",
+        
+        // Hero Slides
+        "hero.slide1.title1": "Delivering the Ocean's Finest",
+        "hero.slide1.title2": "to the World",
+        "hero.slide1.desc": "Your trusted B2B partner in global seafood trade. Premium quality from ocean to market.",
+        "hero.slide2.title1": "State-of-the-Art",
+        "hero.slide2.title2": "Cold Storage Facilities",
+        "hero.slide2.desc": "24/7 temperature monitoring ensuring optimal freshness from processing to delivery.",
+        "hero.slide3.title1": "Global Logistics",
+        "hero.slide3.title2": "Excellence",
+        "hero.slide3.desc": "Serving 50+ countries with reliable shipping and distribution network worldwide.",
+        "hero.slide4.title1": "Premium Processing",
+        "hero.slide4.title2": "Facilities",
+        "hero.slide4.desc": "Advanced processing with strict quality control at every stage of production.",
+        "hero.explore": "Explore Products",
+        "hero.contact": "Get In Touch",
+        
+        // Trust Badges
+        "trust.haccp": "HACCP Certified",
+        "trust.haccpSub": "Food Safety",
+        "trust.fda": "FDA Approved",
+        "trust.fdaSub": "US Compliance",
+        "trust.eu": "EU Certified",
+        "trust.euSub": "European Standards",
+        
+        // Why Choose Section
+        "why.tag": "Why Us",
+        "why.title": "Why Oceanex Marine?",
+        "why.subtitle": "Four pillars that set us apart in the global seafood industry",
+        "why.quality.title": "Premium Quality",
+        "why.quality.desc": "Hand-selected from MSC-certified sustainable fisheries with complete traceability",
+        "why.quality.tag1": "Grade A+",
+        "why.quality.tag2": "Certified",
+        "why.quality.tag3": "Traceable",
+        "why.coldchain.title": "Cold Chain",
+        "why.coldchain.desc": "-60°C deep freeze with 24/7 monitoring",
+        "why.coldchain.stat": "Ton Capacity",
+        "why.global.title": "Global Reach",
+        "why.global.desc": "Distribution across 50+ countries worldwide",
+        "why.global.stat": "Countries",
+        "why.custom.title": "Custom Solutions",
+        "why.custom.desc": "Flexible MOQ, private label packaging, and tailored specifications for your business needs",
+        "why.custom.feature1": "Private Label",
+        "why.custom.feature2": "Flexible MOQ",
+        "why.custom.feature3": "Custom Specs",
+        "why.custom.feature4": "Retail-Ready",
+        "why.btn.learn": "Learn More",
+        "why.btn.explore": "Explore",
+        "why.btn.discover": "Discover",
+        "why.btn.start": "Get Started",
+        
+        // Products Section
+        "products.title": "Our Products",
+        "products.subtitle": "Premium seafood selection for discerning B2B clients",
+        "products.viewAll": "View All",
+        "products.learnMore": "Learn More →",
+        "products.salmon": "Wild Atlantic Salmon",
+        "products.salmon.origin": "Norway",
+        "products.shrimp": "Black Tiger Shrimp",
+        "products.shrimp.origin": "Indonesia",
+        "products.tuna": "Yellowfin Tuna",
+        "products.tuna.origin": "Pacific",
+        "products.crab": "Blue Swimming Crab",
+        "products.crab.origin": "Indonesia",
+        
+        // News Section
+        "news.title": "Latest News",
+        "news.subtitle": "Stay updated with industry trends and company announcements",
+        "news.viewAll": "View All News",
+        "news.readMore": "Read More",
+        "news.article1.title": "Oceanex Expands Cold Storage Facility",
+        "news.article1.desc": "New 10,000 sqm facility increases our processing capacity by 40%",
+        "news.article1.date": "December 2024",
+        "news.article2.title": "Sustainable Fishing Partnership",
+        "news.article2.desc": "New collaboration with MSC to promote sustainable fishing practices",
+        "news.article2.date": "November 2024",
+        "news.article3.title": "Export Award 2024",
+        "news.article3.desc": "Recognized as Indonesia's Top Seafood Exporter",
+        "news.article3.date": "October 2024",
+        
+        // Contact Section
+        "contact.title": "Contact Us",
+        "contact.subtitle": "Interested in our premium seafood? Drop us a message and we'll get back to you within 24 hours.",
+        "contact.desc": "Contact our team for pricing, samples, and partnership opportunities",
+        "contact.form.selectInquiry": "What can we help you with?",
+        "contact.form.inquiryLabel": "I'm interested in... *",
+        "contact.subject.product": "Product & Pricing Information",
+        "contact.subject.bulk": "Bulk Order / Wholesale",
+        "contact.subject.sample": "Request Product Samples",
+        "contact.subject.partnership": "Partnership / Distribution",
+        "contact.subject.general": "General Inquiry",
+        "contact.form.name": "Your Name *",
+        "contact.form.email": "Email Address *",
+        "contact.form.phone": "WhatsApp / Phone (for faster response)",
+        "contact.form.messageLabel": "Tell us more — product type, quantity, destination country, etc. (optional)",
+        "contact.form.submit": "Send Message",
+        "contact.form.privacy": "Your information is secure. We typically respond within 24 hours.",
+        
+        // Floating Assistant
+        "assistant.bubble": "👋 How can I help you?",
+        "assistant.language": "Language",
+        "assistant.whatsapp": "WhatsApp",
+        "assistant.email": "Email Us",
+        "assistant.contact": "Contact Form",
+        "contact.subject.other": "Other",
+        "contact.subtitle": "Fill out the form below and our team will get back to you within 24 hours.",
+        "contact.product.shrimp": "Shrimp",
+        "contact.product.tuna": "Tuna",
+        "contact.product.crab": "Crab",
+        "contact.product.squid": "Squid & Octopus",
+        "contact.product.fish": "Fish Fillet",
+        "contact.product.lobster": "Lobster",
+        "contact.info.title": "Contact Information",
+        "contact.location.title": "Our Location",
+        "contact.location.address": "Jl. Pelabuhan Raya No. 123, Muara Baru, Jakarta Utara 14440, Indonesia",
+        "contact.info.address": "Jl. Pelabuhan Raya No. 123, Muara Baru, Jakarta Utara 14440, Indonesia",
+        "contact.info.phone": "+62 21 6601 2345",
+        "contact.info.email": "export@oceanex.co.id",
+        "contact.info.hours": "Business Hours",
+        "contact.info.hoursValue": "Mon-Fri: 08:00 - 17:00 WIB",
+        
+        // Footer
+        "footer.description": "Your trusted partner in premium seafood export and import. Connecting global markets with the finest ocean products.",
+        "footer.quickLinks": "Quick Links",
+        "footer.products": "Products",
+        "footer.services": "Services",
+        "footer.contactUs": "Contact Us",
+        "footer.premiumFish": "Premium Fish",
+        "footer.freshShrimp": "Fresh Shrimp",
+        "footer.crabLobster": "Crab & Lobster",
+        "footer.shellfish": "Shellfish",
+        "footer.frozenSeafood": "Frozen Seafood",
+        "footer.businessHours": "Business Hours",
+        "footer.monFri": "Mon - Fri",
+        "footer.satSun": "Sat - Sun",
+        "footer.copyright": "© 2025 Oceanex Marine Industries. All rights reserved.",
+        "footer.privacyPolicy": "Privacy Policy",
+        "footer.termsOfService": "Terms of Service",
+        "footer.cookiePolicy": "Cookie Policy",
+        
+        // About Page
+        "about.hero.subtitle": "About Us",
+        "about.hero.title": "Connecting Oceans to Markets",
+        "about.hero.desc": "Premium Seafood Export",
+        "about.hero.cta1": "Our Products",
+        "about.hero.cta2": "Contact Us",
+        "about.vision.title": "Our Vision",
+        "about.vision.desc": "Premium frozen seafood. Certified quality. Delivered worldwide.",
+        "about.mission.title": "Our Mission",
+        "about.mission.desc": "To deliver exceptional seafood products while maintaining the highest standards of quality, supporting local fishing communities, and protecting our marine ecosystems for future generations.",
+        "about.stats.years": "Years",
+        "about.stats.countries": "Countries",
+        "about.stats.tons": "Tons/Year",
+        "about.stats.partners": "Partners",
+        "about.history.title": "Our Journey",
+        "about.history.1998": "Founded as a small fishing company in Jakarta",
+        "about.history.2005": "Expanded to international markets",
+        "about.history.2012": "Achieved HACCP and FDA certification",
+        "about.history.2018": "Reached 50+ export destinations",
+        "about.history.2024": "Industry leader with state-of-the-art facilities",
+        "about.team.title": "Leadership Team",
+        "about.team.ceo": "CEO & Founder",
+        "about.team.coo": "Chief Operations Officer",
+        "about.team.export": "Export Director",
+        "about.certs.title": "Certifications",
+        "about.certs.desc": "Certified",
+        
+        // About Page - Extended
+        "about.established": "Established 2009",
+        "about.hero.title1": "Connecting Oceans.",
+        "about.hero.title2": "Delivering Trust.",
+        "about.hero.tagline": "A global frozen seafood exporter with over 15 years of B2B expertise, trusted by partners across 30+ countries.",
+        "about.stats.yearsNum": "15+",
+        "about.stats.yearsLabel": "Years Experience",
+        "about.stats.countriesNum": "30+",
+        "about.stats.countriesLabel": "Countries Served",
+        "about.stats.qualityNum": "100%",
+        "about.stats.qualityLabel": "Quality Certified",
+        "about.story.label": "Our Story",
+        "about.story.title": "Commitment Through the Years",
+        "about.story.companyName": "Oceanex Fishery",
+        "about.story.para1": "Oceanex Fishery supplies premium frozen seafood to global markets with a strong focus on quality consistency, cold chain integrity, and responsible sourcing.",
+        "about.story.para2": "Established in 2009, we handle seafood products under strict quality control to ensure freshness, safety, and compliance with international standards. Supported by cold storage facilities, fish processing units, and a dedicated seafood logistics network, we maintain product quality from sourcing to delivery.",
+        "about.story.para3": "Our operations emphasize traceability, reliable handling, and sustainable practices, enabling us to serve diverse market requirements with confidence and consistency.",
+        "about.story.established": "Established",
+        "about.story.text1": "From a small cold storage unit in Surabaya, Indonesia, to a fully integrated exporter serving partners worldwide — our journey is defined by trust, traceability, and unwavering product standards.",
+        "about.story.text2": "Every shipment reflects our deep-rooted commitment to responsible sourcing, ethical practices, and customer-first thinking.",
+        "about.story.text3": "We don't just export frozen seafood — we build long-term partnerships backed by transparency, consistency, and operational excellence.",
+        
+        // Certifications Section
+        "about.cert.label": "Quality Assurance",
+        "about.cert.title": "Our Certifications",
+        "about.cert.subtitle": "Internationally recognized standards that guarantee the highest levels of quality, safety, and sustainability.",
+        "about.cert.haccp": "HACCP",
+        "about.cert.haccp.desc": "Food Safety System",
+        "about.cert.iso": "ISO 22000",
+        "about.cert.iso.desc": "Food Safety Management",
+        "about.cert.brc": "BRC Global",
+        "about.cert.brc.desc": "British Retail Standard",
+        "about.cert.msc": "MSC",
+        "about.cert.msc.desc": "Marine Stewardship",
+        "about.cert.fda": "FDA Approved",
+        "about.cert.fda.desc": "US Compliance",
+        "about.cert.eu": "EU Certified",
+        "about.cert.eu.desc": "European Standards",
+        "about.cert.halal": "Halal MUI",
+        "about.cert.halal.desc": "Halal Certified",
+        
+        // Vision Mission
+        "about.vm.vision.title": "Our Vision",
+        "about.vm.vision.text": "To set a benchmark in global seafood supply by delivering consistently reliable frozen seafood through disciplined quality control, proven cold chain integrity, and responsible sourcing.",
+        "about.vm.mission.title": "Our Mission",
+        "about.vm.mission.text": "To source seafood responsibly and transparently, prioritizing traceability, regulatory compliance, and long-term resource sustainability.",
+        
+        // Sister Brand
+        "about.sister.label": "Our Network",
+        "about.sister.title": "Sister Brand",
+        "about.sister.name": "Lorem Ipsum Dolor Sit Amet",
+        "about.sister.text1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+        "about.sister.text2": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+        "about.sister.badge": "Coming Soon",
+        
+        // Download Section
+        "about.download.title1": "Download Our",
+        "about.download.title2": "Company Profile",
+        "about.download.desc": "Get comprehensive information about our company, products, certifications, and capabilities in one document.",
+        "about.download.feature1": "Product Catalog",
+        "about.download.feature2": "Certifications",
+        "about.download.feature3": "Facility Photos",
+        "about.download.feature4": "Contact Details",
+        "about.download.btn": "Download PDF",
+        "about.download.meta": "PDF • 5.2 MB • Updated 2024",
+        
+        // CTA Section
+        "about.cta.title": "Ready to Partner?",
+        "about.cta.desc": "Let's discuss how we can meet your seafood sourcing needs.",
+        "about.cta.btn": "Get In Touch",
+        
+        // Product Page
+        "product.hero.tag": "Our Catalog",
+        "product.hero.title": "Premium Seafood",
+        "product.hero.subtitle": "Sustainably sourced, expertly processed, globally delivered",
+        "product.search": "Search products...",
+        "product.count": "Products",
+        "product.filter.all": "All Products",
+        "product.filter.fish": "Fish",
+        "product.filter.shrimp": "Shrimp",
+        "product.filter.crab": "Crab",
+        "product.filter.shellfish": "Shellfish",
+        "product.filter.other": "Other",
+        "product.specs": "Specifications",
+        "product.viewSpecs": "View Specifications",
+        "product.requestQuote": "Request Quote",
+        "product.inquire": "Inquire Now",
+        
+        // Product Items
+        "product.salmon.name": "Wild Atlantic Salmon",
+        "product.salmon.origin": "Norway",
+        "product.salmon.desc": "Premium whole salmon with rich flavor and firm texture. Perfect for sashimi, grilling, or smoking.",
+        "product.salmon.badge": "Grade A+",
+        
+        "product.tigerShrimp.name": "Black Tiger Shrimp",
+        "product.tigerShrimp.origin": "Indonesia",
+        "product.tigerShrimp.desc": "Large, succulent tiger prawns with distinctive stripes. Ideal for high-end restaurants and hotels.",
+        "product.tigerShrimp.badge": "Premium",
+        
+        "product.kingCrab.name": "King Crab Legs",
+        "product.kingCrab.origin": "Alaska, USA",
+        "product.kingCrab.desc": "Wild-caught Alaskan king crab with sweet, tender meat. The ultimate luxury seafood.",
+        "product.kingCrab.badge": "Premium",
+        
+        "product.bluefinTuna.name": "Bluefin Tuna",
+        "product.bluefinTuna.origin": "Japan",
+        "product.bluefinTuna.desc": "Premium sashimi-grade bluefin with exceptional marbling. The pinnacle of tuna quality.",
+        "product.bluefinTuna.badge": "Sashimi Grade",
+        
+        "product.vannamei.name": "Vannamei Shrimp",
+        "product.vannamei.origin": "Vietnam",
+        "product.vannamei.desc": "Farm-raised white shrimp with mild, sweet flavor. Versatile and consistently high quality.",
+        "product.vannamei.badge": "Grade A",
+        
+        "product.snowCrab.name": "Snow Crab Clusters",
+        "product.snowCrab.origin": "Canada",
+        "product.snowCrab.desc": "Wild-caught snow crab with delicate, sweet meat. Pre-cooked and ready to serve.",
+        "product.snowCrab.badge": "Grade A",
+        
+        "product.scallops.name": "Sea Scallops",
+        "product.scallops.origin": "USA East Coast",
+        "product.scallops.desc": "Premium dry-pack scallops with natural sweetness. No added water or phosphates.",
+        "product.scallops.badge": "Dry Pack",
+        
+        "product.yellowfin.name": "Yellowfin Tuna",
+        "product.yellowfin.origin": "Philippines",
+        "product.yellowfin.desc": "Wild-caught yellowfin with lean, flavorful meat. Excellent for searing and grilling.",
+        "product.yellowfin.badge": "Grade A",
+        
+        "product.lobster.name": "Lobster Tails",
+        "product.lobster.origin": "Caribbean",
+        "product.lobster.desc": "Warm water spiny lobster tails with firm, sweet meat. Restaurant favorite worldwide.",
+        "product.lobster.badge": "Premium",
+        
+        "product.cod.name": "Atlantic Cod Fillet",
+        "product.cod.origin": "Iceland",
+        "product.cod.desc": "Wild-caught Atlantic cod with mild, flaky white meat. Classic fish for various cuisines.",
+        "product.cod.badge": "Grade A",
+        
+        "product.mussels.name": "Blue Mussels",
+        "product.mussels.origin": "Chile",
+        "product.mussels.desc": "Rope-grown Chilean mussels with plump meat and clean taste. Ready to cook.",
+        "product.mussels.badge": "Farm Fresh",
+        
+        "product.squid.name": "Squid / Calamari",
+        "product.squid.origin": "China",
+        "product.squid.desc": "Clean, tender squid tubes and tentacles. Perfect for frying, grilling, or stuffing.",
+        "product.squid.badge": "Grade A",
+        
+        // Spec Labels
+        "product.spec.sizeRange": "Size Range",
+        "product.spec.processing": "Processing",
+        "product.spec.packaging": "Packaging",
+        "product.spec.storage": "Storage",
+        "product.spec.shelfLife": "Shelf Life",
+        "product.spec.moq": "MOQ",
+        "product.spec.certification": "Certification",
+        "product.spec.availability": "Availability",
+        
+        // No Results
+        "product.noResults.title": "No products found",
+        "product.noResults.desc": "Try adjusting your search or filter criteria",
+        "product.noResults": "No products found",
+        "product.noResultsDesc": "Try adjusting your search or filter criteria",
+        "product.cta.title": "Can't find what you're looking for?",
+        "product.cta.desc": "We source a wide range of seafood products. Contact us with your specific requirements.",
+        "product.cta.btn": "Get Custom Quote"
+    },
+    
+    zh: {
+        // Navbar
+        "nav.home": "首页",
+        "nav.about": "关于我们",
+        "nav.products": "产品",
+        "nav.news": "新闻",
+        "nav.contact": "联系我们",
+        "nav.getQuote": "获取报价",
+        "nav.contactUs": "联系我们",
+        
+        // Hero Slides
+        "hero.slide1.title1": "传递海洋精华",
+        "hero.slide1.title2": "至全球",
+        "hero.slide1.desc": "您值得信赖的全球海鲜贸易B2B合作伙伴。从海洋到市场的优质品质。",
+        "hero.slide2.title1": "先进的",
+        "hero.slide2.title2": "冷藏设施",
+        "hero.slide2.desc": "24/7温度监控，确保从加工到交付的最佳新鲜度。",
+        "hero.slide3.title1": "全球物流",
+        "hero.slide3.title2": "卓越品质",
+        "hero.slide3.desc": "通过可靠的运输和配送网络服务50多个国家。",
+        "hero.slide4.title1": "优质加工",
+        "hero.slide4.title2": "设施",
+        "hero.slide4.desc": "先进的加工工艺，每个生产环节都有严格的质量控制。",
+        "hero.explore": "探索产品",
+        "hero.contact": "联系我们",
+        
+        // Trust Badges
+        "trust.haccp": "HACCP认证",
+        "trust.haccpSub": "食品安全",
+        "trust.fda": "FDA批准",
+        "trust.fdaSub": "美国合规",
+        "trust.eu": "欧盟认证",
+        "trust.euSub": "欧洲标准",
+        
+        // Why Choose Section
+        "why.tag": "为什么选择我们",
+        "why.title": "为什么选择Oceanex Marine？",
+        "why.subtitle": "在全球海鲜行业中脱颖而出的四大支柱",
+        "why.quality.title": "优质品质",
+        "why.quality.desc": "精选自MSC认证的可持续渔场，具有完整的可追溯性",
+        "why.quality.tag1": "A+级",
+        "why.quality.tag2": "认证",
+        "why.quality.tag3": "可追溯",
+        "why.coldchain.title": "冷链物流",
+        "why.coldchain.desc": "-60°C深冻，24/7监控",
+        "why.coldchain.stat": "吨容量",
+        "why.global.title": "全球覆盖",
+        "why.global.desc": "配送覆盖全球50多个国家",
+        "why.global.stat": "个国家",
+        "why.custom.title": "定制方案",
+        "why.custom.desc": "灵活的最小起订量、自有品牌包装，以及为您的业务需求量身定制的规格",
+        "why.custom.feature1": "自有品牌",
+        "why.custom.feature2": "灵活MOQ",
+        "why.custom.feature3": "定制规格",
+        "why.custom.feature4": "零售就绪",
+        "why.btn.learn": "了解更多",
+        "why.btn.explore": "探索",
+        "why.btn.discover": "发现",
+        "why.btn.start": "开始",
+        
+        // Products Section
+        "products.title": "我们的产品",
+        "products.subtitle": "为挑剔的B2B客户精选优质海鲜",
+        "products.viewAll": "查看全部",
+        "products.learnMore": "了解更多 →",
+        "products.salmon": "野生大西洋三文鱼",
+        "products.salmon.origin": "挪威",
+        "products.shrimp": "黑虎虾",
+        "products.shrimp.origin": "印尼",
+        "products.tuna": "黄鳍金枪鱼",
+        "products.tuna.origin": "太平洋",
+        "products.crab": "蓝蟹",
+        "products.crab.origin": "印尼",
+        
+        // News Section
+        "news.title": "最新新闻",
+        "news.subtitle": "了解行业趋势和公司公告",
+        "news.viewAll": "查看全部新闻",
+        "news.readMore": "阅读更多",
+        "news.article1.title": "Oceanex扩建冷藏设施",
+        "news.article1.desc": "新增10,000平方米设施，加工能力提升40%",
+        "news.article1.date": "2024年12月",
+        "news.article2.title": "可持续捕鱼合作",
+        "news.article2.desc": "与MSC合作推广可持续捕鱼实践",
+        "news.article2.date": "2024年11月",
+        "news.article3.title": "2024年出口奖",
+        "news.article3.desc": "被评为印尼顶级海鲜出口商",
+        "news.article3.date": "2024年10月",
+        
+        // Contact Section
+        "contact.title": "联系我们",
+        "contact.subtitle": "对我们的优质海鲜感兴趣？给我们留言，我们将在24小时内回复您。",
+        "contact.desc": "联系我们的团队获取价格、样品和合作机会",
+        "contact.form.selectInquiry": "我们能帮您什么？",
+        "contact.form.inquiryLabel": "我对...感兴趣 *",
+        "contact.subject.product": "产品与价格咨询",
+        "contact.subject.bulk": "批量订购 / 批发",
+        "contact.subject.sample": "索取产品样品",
+        "contact.subject.partnership": "合作伙伴 / 经销",
+        "contact.subject.general": "一般咨询",
+        "contact.form.name": "您的姓名 *",
+        "contact.form.email": "电子邮箱 *",
+        "contact.form.phone": "WhatsApp / 电话（更快回复）",
+        "contact.form.messageLabel": "告诉我们更多 — 产品类型、数量、目的地国家等（可选）",
+        "contact.form.submit": "发送消息",
+        "contact.form.privacy": "您的信息是安全的。我们通常在24小时内回复。",
+        
+        // Floating Assistant
+        "assistant.bubble": "👋 有什么可以帮您？",
+        "assistant.language": "语言",
+        "assistant.whatsapp": "WhatsApp",
+        "assistant.email": "发送邮件",
+        "assistant.contact": "联系表单",
+        
+        "contact.subject.other": "其他",
+        "contact.product.shrimp": "虾类",
+        "contact.product.tuna": "金枪鱼",
+        "contact.product.crab": "蟹类",
+        "contact.product.squid": "鱿鱼和章鱼",
+        "contact.product.fish": "鱼片",
+        "contact.product.lobster": "龙虾",
+        "contact.info.title": "联系信息",
+        "contact.location.title": "我们的位置",
+        "contact.location.address": "印尼雅加达北区Muara Baru港口路123号，邮编14440",
+        "contact.info.address": "印尼雅加达北区Muara Baru港口路123号，邮编14440",
+        "contact.info.phone": "+62 21 6601 2345",
+        "contact.info.email": "export@oceanex.co.id",
+        "contact.info.hours": "营业时间",
+        "contact.info.hoursValue": "周一至周五: 08:00 - 17:00 WIB",
+        
+        // Footer
+        "footer.description": "您值得信赖的优质海鲜进出口合作伙伴。连接全球市场与最优质的海洋产品。",
+        "footer.quickLinks": "快速链接",
+        "footer.products": "产品",
+        "footer.services": "服务",
+        "footer.contactUs": "联系我们",
+        "footer.premiumFish": "优质鱼类",
+        "footer.freshShrimp": "新鲜虾类",
+        "footer.crabLobster": "蟹与龙虾",
+        "footer.shellfish": "贝类",
+        "footer.frozenSeafood": "冷冻海鲜",
+        "footer.businessHours": "营业时间",
+        "footer.monFri": "周一至周五",
+        "footer.satSun": "周六至周日",
+        "footer.copyright": "© 2025 Oceanex 海洋工业。保留所有权利。",
+        "footer.privacyPolicy": "隐私政策",
+        "footer.termsOfService": "服务条款",
+        "footer.cookiePolicy": "Cookie政策",
+        
+        // About Page
+        "about.hero.subtitle": "关于我们",
+        "about.hero.title": "连接海洋与市场",
+        "about.hero.desc": "优质海鲜出口",
+        "about.hero.cta1": "我们的产品",
+        "about.hero.cta2": "联系我们",
+        "about.vision.title": "我们的愿景",
+        "about.vision.desc": "优质冷冻海鲜。认证品质。全球配送。",
+        "about.mission.title": "我们的使命",
+        "about.mission.desc": "提供卓越的海鲜产品，同时保持最高质量标准，支持当地渔业社区，保护海洋生态系统。",
+        "about.stats.years": "年卓越历程",
+        "about.stats.countries": "出口国家",
+        "about.stats.tons": "年出口吨数",
+        "about.stats.partners": "全球合作伙伴",
+        "about.history.title": "我们的历程",
+        "about.history.1998": "在雅加达创立小型渔业公司",
+        "about.history.2005": "拓展国际市场",
+        "about.history.2012": "获得HACCP和FDA认证",
+        "about.history.2018": "出口目的地达到50多个",
+        "about.history.2024": "成为拥有先进设施的行业领导者",
+        "about.team.title": "领导团队",
+        "about.team.ceo": "首席执行官兼创始人",
+        "about.team.coo": "首席运营官",
+        "about.team.export": "出口总监",
+        "about.certs.title": "我们的认证",
+        "about.certs.desc": "致力于最高质量和安全标准",
+        
+        // About Page - Extended
+        "about.established": "成立于2009年",
+        "about.hero.title1": "连接海洋。",
+        "about.hero.title2": "传递信任。",
+        "about.hero.tagline": "一家拥有超过15年B2B经验的全球冷冻海鲜出口商，获得30多个国家合作伙伴的信赖。",
+        "about.stats.yearsNum": "15+",
+        "about.stats.yearsLabel": "年经验",
+        "about.stats.countriesNum": "30+",
+        "about.stats.countriesLabel": "服务国家",
+        "about.stats.qualityNum": "100%",
+        "about.stats.qualityLabel": "质量认证",
+        "about.story.label": "我们的故事",
+        "about.story.title": "多年的承诺",
+        "about.story.companyName": "Oceanex 渔业",
+        "about.story.para1": "Oceanex Fishery 向全球市场供应优质冷冻海鲜，专注于质量一致性、冷链完整性和负责任的采购。",
+        "about.story.para2": "成立于2009年，我们在严格的质量控制下处理海鲜产品，确保新鲜度、安全性和符合国际标准。依托冷藏设施、鱼类加工厂和专业的海鲜物流网络，我们从采购到交付全程保持产品质量。",
+        "about.story.para3": "我们的运营强调可追溯性、可靠的处理和可持续实践，使我们能够以信心和一致性满足多样化的市场需求。",
+        "about.story.established": "成立",
+        "about.story.text1": "从印尼泗水的小型冷库起步，发展成为服务全球合作伙伴的完整出口商——我们的发展历程以信任、可追溯性和坚定的产品标准为基础。",
+        "about.story.text2": "每一批货物都体现了我们对负责任采购、道德实践和客户至上理念的深厚承诺。",
+        "about.story.text3": "我们不仅仅出口冷冻海鲜——我们建立以透明、一致和卓越运营为基础的长期合作伙伴关系。",
+        
+        // Certifications Section
+        "about.cert.label": "质量保证",
+        "about.cert.title": "我们的认证",
+        "about.cert.subtitle": "国际认可的标准，保证最高水平的质量、安全和可持续性。",
+        "about.cert.haccp": "HACCP",
+        "about.cert.haccp.desc": "食品安全体系",
+        "about.cert.iso": "ISO 22000",
+        "about.cert.iso.desc": "食品安全管理",
+        "about.cert.brc": "BRC Global",
+        "about.cert.brc.desc": "英国零售标准",
+        "about.cert.msc": "MSC",
+        "about.cert.msc.desc": "海洋管理",
+        "about.cert.fda": "FDA认证",
+        "about.cert.fda.desc": "美国合规",
+        "about.cert.eu": "欧盟认证",
+        "about.cert.eu.desc": "欧洲标准",
+        "about.cert.halal": "清真MUI",
+        "about.cert.halal.desc": "清真认证",
+        
+        // Vision Mission
+        "about.vm.vision.title": "我们的愿景",
+        "about.vm.vision.text": "通过严格的质量控制、可靠的冷链完整性和负责任的采购，持续提供可靠的冷冻海鲜，在全球海鲜供应领域树立标杆。",
+        "about.vm.mission.title": "我们的使命",
+        "about.vm.mission.text": "负责任且透明地采购海鲜，优先考虑可追溯性、法规合规性和长期资源可持续性。",
+        
+        // Sister Brand
+        "about.sister.label": "我们的网络",
+        "about.sister.title": "姊妹品牌",
+        "about.sister.name": "Lorem Ipsum Dolor Sit Amet",
+        "about.sister.text1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+        "about.sister.text2": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+        "about.sister.badge": "即将推出",
+        
+        // Download Section
+        "about.download.title1": "下载我们的",
+        "about.download.title2": "公司简介",
+        "about.download.desc": "在一份文档中获取有关我们公司、产品、认证和能力的全面信息。",
+        "about.download.feature1": "产品目录",
+        "about.download.feature2": "认证证书",
+        "about.download.feature3": "设施照片",
+        "about.download.feature4": "联系方式",
+        "about.download.btn": "下载PDF",
+        "about.download.meta": "PDF • 5.2 MB • 2024年更新",
+        
+        // CTA Section
+        "about.cta.title": "准备合作吗？",
+        "about.cta.desc": "让我们讨论如何满足您的海鲜采购需求。",
+        "about.cta.btn": "联系我们",
+        
+        // Product Page
+        "product.hero.tag": "产品目录",
+        "product.hero.title": "优质海鲜",
+        "product.hero.subtitle": "可持续采购，专业加工，全球配送",
+        "product.search": "搜索产品...",
+        "product.count": "个产品",
+        "product.filter.all": "所有产品",
+        "product.filter.fish": "鱼类",
+        "product.filter.shrimp": "虾类",
+        "product.filter.crab": "蟹类",
+        "product.filter.shellfish": "贝类",
+        "product.filter.other": "其他",
+        "product.specs": "规格",
+        "product.viewSpecs": "查看规格",
+        "product.requestQuote": "获取报价",
+        "product.inquire": "立即咨询",
+        "product.noResults": "未找到产品",
+        "product.noResultsDesc": "请调整搜索或筛选条件",
+        "product.cta.title": "找不到您需要的产品？",
+        "product.cta.desc": "我们提供各种海鲜产品。请联系我们，告诉我们您的具体需求。",
+        "product.cta.btn": "获取定制报价",
+        
+        // Product Items - Chinese
+        "product.salmon.name": "野生大西洋三文鱼",
+        "product.salmon.origin": "挪威",
+        "product.salmon.desc": "优质整条三文鱼，风味浓郁，肉质紧实。适合刺身、烧烤或烟熏。",
+        "product.salmon.badge": "A+级",
+        
+        "product.tigerShrimp.name": "黑虎虾",
+        "product.tigerShrimp.origin": "印度尼西亚",
+        "product.tigerShrimp.desc": "个大肉嫩的虎斑对虾，条纹鲜明。高档餐厅和酒店的理想选择。",
+        "product.tigerShrimp.badge": "优质",
+        
+        "product.kingCrab.name": "帝王蟹腿",
+        "product.kingCrab.origin": "阿拉斯加，美国",
+        "product.kingCrab.desc": "野生阿拉斯加帝王蟹，蟹肉鲜甜细嫩。顶级奢华海鲜。",
+        "product.kingCrab.badge": "优质",
+        
+        "product.bluefinTuna.name": "蓝鳍金枪鱼",
+        "product.bluefinTuna.origin": "日本",
+        "product.bluefinTuna.desc": "顶级刺身级蓝鳍金枪鱼，油脂分布优异。金枪鱼品质的巅峰之作。",
+        "product.bluefinTuna.badge": "刺身级",
+        
+        "product.vannamei.name": "南美白对虾",
+        "product.vannamei.origin": "越南",
+        "product.vannamei.desc": "养殖白虾，口感温和甜美。用途广泛，品质稳定。",
+        "product.vannamei.badge": "A级",
+        
+        "product.snowCrab.name": "雪蟹腿组",
+        "product.snowCrab.origin": "加拿大",
+        "product.snowCrab.desc": "野生雪蟹，蟹肉细腻鲜甜。预熟即食。",
+        "product.snowCrab.badge": "A级",
+        
+        "product.scallops.name": "海扇贝",
+        "product.scallops.origin": "美国东海岸",
+        "product.scallops.desc": "优质干贝，自然甜美。无添加水分或磷酸盐。",
+        "product.scallops.badge": "干贝",
+        
+        "product.yellowfin.name": "黄鳍金枪鱼",
+        "product.yellowfin.origin": "菲律宾",
+        "product.yellowfin.desc": "野生黄鳍金枪鱼，肉质精瘦、风味十足。适合煎烤。",
+        "product.yellowfin.badge": "A级",
+        
+        "product.lobster.name": "龙虾尾",
+        "product.lobster.origin": "加勒比海",
+        "product.lobster.desc": "温水岩龙虾尾，肉质紧实甜美。全球餐厅最爱。",
+        "product.lobster.badge": "优质",
+        
+        "product.cod.name": "大西洋鳕鱼片",
+        "product.cod.origin": "冰岛",
+        "product.cod.desc": "野生大西洋鳕鱼，肉质细嫩、口感清淡。各种烹饪方式的经典之选。",
+        "product.cod.badge": "A级",
+        
+        "product.mussels.name": "蓝贻贝",
+        "product.mussels.origin": "智利",
+        "product.mussels.desc": "智利绳养贻贝，肉质饱满、味道鲜美。即烹即食。",
+        "product.mussels.badge": "新鲜养殖",
+        
+        "product.squid.name": "鱿鱼 / 花枝",
+        "product.squid.origin": "中国",
+        "product.squid.desc": "干净嫩滑的鱿鱼筒和触须。适合油炸、烧烤或填馅。",
+        "product.squid.badge": "A级",
+        
+        // Spec Labels - Chinese
+        "product.spec.sizeRange": "尺寸规格",
+        "product.spec.processing": "加工方式",
+        "product.spec.packaging": "包装方式",
+        "product.spec.storage": "储存温度",
+        "product.spec.shelfLife": "保质期",
+        "product.spec.moq": "最小起订量",
+        "product.spec.certification": "认证",
+        "product.spec.availability": "供应期",
+        
+        // No Results - Chinese
+        "product.noResults.title": "未找到产品",
+        "product.noResults.desc": "请调整搜索或筛选条件"
+    },
+    
+    // ============================================
+    // JAPANESE TRANSLATIONS
+    // ============================================
+    ja: {
+        // Navbar
+        "nav.home": "ホーム",
+        "nav.about": "会社概要",
+        "nav.products": "製品",
+        "nav.news": "ニュース",
+        "nav.contact": "お問い合わせ",
+        "nav.getQuote": "見積依頼",
+        "nav.contactUs": "お問い合わせ",
+        
+        // Hero Slides
+        "hero.slide1.title1": "海の恵みを",
+        "hero.slide1.title2": "世界へ届ける",
+        "hero.slide1.desc": "信頼できるB2Bシーフード貿易パートナー。海から市場へ、プレミアム品質をお届けします。",
+        "hero.slide2.title1": "最先端の",
+        "hero.slide2.title2": "冷凍施設",
+        "hero.slide2.desc": "24時間365日の温度監視で、加工から配送まで最適な鮮度を維持。",
+        "hero.slide3.title1": "グローバル物流の",
+        "hero.slide3.title2": "エクセレンス",
+        "hero.slide3.desc": "50カ国以上へ信頼性の高い輸送・配送ネットワークでサービス提供。",
+        "hero.slide4.title1": "プレミアム加工",
+        "hero.slide4.title2": "施設",
+        "hero.slide4.desc": "生産の全工程で厳格な品質管理を実施する先進的な加工施設。",
+        "hero.explore": "製品を見る",
+        "hero.contact": "お問い合わせ",
+        
+        // Trust Badges
+        "trust.haccp": "HACCP認証",
+        "trust.haccpSub": "食品安全",
+        "trust.fda": "FDA承認",
+        "trust.fdaSub": "米国基準",
+        "trust.eu": "EU認証",
+        "trust.euSub": "欧州基準",
+        
+        // Why Choose Section
+        "why.tag": "選ばれる理由",
+        "why.title": "Oceanex Marineが選ばれる理由",
+        "why.subtitle": "グローバルシーフード業界で差別化を図る4つの柱",
+        "why.quality.title": "プレミアム品質",
+        "why.quality.desc": "完全なトレーサビリティを備えたMSC認証の持続可能な漁業から厳選",
+        "why.quality.tag1": "グレードA+",
+        "why.quality.tag2": "認証済み",
+        "why.quality.tag3": "追跡可能",
+        "why.coldchain.title": "コールドチェーン",
+        "why.coldchain.desc": "-60°C超低温冷凍、24時間監視体制",
+        "why.coldchain.tag": "24時間監視",
+        "why.global.title": "グローバル物流",
+        "why.global.desc": "50カ国以上への配送",
+        "why.export.title": "輸出専門",
+        "why.export.desc": "冷凍コンテナ輸送",
+        "why.coldchain.stat": "トン容量",
+        "why.global.stat": "カ国",
+        "why.custom.title": "カスタムソリューション",
+        "why.custom.desc": "柔軟な最小発注量、プライベートラベル包装、お客様のビジネスニーズに合わせた仕様",
+        "why.custom.feature1": "プライベートラベル",
+        "why.custom.feature2": "柔軟なMOQ",
+        "why.custom.feature3": "カスタム仕様",
+        "why.custom.feature4": "小売対応",
+        "why.btn.learn": "詳細を見る",
+        "why.btn.explore": "探索する",
+        "why.btn.discover": "発見する",
+        "why.btn.start": "始める",
+        
+        // Product Section
+        "products.tag": "製品ライン",
+        "products.title": "プレミアムシーフードコレクション",
+        "products.subtitle": "世界市場向けの持続可能な調達と専門的な加工",
+        "products.viewAll": "全製品を見る",
+        "products.explore": "詳細を見る",
+        "products.learnMore": "詳細を見る →",
+        "products.salmon": "ワイルドアトランティックサーモン",
+        "products.salmon.origin": "ノルウェー",
+        "products.shrimp": "ブラックタイガーシュリンプ",
+        "products.shrimp.origin": "インドネシア",
+        "products.tuna": "キハダマグロ",
+        "products.tuna.origin": "太平洋",
+        "products.crab": "ブルースイミングクラブ",
+        "products.crab.origin": "インドネシア",
+        
+        // Stats Section
+        "stats.experience": "年の経験",
+        "stats.countries": "輸出国",
+        "stats.partners": "グローバルパートナー",
+        "stats.volume": "年間輸出量",
+        
+        // Process Section
+        "process.tag": "プロセス",
+        "process.title": "海から市場へ",
+        "process.subtitle": "品質と完全性を確保する輸出プロセス",
+        "process.step1.title": "調達",
+        "process.step1.desc": "認証漁業から直接調達",
+        "process.step2.title": "加工",
+        "process.step2.desc": "先進施設での高度な加工",
+        "process.step3.title": "品質管理",
+        "process.step3.desc": "厳格な検査体制",
+        "process.step4.title": "輸出",
+        "process.step4.desc": "コールドチェーン輸送",
+        
+        // Contact Section
+        "contact.tag": "お問い合わせ",
+        "contact.title": "お問い合わせ",
+        "contact.subtitle": "プレミアムシーフードにご興味がありますか？メッセージをお送りください。24時間以内にご連絡いたします。",
+        "contact.desc": "価格、サンプル、パートナーシップについてお問い合わせください",
+        "contact.form.selectInquiry": "どのようなご用件でしょうか？",
+        "contact.form.inquiryLabel": "ご興味のある内容 *",
+        "contact.subject.product": "製品・価格のお問い合わせ",
+        "contact.subject.bulk": "大量注文・卸売",
+        "contact.subject.sample": "サンプルのリクエスト",
+        "contact.subject.partnership": "パートナーシップ・販売代理",
+        "contact.subject.general": "一般的なお問い合わせ",
+        "contact.form.name": "お名前 *",
+        "contact.form.email": "メールアドレス *",
+        "contact.form.phone": "WhatsApp / 電話番号（より迅速な対応）",
+        "contact.form.messageLabel": "詳細をお聞かせください — 製品の種類、数量、仕向地など（任意）",
+        "contact.form.submit": "メッセージを送信",
+        "contact.form.privacy": "お客様の情報は安全に保護されます。通常24時間以内にご返信いたします。",
+        
+        // Floating Assistant
+        "assistant.bubble": "👋 お手伝いできますか？",
+        "assistant.language": "言語",
+        "assistant.whatsapp": "WhatsApp",
+        "assistant.email": "メール",
+        "assistant.contact": "お問い合わせフォーム",
+        "contact.subject.product": "製品お問い合わせ",
+        "contact.subject.bulk": "大量注文",
+        "contact.subject.partnership": "パートナーシップ",
+        "contact.subject.marketing": "マーケティング",
+        "contact.subject.other": "その他",
+        "contact.product.shrimp": "エビ",
+        "contact.product.tuna": "マグロ",
+        "contact.product.crab": "カニ",
+        "contact.product.squid": "イカ＆タコ",
+        "contact.product.fish": "魚フィレ",
+        "contact.product.lobster": "ロブスター",
+        "contact.info.title": "連絡先情報",
+        "contact.location.title": "所在地",
+        "contact.location.address": "Jl. Pelabuhan Raya No. 123, Muara Baru, Jakarta Utara 14440, インドネシア",
+        "contact.info.address": "Jl. Pelabuhan Raya No. 123, Muara Baru, Jakarta Utara 14440, Indonesia",
+        "contact.info.phone": "+62 21 6601 2345",
+        "contact.info.email": "export@oceanex.co.id",
+        "contact.info.hours": "営業時間",
+        "contact.info.hoursValue": "月〜金: 08:00 - 17:00 WIB",
+        
+        // Footer
+        "footer.description": "プレミアムシーフードの輸出入における信頼できるパートナー。世界市場に最高品質の海産物をお届けしています。",
+        "footer.quickLinks": "クイックリンク",
+        "footer.products": "製品",
+        "footer.premiumFish": "プレミアムフィッシュ",
+        "footer.freshShrimp": "新鮮エビ",
+        "footer.crabLobster": "カニ＆ロブスター",
+        "footer.shellfish": "貝類",
+        "footer.frozenSeafood": "冷凍シーフード",
+        "footer.contactUs": "お問い合わせ",
+        "footer.address": "住所",
+        "footer.businessHours": "営業時間",
+        "footer.monFri": "月曜〜金曜",
+        "footer.satSun": "土曜〜日曜",
+        "footer.services": "サービス",
+        "footer.copyright": "© 2025 Oceanex Marine Industries. All rights reserved.",
+        "footer.privacyPolicy": "プライバシーポリシー",
+        "footer.termsOfService": "利用規約",
+        "footer.cookiePolicy": "クッキーポリシー",
+        
+        // News Section
+        "news.title": "最新ニュース",
+        "news.subtitle": "業界動向と企業ニュースをお届けします",
+        "news.viewAll": "すべてのニュースを見る",
+        "news.readMore": "続きを読む",
+        "news.article1.title": "Oceanex冷蔵施設拡張",
+        "news.article1.desc": "新規10,000㎡施設により処理能力が40%向上",
+        "news.article1.date": "2024年12月",
+        "news.article2.title": "持続可能な漁業パートナーシップ",
+        "news.article2.desc": "MSCとの新たな協力で持続可能な漁業実践を推進",
+        "news.article2.date": "2024年11月",
+        "news.article3.title": "輸出アワード2024",
+        "news.article3.desc": "インドネシア最優秀シーフード輸出業者に認定",
+        "news.article3.date": "2024年10月",
+        
+        // About Page
+        "about.hero.subtitle": "会社概要",
+        "about.hero.title": "海と市場をつなぐ",
+        "about.hero.desc": "プレミアムシーフード輸出",
+        "about.vision.desc": "プレミアム冷凍シーフード。認証品質。世界配送。",
+        "about.stats.years": "年の実績",
+        "about.stats.countries": "輸出国",
+        "about.certs.desc": "品質保証",
+        
+        // Story Section
+        "about.story.label": "私たちのストーリー",
+        "about.story.companyName": "Oceanex Fishery",
+        "about.story.para1": "Oceanex Fisheryは、品質の一貫性、コールドチェーンの完全性、責任ある調達に重点を置き、世界市場にプレミアム冷凍シーフードを供給しています。",
+        "about.story.para2": "2009年設立以来、厳格な品質管理のもとでシーフード製品を取り扱い、鮮度、安全性、国際基準への準拠を確保しています。冷蔵施設、魚加工ユニット、専用シーフード物流ネットワークに支えられ、調達から配送まで製品品質を維持しています。",
+        "about.story.para3": "当社の運営は、トレーサビリティ、信頼性の高い取り扱い、持続可能な慣行を重視し、多様な市場要件に自信と一貫性を持って対応しています。",
+        "about.story.established": "設立",
+        
+        // Certifications
+        "about.cert.label": "品質保証",
+        "about.cert.title": "認証一覧",
+        "about.cert.subtitle": "最高レベルの品質、安全性、持続可能性を保証する国際認証基準。",
+        "about.cert.haccp": "HACCP",
+        "about.cert.haccp.desc": "食品安全システム",
+        "about.cert.iso": "ISO 22000",
+        "about.cert.iso.desc": "食品安全マネジメント",
+        "about.cert.brc": "BRC Global",
+        "about.cert.brc.desc": "英国小売基準",
+        "about.cert.msc": "MSC",
+        "about.cert.msc.desc": "海洋管理",
+        "about.cert.fda": "FDA承認",
+        "about.cert.fda.desc": "米国基準準拠",
+        "about.cert.eu": "EU認証",
+        "about.cert.eu.desc": "欧州基準",
+        "about.cert.halal": "ハラール MUI",
+        "about.cert.halal.desc": "ハラール認証",
+        
+        // Vision & Mission
+        "about.vm.vision.title": "ビジョン",
+        "about.vm.vision.text": "規律ある品質管理、実証済みのコールドチェーン完全性、責任ある調達を通じて、一貫して信頼できる冷凍シーフードを提供し、グローバルシーフード供給のベンチマークを設定すること。",
+        "about.vm.mission.title": "ミッション",
+        "about.vm.mission.text": "トレーサビリティ、規制遵守、長期的な資源の持続可能性を優先し、責任を持って透明性のあるシーフード調達を行うこと。",
+        
+        // Sister Brand
+        "about.sister.label": "ネットワーク",
+        "about.sister.title": "姉妹ブランド",
+        "about.sister.name": "Lorem Ipsum Dolor Sit Amet",
+        "about.sister.text1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "about.sister.text2": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.",
+        "about.sister.badge": "近日公開",
+        
+        // Download Section
+        "about.download.title1": "ダウンロード",
+        "about.download.title2": "会社案内",
+        "about.download.desc": "会社、製品、認証、機能に関する包括的な情報を1つのドキュメントで入手できます。",
+        "about.download.feature1": "製品カタログ",
+        "about.download.feature2": "認証",
+        "about.download.feature3": "施設写真",
+        "about.download.feature4": "連絡先",
+        "about.download.btn": "PDFダウンロード",
+        "about.download.meta": "PDF • 5.2 MB • 2024年更新",
+        
+        // CTA Section
+        "about.cta.title": "パートナーシップをお考えですか？",
+        "about.cta.desc": "シーフード調達のニーズについてご相談ください。",
+        "about.cta.btn": "お問い合わせ",
+        
+        // Product Page
+        "product.hero.tag": "カタログ",
+        "product.hero.title": "プレミアムシーフード",
+        "product.hero.subtitle": "持続可能な調達、専門的な加工、世界配送",
+        "product.filter.all": "全製品",
+        "product.filter.fish": "魚",
+        "product.filter.shrimp": "エビ",
+        "product.filter.crab": "カニ",
+        "product.filter.shellfish": "貝類",
+        "product.search": "製品を検索...",
+        "product.viewSpecs": "仕様を見る",
+        "product.requestQuote": "見積依頼",
+        "product.cta.title": "お探しの製品が見つかりませんか？",
+        "product.cta.desc": "幅広いシーフード製品を取り扱っております。ご要望をお聞かせください。",
+        "product.cta.btn": "カスタム見積り",
+        
+        // Product Names
+        "product.salmon.name": "ワイルドアトランティックサーモン",
+        "product.salmon.origin": "ノルウェー",
+        "product.salmon.desc": "豊かな風味としっかりした食感のプレミアムホールサーモン。刺身、グリル、スモークに最適。",
+        "product.salmon.badge": "グレードA+",
+        "product.tigerShrimp.name": "ブラックタイガーシュリンプ",
+        "product.tigerShrimp.origin": "インドネシア",
+        "product.tigerShrimp.desc": "特徴的な縞模様を持つ大型で肉厚なタイガーエビ。高級レストランやホテルに最適。",
+        "product.tigerShrimp.badge": "プレミアム",
+        "product.kingCrab.name": "キングクラブレッグ",
+        "product.kingCrab.origin": "アラスカ、米国",
+        "product.kingCrab.desc": "甘くて柔らかい肉を持つ野生のアラスカ産キングクラブ。究極の高級シーフード。",
+        "product.kingCrab.badge": "プレミアム",
+        "product.bluefin.name": "ブルーフィンツナ",
+        "product.bluefin.origin": "日本",
+        "product.bluefin.desc": "卓越した霜降りを持つプレミアム刺身グレードのブルーフィン。マグロの最高峰。",
+        "product.bluefin.badge": "刺身グレード",
+        "product.vannamei.name": "バナメイシュリンプ",
+        "product.vannamei.origin": "ベトナム",
+        "product.vannamei.desc": "マイルドで甘い風味の養殖ホワイトシュリンプ。万能で一貫した高品質。",
+        "product.vannamei.badge": "グレードA",
+        "product.snowCrab.name": "スノークラブクラスター",
+        "product.snowCrab.origin": "カナダ",
+        "product.snowCrab.desc": "繊細で甘い肉を持つ野生のスノークラブ。調理済みですぐにお召し上がりいただけます。",
+        "product.snowCrab.badge": "グレードA",
+        "product.scallops.name": "ホタテ貝",
+        "product.scallops.origin": "米国東海岸",
+        "product.scallops.desc": "自然な甘みを持つプレミアムドライパックスキャロップ。水分やリン酸塩無添加。",
+        "product.scallops.badge": "ドライパック",
+        "product.yellowfin.name": "キハダマグロ",
+        "product.yellowfin.origin": "フィリピン",
+        "product.yellowfin.desc": "赤身で風味豊かな野生のキハダマグロ。シアーやグリルに最適。",
+        "product.yellowfin.badge": "グレードA",
+        "product.lobster.name": "ロブスターテール",
+        "product.lobster.origin": "カリブ海",
+        "product.lobster.desc": "しっかりとした甘い肉を持つ温水イセエビテール。世界中のレストランで人気。",
+        "product.lobster.badge": "プレミアム",
+        "product.cod.name": "アトランティックコッドフィレ",
+        "product.cod.origin": "アイスランド",
+        "product.cod.desc": "マイルドでフレーク状の白身を持つ野生のアトランティックコッド。様々な料理のクラシック。",
+        "product.cod.badge": "グレードA",
+        "product.mussels.name": "ブルームール貝",
+        "product.mussels.origin": "チリ",
+        "product.mussels.desc": "ぷりぷりの肉とクリーンな味わいのロープ養殖チリ産ムール貝。調理準備完了。",
+        "product.mussels.badge": "ファームフレッシュ",
+        "product.squid.name": "イカ / カラマリ",
+        "product.squid.origin": "中国",
+        "product.squid.desc": "きれいで柔らかいイカのチューブと触手。揚げ物、グリル、詰め物に最適。",
+        "product.squid.badge": "グレードA",
+        
+        // Product Specs Labels
+        "product.spec.sizeRange": "サイズ範囲",
+        "product.spec.processing": "加工方法",
+        "product.spec.packaging": "包装",
+        "product.spec.storage": "保存方法",
+        "product.spec.shelfLife": "賞味期限",
+        "product.spec.moq": "最小発注数量",
+        "product.spec.certification": "認証",
+        "product.spec.availability": "出荷時期",
+        
+        // No Results
+        "product.noResults.title": "製品が見つかりません",
+        "product.noResults.desc": "検索条件またはフィルターを調整してください"
+    }
+};
+
+// Translation Engine
+class TranslationEngine {
+    constructor() {
+        this.currentLang = localStorage.getItem('selectedLang') || 'en';
+        this.init();
+    }
+    
+    init() {
+        document.addEventListener('DOMContentLoaded', () => {
+            this.applyTranslations();
+        });
+        
+        if (document.readyState === 'complete' || document.readyState === 'interactive') {
+            setTimeout(() => this.applyTranslations(), 100);
+        }
+    }
+    
+    translate(key) {
+        return translations[this.currentLang][key] || translations['en'][key] || key;
+    }
+    
+    applyTranslations() {
+        // Translate all elements with data-translate attribute
+        document.querySelectorAll('[data-translate]').forEach(element => {
+            const key = element.getAttribute('data-translate');
+            const translation = this.translate(key);
+            
+            if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                element.placeholder = translation;
+            } else if (element.tagName === 'OPTION') {
+                element.textContent = translation;
+            } else {
+                element.textContent = translation;
+            }
+        });
+        
+        // Translate elements with data-translate-html (for HTML content)
+        document.querySelectorAll('[data-translate-html]').forEach(element => {
+            const key = element.getAttribute('data-translate-html');
+            element.innerHTML = this.translate(key);
+        });
+    }
+    
+    setLanguage(lang) {
+        this.currentLang = lang;
+        localStorage.setItem('selectedLang', lang);
+        this.applyTranslations();
+    }
+}
+
+// Initialize translation engine
+const translator = new TranslationEngine();
+
+// Global function to change language
+function changeLanguage(lang) {
+    translator.setLanguage(lang);
+}

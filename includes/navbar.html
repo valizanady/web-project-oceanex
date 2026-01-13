@@ -1,0 +1,145 @@
+<nav class="navbar navbar-expand-lg">                
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="./">
+            <img src="images/logo.png" class="navbar-brand-image img-fluid" alt="Oceanex Marine Industries">
+            <span class="navbar-brand-text">
+                Oceanex
+                <small>Marine Industries</small>
+            </span>
+        </a>
+
+        <!-- Mobile Header Right: Contact Button + Toggler -->
+        <div class="d-lg-none d-flex align-items-center">
+            <a class="btn btn-contact-mobile" href="index.html#section_5" data-translate="nav.contactUs">Contact Us</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+            </button>
+        </div>
+        
+        <!-- Desktop Toggler (hidden) -->
+        <button class="navbar-toggler d-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-lg-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" data-page="home" data-translate="nav.home">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html" data-page="about" data-translate="nav.about">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="product/" data-page="product" data-translate="nav.products">Products</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#news" data-page="news" data-translate="nav.news">News</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#section_5" data-page="contact" data-translate="nav.contact">Contact</a>
+                </li>
+
+                <!-- Language Switcher -->
+                <li class="nav-item dropdown ms-lg-2">
+                    <a class="nav-link dropdown-toggle lang-switcher" href="#" id="langDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-globe2"></i> <span class="current-lang">EN</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end lang-dropdown" aria-labelledby="langDropdown">
+                        <li>
+                            <a class="dropdown-item lang-option" href="#" data-lang="en">
+                                <span class="lang-flag">🇬🇧</span> English
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item lang-option" href="#" data-lang="zh">
+                                <span class="lang-flag">🇨🇳</span> 中文
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item lang-option" href="#" data-lang="ja">
+                                <span class="lang-flag">🇯🇵</span> 日本語
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- Contact Button - Desktop Only -->
+            <div class="d-none d-lg-block ms-lg-3">
+                <a class="btn custom-btn custom-border-btn btn-contact-nav" href="index.html#section_5" data-translate="nav.contactUs">Contact Us</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<script>
+// Language Switcher Logic with Translation
+(function() {
+    const savedLang = localStorage.getItem('selectedLang') || 'en';
+    
+    function updateLangDisplay(lang) {
+        const currentLangSpan = document.querySelector('.current-lang');
+        if (currentLangSpan) {
+            if (lang === 'zh') {
+                currentLangSpan.textContent = '中文';
+            } else if (lang === 'ja') {
+                currentLangSpan.textContent = '日本語';
+            } else {
+                currentLangSpan.textContent = 'EN';
+            }
+        }
+        
+        document.querySelectorAll('.lang-option').forEach(opt => {
+            opt.classList.remove('active');
+            if (opt.getAttribute('data-lang') === lang) {
+                opt.classList.add('active');
+            }
+        });
+    }
+    
+    updateLangDisplay(savedLang);
+    
+    document.querySelectorAll('.lang-option').forEach(option => {
+        option.addEventListener('click', function(e) {
+            e.preventDefault();
+            const lang = this.getAttribute('data-lang');
+            localStorage.setItem('selectedLang', lang);
+            updateLangDisplay(lang);
+            
+            // Apply translations using global translator
+            if (typeof changeLanguage === 'function') {
+                changeLanguage(lang);
+            } else {
+                // Fallback: reload if translator not loaded yet
+                window.location.reload();
+            }
+        });
+    });
+})();
+
+// Auto-detect current page and set active class
+(function() {
+    const currentPath = window.location.pathname;
+    const navLinks = document.querySelectorAll('.navbar .nav-link');
+    
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        const page = link.getAttribute('data-page');
+        
+        if (page === 'home' && (currentPath.endsWith('/') || currentPath.endsWith('index.html') || currentPath === '')) {
+            // Only set active for home if not on about or product page
+            if (!currentPath.includes('about') && !currentPath.includes('product')) {
+                link.classList.add('active');
+            }
+        } else if (page === 'about' && currentPath.includes('about')) {
+            link.classList.add('active');
+        } else if (page === 'product' && currentPath.includes('product')) {
+            link.classList.add('active');
+        }
+    });
+})();
+</script>
