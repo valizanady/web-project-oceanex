@@ -1,5 +1,25 @@
 # Oceanex Website - Security & Configuration
 
+# ====================================
+# CLEAN URLs - Remove .html extension
+# ====================================
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Redirect .html files to clean URLs
+    RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+    RewriteRule ^ /%1 [NC,L,R=301]
+    
+    # Serve .html files for clean URLs
+    RewriteCond %{REQUEST_FILENAME}.html -f
+    RewriteRule ^(.+)$ $1.html [L]
+</IfModule>
+
+# ====================================
+# SECURITY
+# ====================================
+
 # Prevent directory browsing
 Options -Indexes
 

@@ -412,28 +412,59 @@ p, span, a, li, div, input, textarea, button, label {
 
 /* Mobile Toggler - Navy/Gold Color */
 .navbar-toggler {
-    border: 2px solid var(--navy, #0d2845) !important;
-    padding: 6px 10px;
-    background: transparent !important;
-    border-radius: 4px;
+    border: none !important;
+    padding: 8px !important;
+    background: var(--navy, #0d2845) !important;
+    border-radius: 6px;
+    position: relative;
+    box-shadow: 0 2px 8px rgba(13, 40, 69, 0.15) !important;
 }
 
 .navbar-toggler:focus {
-    box-shadow: none !important;
+    box-shadow: 0 2px 12px rgba(13, 40, 69, 0.25) !important;
     outline: none !important;
+    background: var(--navy, #0d2845) !important;
 }
 
 .navbar-toggler span {
     display: block;
-    width: 22px;
+    width: 20px;
     height: 2px;
-    background-color: var(--navy, #0d2845) !important;
-    margin: 5px 0;
+    background-color: #ffffff !important;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+    opacity: 1 !important;
+}
+
+.navbar-toggler::before,
+.navbar-toggler::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #ffffff !important;
     transition: all 0.3s ease;
 }
 
 .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%230d2845' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23ffffff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2.5' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* Force hamburger lines to be navy - critical override */
+.navbar .navbar-toggler span,
+.navbar-toggler span,
+button.navbar-toggler span {
+    background-color: #ffffff !important;
+    background: #ffffff !important;
+    opacity: 1 !important;
+}
+
+.navbar .navbar-toggler::before,
+.navbar .navbar-toggler::after,
+.navbar-toggler::before,
+.navbar-toggler::after {
+    background-color: #ffffff !important;
+    background: #ffffff !important;
 }
 
 /* ============================================
@@ -971,29 +1002,30 @@ p, span, a, li, div, input, textarea, button, label {
     
     /* Toggler - exact same height as contact button */
     .navbar-toggler {
-        width: 36px;
-        height: 36px;
-        min-height: 36px;
-        max-height: 36px;
-        padding: 9px 8px;
-        border: 1px solid rgba(255, 255, 255, 0.25);
-        border-radius: 6px;
-        background: rgba(255, 255, 255, 0.08);
+        width: 40px;
+        height: 40px;
+        min-height: 40px;
+        max-height: 40px;
+        padding: 10px 8px;
+        border: none !important;
+        border-radius: 8px;
+        background: var(--navy, #0d2845) !important;
         flex-shrink: 0;
         display: flex;
         flex-direction: column;
-        align-items: stretch;
+        align-items: center;
         justify-content: center;
         gap: 5px;
         margin-left: 8px;
         position: relative;
         box-sizing: border-box;
+        box-shadow: 0 2px 8px rgba(13, 40, 69, 0.2);
     }
     
     .navbar-toggler:focus {
-        box-shadow: none;
+        box-shadow: 0 2px 12px rgba(13, 40, 69, 0.3);
         outline: none;
-        background: rgba(255, 255, 255, 0.12);
+        background: #0d2845 !important;
     }
     
     /* Custom hamburger - 3 justified lines with X animation */
@@ -1006,8 +1038,9 @@ p, span, a, li, div, input, textarea, button, label {
     .navbar-toggler span {
         content: '';
         display: block;
+        width: 20px;
         height: 2px;
-        background: rgba(255, 255, 255, 0.9);
+        background: #ffffff !important;
         border-radius: 2px;
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         transform-origin: center;
@@ -1015,6 +1048,7 @@ p, span, a, li, div, input, textarea, button, label {
     
     .navbar-toggler span {
         display: block;
+        opacity: 1 !important;
     }
     
     /* X animation when expanded */
@@ -1409,15 +1443,16 @@ html {
     }
     
     .navbar-toggler {
-        border: none;
+        border: none !important;
         padding: 8px;
-        background: rgba(255,255,255,0.1);
+        background: var(--navy, #0d2845) !important;
         border-radius: 6px;
+        box-shadow: 0 2px 8px rgba(13, 40, 69, 0.2);
     }
     
     .navbar-toggler:focus {
-        box-shadow: none;
-        outline: 2px solid var(--accent-gold);
+        box-shadow: 0 2px 12px rgba(13, 40, 69, 0.3);
+        outline: none !important;
     }
     
     .navbar-collapse {
@@ -1932,5 +1967,45 @@ html {
     
     .enhanced-quote-form h2 {
         font-size: 1.5rem;
+    }
+}
+
+/* ============================================
+   CRITICAL FIX - NAVBAR TOGGLER VISIBILITY
+   Force hamburger icon to be NAVY background with WHITE lines
+   ============================================ */
+@media (max-width: 991px) {
+    .navbar-toggler,
+    button.navbar-toggler {
+        border: none !important;
+        background: #0d2845 !important;
+        background-color: #0d2845 !important;
+        box-shadow: 0 2px 8px rgba(13, 40, 69, 0.2) !important;
+    }
+    
+    .navbar-toggler span,
+    .navbar-toggler::before,
+    .navbar-toggler::after,
+    button.navbar-toggler span,
+    button.navbar-toggler::before,
+    button.navbar-toggler::after {
+        background: #ffffff !important;
+        background-color: #ffffff !important;
+        opacity: 1 !important;
+        width: 20px !important;
+        height: 2px !important;
+    }
+    
+    .navbar-toggler:focus,
+    button.navbar-toggler:focus {
+        background: #0d2845 !important;
+        box-shadow: 0 2px 12px rgba(13, 40, 69, 0.3) !important;
+        outline: none !important;
+    }
+    
+    .navbar-toggler:hover,
+    button.navbar-toggler:hover {
+        background: #1a3a5a !important;
+        box-shadow: 0 3px 14px rgba(13, 40, 69, 0.3) !important;
     }
 }
