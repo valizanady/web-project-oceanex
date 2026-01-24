@@ -237,13 +237,13 @@
       const modalData = {
         quality: {
           icon: 'bi-shield-check',
-          title: 'Premium Quality',
-          desc: 'Every product undergoes rigorous selection and quality control processes. We source only from MSC-certified sustainable fisheries and maintain strict traceability from ocean to your market.',
+          title: 'Quality Driven',
+          desc: 'Every product undergoes rigorous grading standards and quality control processes. We maintain strict traceability from source to delivery with complete transparency at every stage.',
           features: [
-            'Grade A+ premium selection',
-            'MSC certified sustainable sources',
-            'Complete traceability system',
+            'Grade A+ rigorous grading',
+            'Full traceability system',
             'Strict quality control at every stage',
+            'Source to delivery transparency',
             'Freshness guaranteed',
             'Third-party lab testing'
           ]

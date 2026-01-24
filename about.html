@@ -35,9 +35,10 @@
                 align-items: center;
                 justify-content: center;
                 overflow: hidden;
+                transform: translateZ(0);
             }
 
-            /* Video Background */
+            /* Video Background - Hardware Accelerated */
             .hero-video-container {
                 position: absolute;
                 top: 0;
@@ -45,12 +46,16 @@
                 width: 100%;
                 height: 100%;
                 z-index: 0;
+                transform: translateZ(0);
+                backface-visibility: hidden;
             }
             
             .hero-video {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+                transform: translateZ(0);
+                backface-visibility: hidden;
             }
             
             .hero-video-overlay {
@@ -65,22 +70,12 @@
                     rgba(6, 35, 81, 0.75) 50%,
                     rgba(6, 35, 81, 0.9) 100%
                 );
+                transform: translateZ(0);
             }
 
-            /* Sophisticated grid pattern */
+            /* Remove grid pattern - can cause rendering issues */
             .about-hero::after {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                background-image: 
-                    linear-gradient(rgba(184, 134, 11, 0.03) 1px, transparent 1px),
-                    linear-gradient(90deg, rgba(184, 134, 11, 0.03) 1px, transparent 1px);
-                background-size: 60px 60px;
-                pointer-events: none;
-                z-index: 1;
+                display: none;
             }
 
             .hero-gold-line {
@@ -110,20 +105,18 @@
                 font-weight: 500;
                 text-transform: uppercase;
                 letter-spacing: 3px;
-                margin-bottom: 24px;
-                animation: fadeInUp 0.8s ease;
+                margin-bottom: 16px;
             }
 
             /* Remove decorative lines */
 
             .about-hero h1 {
-                font-size: clamp(1rem, 3.5vw, 4rem);
-                font-weight: 600;
+                font-size: clamp(2.5rem, 5vw, 5rem);
+                font-weight: 700;
                 color: var(--text-primary);
-                margin-bottom: 32px;
+                margin-bottom: 24px;
                 letter-spacing: -1px;
-                line-height: 1.1;
-                animation: fadeInUp 0.8s ease 0.1s both;
+                line-height: 1.2;
             }
 
             .about-hero h1 .gold-text {
@@ -132,25 +125,31 @@
             }
 
             .hero-tagline {
-                font-size: 1.15rem;
+                font-size: 1.3rem;
                 font-weight: 400;
                 color: var(--text-secondary);
                 max-width: 650px;
                 margin: 0 auto 48px;
-                line-height: 1.9;
-                letter-spacing: 0;
-                animation: fadeInUp 0.8s ease 0.2s both;
+                line-height: 1.8;
+                letter-spacing: 0.3px;
             }
 
             .hero-stats {
                 display: flex;
                 justify-content: center;
                 gap: 60px;
-                animation: fadeInUp 0.8s ease 0.3s both;
             }
 
             .hero-stat {
                 text-align: center;
+            }
+            
+            .hero-stat-icon {
+                font-size: 1.5rem;
+                color: var(--accent-gold);
+                display: block;
+                margin-bottom: 8px;
+                opacity: 0.8;
             }
 
             .hero-stat-number {
@@ -181,9 +180,10 @@
                STORY SECTION - Clean & Elegant
                ============================================ */
             .story-section {
-                padding: 80px 0 0 0;
+                padding: 100px 0;
                 background: var(--surface-cream);
                 position: relative;
+                overflow: hidden;
             }
 
             .story-section::before {
@@ -208,19 +208,134 @@
             }
 
             .story-title {
-                font-size: 3rem;
+                font-size: 2.5rem;
                 font-weight: 600;
                 color: #062351;
-                margin-bottom: 40px;
+                margin-bottom: 32px;
                 line-height: 1.2;
             }
 
             .story-text {
                 color: #4a5568;
-                line-height: 2;
-                font-size: 1.05rem;
-                margin-bottom: 24px;
+                line-height: 1.9;
+                font-size: 1rem;
+                margin-bottom: 20px;
                 font-weight: 400;
+            }
+
+            /* Story Gallery - Static Grid with Hover Effects */
+            .story-gallery {
+                position: relative;
+                height: 450px;
+            }
+
+            .gallery-item {
+                position: absolute;
+                border-radius: 12px;
+                overflow: hidden;
+                box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+                transition: transform 0.4s ease, box-shadow 0.4s ease;
+                will-change: transform;
+                backface-visibility: hidden;
+            }
+
+            .gallery-item img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.4s ease;
+            }
+
+            .gallery-item-1 {
+                width: 280px;
+                height: 200px;
+                top: 0;
+                left: 0;
+                z-index: 3;
+                transform: rotate(-2deg);
+            }
+
+            .gallery-item-2 {
+                width: 220px;
+                height: 280px;
+                top: 50px;
+                right: 20px;
+                z-index: 2;
+                transform: rotate(2deg);
+            }
+
+            .gallery-item-3 {
+                width: 200px;
+                height: 150px;
+                bottom: 20px;
+                left: 60px;
+                z-index: 1;
+                transform: rotate(1deg);
+            }
+
+            .gallery-item:hover {
+                transform: scale(1.03) rotate(0deg);
+                z-index: 10;
+                box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+            }
+
+            .gallery-item:hover img {
+                transform: scale(1.05);
+            }
+
+            .story-year-floating {
+                position: absolute;
+                bottom: 80px;
+                right: 0;
+                background: #062351;
+                color: white;
+                padding: 24px 32px;
+                text-align: center;
+                border-radius: 8px;
+                z-index: 5;
+                box-shadow: 0 10px 30px rgba(6, 35, 81, 0.3);
+            }
+
+            .story-year-floating strong {
+                display: block;
+                font-size: 2rem;
+                font-weight: 700;
+                color: var(--accent-gold);
+                line-height: 1;
+            }
+
+            .story-year-floating span {
+                font-size: 11px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                opacity: 0.8;
+            }
+
+            @media (max-width: 768px) {
+                .story-gallery {
+                    height: 350px;
+                }
+                .gallery-item-1 {
+                    width: 180px;
+                    height: 130px;
+                }
+                .gallery-item-2 {
+                    width: 150px;
+                    height: 200px;
+                    right: 0;
+                }
+                .gallery-item-3 {
+                    width: 140px;
+                    height: 100px;
+                    left: 20px;
+                }
+                .story-year-floating {
+                    padding: 16px 24px;
+                    bottom: 40px;
+                }
+                .story-year-floating strong {
+                    font-size: 1.5rem;
+                }
             }
 
             .story-image-container {
@@ -312,26 +427,29 @@
             }
 
             .cert-grid {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                display: flex;
+                justify-content: center;
                 gap: 24px;
+                flex-wrap: wrap;
                 max-width: 1000px;
                 margin: 0 auto;
             }
 
             .cert-grid-4 {
-                grid-template-columns: repeat(4, 1fr);
+                display: flex;
+                justify-content: center;
             }
 
             @media (max-width: 992px) {
                 .cert-grid-4 {
-                    grid-template-columns: repeat(2, 1fr);
+                    justify-content: center;
                 }
             }
 
             @media (max-width: 576px) {
                 .cert-grid-4 {
-                    grid-template-columns: 1fr;
+                    flex-direction: column;
+                    align-items: center;
                 }
             }
 
@@ -342,6 +460,8 @@
                 position: relative;
                 transition: all 0.4s ease;
                 border: 1px solid transparent;
+                min-width: 200px;
+                max-width: 250px;
             }
 
             .cert-item:hover {
@@ -352,8 +472,8 @@
             }
 
             .cert-logo-box {
-                width: 80px;
-                height: 80px;
+                width: 100px;
+                height: 100px;
                 margin: 0 auto 20px;
                 background: #fff;
                 border: 1px dashed #d1d5db;
@@ -361,6 +481,16 @@
                 align-items: center;
                 justify-content: center;
                 transition: all 0.3s ease;
+                border-radius: 12px;
+                padding: 10px;
+            }
+            
+            .cert-logo-box .cert-logo-img {
+                max-width: 80px;
+                max-height: 80px;
+                width: auto;
+                height: auto;
+                object-fit: contain;
             }
 
             .cert-item:hover .cert-logo-box {
@@ -389,7 +519,7 @@
                 margin: 0;
             }
 
-            /* Certification Marquee */
+            /* Certification Bar - Running Text Marquee */
             .cert-marquee-wrapper {
                 margin-top: 80px;
                 margin-bottom: 0;
@@ -403,7 +533,17 @@
             .cert-marquee {
                 display: flex;
                 gap: 60px;
-                animation: marquee 30s linear infinite;
+                animation: marqueeScroll 20s linear infinite;
+                width: max-content;
+            }
+
+            @keyframes marqueeScroll {
+                0% {
+                    transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(-50%);
+                }
             }
 
             .cert-marquee-item {
@@ -421,11 +561,6 @@
             .cert-marquee-item i {
                 color: var(--accent-gold);
                 font-size: 16px;
-            }
-
-            @keyframes marquee {
-                0% { transform: translateX(0); }
-                100% { transform: translateX(-50%); }
             }
 
             /* ============================================
@@ -568,40 +703,48 @@
             }
 
             /* ============================================
-               DOWNLOAD SECTION - Premium CTA
+               DOWNLOAD SECTION - Modern Card Style
                ============================================ */
             .download-section {
-                padding: 100px 0;
-                background: #fff;
+                padding: 80px 0;
+                background: var(--surface-cream);
             }
 
             .download-card {
-                background: var(--gradient-premium);
-                padding: 80px;
+                background: #fff;
+                border-radius: 16px;
+                padding: 60px;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                gap: 60px;
+                gap: 40px;
                 position: relative;
-                overflow: hidden;
-            }
-
-            .download-card::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                height: 2px;
-                background: var(--gradient-gold);
+                box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+                border: 1px solid rgba(0,0,0,0.05);
             }
 
             @media (max-width: 992px) {
                 .download-card {
                     flex-direction: column;
                     text-align: center;
-                    padding: 60px 40px;
+                    padding: 48px 32px;
                 }
+            }
+
+            .download-icon-box {
+                width: 80px;
+                height: 80px;
+                background: linear-gradient(135deg, #062351 0%, #0d3a6d 100%);
+                border-radius: 16px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+            }
+
+            .download-icon-box i {
+                font-size: 32px;
+                color: var(--accent-gold);
             }
 
             .download-content {
@@ -609,27 +752,24 @@
             }
 
             .download-content h2 {
-                font-size: 2.5rem;
-                font-weight: 600;
-                color: var(--text-primary);
-                margin-bottom: 16px;
-            }
-
-            .download-content h2 span {
-                color: var(--accent-gold);
+                font-size: 1.75rem;
+                font-weight: 700;
+                color: #062351;
+                margin-bottom: 8px;
             }
 
             .download-content p {
-                color: var(--text-secondary);
-                font-size: 1.1rem;
-                line-height: 1.8;
-                margin-bottom: 24px;
+                color: #6b7280;
+                font-size: 1rem;
+                line-height: 1.6;
+                margin-bottom: 0;
             }
 
             .download-features {
                 display: flex;
-                gap: 32px;
+                gap: 24px;
                 flex-wrap: wrap;
+                margin-top: 16px;
             }
 
             @media (max-width: 992px) {
@@ -641,35 +781,37 @@
             .download-feature {
                 display: flex;
                 align-items: center;
-                gap: 8px;
-                color: var(--text-secondary);
+                gap: 6px;
+                color: #6b7280;
                 font-size: 13px;
             }
 
             .download-feature i {
                 color: var(--accent-gold);
+                font-size: 14px;
             }
 
             .download-btn {
                 display: inline-flex;
                 align-items: center;
-                gap: 16px;
-                background: var(--accent-gold);
-                color: #062351;
-                padding: 20px 48px;
+                gap: 12px;
+                background: #062351;
+                color: #fff;
+                padding: 16px 32px;
                 font-size: 14px;
                 font-weight: 600;
-                letter-spacing: 1px;
-                text-transform: uppercase;
+                letter-spacing: 0.5px;
                 text-decoration: none;
+                border-radius: 8px;
                 transition: all 0.3s ease;
+                white-space: nowrap;
             }
 
             .download-btn:hover {
-                background: var(--accent-gold-light);
-                color: #062351;
+                background: #0d3a6d;
+                color: #fff;
                 transform: translateY(-2px);
-                box-shadow: 0 10px 30px rgba(201, 162, 39, 0.3);
+                box-shadow: 0 8px 24px rgba(6, 35, 81, 0.3);
             }
 
             .download-btn i {
@@ -677,65 +819,91 @@
             }
 
             .download-meta {
-                margin-top: 16px;
-                color: var(--text-muted);
+                margin-top: 12px;
+                color: #9ca3af;
                 font-size: 12px;
                 text-align: center;
             }
 
             /* ============================================
-               CTA SECTION - Minimal Elegance
+               CTA SECTION - Newsletter Style
                ============================================ */
             .cta-section {
-                padding: 120px 0;
+                padding: 80px 0;
                 background: #062351;
                 text-align: center;
                 position: relative;
             }
 
-            .cta-section::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                height: 1px;
-                background: linear-gradient(90deg, transparent, var(--accent-gold), transparent);
-                opacity: 0.3;
-            }
-
             .cta-section h2 {
-                font-size: 3rem;
-                font-weight: 600;
-                color: var(--text-primary);
-                margin-bottom: 20px;
+                font-size: 2.25rem;
+                font-weight: 700;
+                color: #fff;
+                margin-bottom: 8px;
             }
 
-            .cta-section p {
-                color: var(--text-secondary);
-                font-size: 1.1rem;
-                margin-bottom: 40px;
+            .cta-section .cta-highlight {
+                font-size: 1.5rem;
+                font-weight: 600;
+                color: var(--accent-gold);
+                margin-bottom: 32px;
+                display: block;
+            }
+
+            .cta-form {
+                display: flex;
+                flex-direction: row;
+                gap: 16px;
+                max-width: 600px;
+                margin: 0 auto;
+            }
+
+            @media (max-width: 576px) {
+                .cta-form {
+                    flex-direction: column;
+                }
+            }
+
+            .cta-input {
+                flex: 1;
+                padding: 16px 24px;
+                border-radius: 8px;
+                border: none;
+                font-size: 14px;
+                background: #fff;
+                color: #333;
+                outline: none;
+            }
+
+            .cta-input::placeholder {
+                color: #9ca3af;
             }
 
             .cta-btn {
                 display: inline-flex;
                 align-items: center;
-                gap: 12px;
-                background: transparent;
-                border: 1px solid var(--accent-gold);
-                color: var(--accent-gold);
-                padding: 18px 48px;
-                font-size: 13px;
+                justify-content: center;
+                gap: 10px;
+                background: var(--accent-gold);
+                border: none;
+                color: #fff;
+                padding: 16px 32px;
+                font-size: 14px;
                 font-weight: 600;
-                letter-spacing: 2px;
-                text-transform: uppercase;
+                border-radius: 8px;
                 text-decoration: none;
                 transition: all 0.3s ease;
+                cursor: pointer;
+                white-space: nowrap;
             }
 
             .cta-btn:hover {
-                background: var(--accent-gold);
-                color: #062351;
+                opacity: 0.9;
+                color: #fff;
+            }
+
+            .cta-btn i {
+                font-size: 16px;
             }
 
             /* ============================================
@@ -789,28 +957,12 @@
                         <span data-translate="about.hero.subtitle">About Us</span>
                     </div>
                     <h1>
-                        <span data-translate="about.hero.title">Connecting Oceans to Markets</span><br>
-                        <span class="gold-text" data-translate="about.hero.desc">Premium Seafood Export</span>
+                        <span data-translate="about.hero.title">Your Trusted Seafood</span><br>
+                        <span class="gold-text" data-translate="about.hero.desc">Export Partner</span>
                     </h1>
                     <p class="hero-tagline" data-translate="about.vision.desc">
-                        Premium frozen seafood. Certified quality. Delivered worldwide.
+                        Certified frozen seafood. Global delivery. B2B excellence.
                     </p>
-                    <div class="hero-stats">
-                        <div class="hero-stat">
-                            <span class="hero-stat-number">15+</span>
-                            <span class="hero-stat-label" data-translate="about.stats.years">Years</span>
-                        </div>
-                        <div class="hero-divider"></div>
-                        <div class="hero-stat">
-                            <span class="hero-stat-number">50+</span>
-                            <span class="hero-stat-label" data-translate="about.stats.countries">Countries</span>
-                        </div>
-                        <div class="hero-divider"></div>
-                        <div class="hero-stat">
-                            <span class="hero-stat-number">100%</span>
-                            <span class="hero-stat-label" data-translate="about.certs.desc">Certified</span>
-                        </div>
-                    </div>
                 </div>
             </section>
 
@@ -818,27 +970,31 @@
             <!-- Story Section -->
             <section class="story-section">
                 <div class="container">
-                    <div class="row align-items-center g-4 pb-0">
+                    <div class="row align-items-center g-5 pb-0">
                         <div class="col-lg-6 animate-on-scroll">
                             <span class="story-label" data-translate="about.story.label">Our Story</span>
                             <h2 class="story-title" data-translate="about.story.companyName">Oceanex Fishery</h2>
                             <p class="story-text" data-translate="about.story.para1">
-                                Oceanex Fishery supplies premium frozen seafood to global markets with a strong focus on quality consistency, cold chain integrity, and responsible sourcing.
+                                Premium frozen seafood supplier serving global B2B markets since 2020. We specialize in quality consistency, cold chain integrity, and responsible sourcing.
                             </p>
                             <p class="story-text" data-translate="about.story.para2">
-                                Established in 2009, we handle seafood products under strict quality control to ensure freshness, safety, and compliance with international standards. Supported by cold storage facilities, fish processing units, and a dedicated seafood logistics network, we maintain product quality from sourcing to delivery.
-                            </p>
-                            <p class="story-text" data-translate="about.story.para3">
-                                Our operations emphasize traceability, reliable handling, and sustainable practices, enabling us to serve diverse market requirements with confidence and consistency.
+                                Our integrated operations include modern cold storage facilities, certified processing units, and dedicated logistics network — ensuring product quality from ocean to delivery.
                             </p>
                         </div>
                         <div class="col-lg-6 animate-on-scroll">
-                            <div class="story-image-container">
-                                <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&q=80" alt="Oceanex Story" class="story-image">
-                                <div class="story-image-frame"></div>
-                                <div class="story-year-badge">
-                                    <strong>2009</strong>
-                                    <span data-translate="about.story.established">Established</span>
+                            <div class="story-gallery">
+                                <div class="gallery-item gallery-item-1">
+                                    <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&q=80" alt="Fresh Seafood Processing">
+                                </div>
+                                <div class="gallery-item gallery-item-2">
+                                    <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&q=80" alt="Quality Control">
+                                </div>
+                                <div class="gallery-item gallery-item-3">
+                                    <img src="https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=400&q=80" alt="Cold Storage Facility">
+                                </div>
+                                <div class="story-year-floating">
+                                    <strong>2020</strong>
+                                    <span>Est.</span>
                                 </div>
                             </div>
                         </div>
@@ -859,65 +1015,44 @@
                     <div class="cert-grid cert-grid-4">
                         <div class="cert-item animate-on-scroll">
                             <div class="cert-logo-box">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="80" height="80">
-                                    <circle cx="50" cy="50" r="45" fill="#062351"/>
-                                    <path d="M50 15L58 35H80L62 48L70 68L50 55L30 68L38 48L20 35H42L50 15Z" fill="#EBC042"/>
-                                    <text x="50" y="88" font-size="12" fill="white" text-anchor="middle" font-weight="bold">HACCP</text>
-                                </svg>
+                                <img src="images/certifications/cert-haccp.png" alt="HACCP Certified" class="cert-logo-img">
                             </div>
                             <h5 data-translate="about.cert.haccp">HACCP</h5>
                             <p data-translate="about.cert.haccp.desc">Food Safety System</p>
                         </div>
                         <div class="cert-item animate-on-scroll">
                             <div class="cert-logo-box">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="80" height="80">
-                                    <circle cx="50" cy="50" r="45" fill="#1a7a3e"/>
-                                    <path d="M50 10C35 10 25 22 25 35C25 55 50 85 50 85C50 85 75 55 75 35C75 22 65 10 50 10Z" fill="white"/>
-                                    <text x="50" y="50" font-size="14" fill="#1a7a3e" text-anchor="middle" font-weight="bold" font-family="Arial">حلال</text>
-                                    <text x="50" y="95" font-size="10" fill="white" text-anchor="middle" font-weight="bold">HALAL MUI</text>
-                                </svg>
+                                <img src="images/certifications/cert-fda.png" alt="FDA Registered" class="cert-logo-img">
                             </div>
-                            <h5 data-translate="about.cert.halal">Halal MUI</h5>
-                            <p data-translate="about.cert.halal.desc">Halal Certified</p>
+                            <h5 data-translate="about.cert.fda">FDA</h5>
+                            <p data-translate="about.cert.fda.desc">Registered Facility</p>
                         </div>
                         <div class="cert-item animate-on-scroll">
                             <div class="cert-logo-box">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="80" height="80">
-                                    <rect x="5" y="5" width="90" height="90" rx="10" fill="#CA1B1A"/>
-                                    <text x="50" y="40" font-size="18" fill="white" text-anchor="middle" font-weight="bold">BRC</text>
-                                    <text x="50" y="60" font-size="12" fill="white" text-anchor="middle">FOOD</text>
-                                    <rect x="15" y="72" width="70" height="5" fill="#EBC042"/>
-                                    <text x="50" y="92" font-size="8" fill="white" text-anchor="middle">CERTIFIED</text>
-                                </svg>
-                            </div>
-                            <h5 data-translate="about.cert.brc">BRC Food</h5>
-                            <p data-translate="about.cert.brc.desc">Global Standard</p>
-                        </div>
-                        <div class="cert-item animate-on-scroll">
-                            <div class="cert-logo-box">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="80" height="80">
-                                    <circle cx="50" cy="50" r="45" fill="#062351"/>
-                                    <circle cx="50" cy="50" r="38" fill="none" stroke="white" stroke-width="3"/>
-                                    <text x="50" y="42" font-size="16" fill="white" text-anchor="middle" font-weight="bold">ISO</text>
-                                    <text x="50" y="62" font-size="14" fill="#EBC042" text-anchor="middle" font-weight="bold">14001</text>
-                                </svg>
+                                <img src="images/certifications/cert-iso14001.png" alt="ISO 14001 Certified" class="cert-logo-img">
                             </div>
                             <h5 data-translate="about.cert.iso">ISO 14001</h5>
                             <p data-translate="about.cert.iso.desc">Environmental Management</p>
                         </div>
                     </div>
 
-                    <!-- Certification Marquee -->
+                    <!-- Certification Bar - Running Text -->
                     <div class="cert-marquee-wrapper">
                         <div class="cert-marquee">
+                            <!-- First set -->
                             <div class="cert-marquee-item"><i class="bi bi-check-circle-fill"></i> HACCP Certified</div>
-                            <div class="cert-marquee-item"><i class="bi bi-check-circle-fill"></i> Halal MUI</div>
-                            <div class="cert-marquee-item"><i class="bi bi-check-circle-fill"></i> BRC Food Standard</div>
+                            <div class="cert-marquee-item"><i class="bi bi-check-circle-fill"></i> FDA Registered</div>
                             <div class="cert-marquee-item"><i class="bi bi-check-circle-fill"></i> ISO 14001</div>
+                            <div class="cert-marquee-item"><i class="bi bi-patch-check-fill"></i> Quality Driven</div>
+                            <div class="cert-marquee-item"><i class="bi bi-globe2"></i> Global Export</div>
+                            <div class="cert-marquee-item"><i class="bi bi-shield-check"></i> Food Safety</div>
+                            <!-- Duplicate for seamless loop -->
                             <div class="cert-marquee-item"><i class="bi bi-check-circle-fill"></i> HACCP Certified</div>
-                            <div class="cert-marquee-item"><i class="bi bi-check-circle-fill"></i> Halal MUI</div>
-                            <div class="cert-marquee-item"><i class="bi bi-check-circle-fill"></i> BRC Food Standard</div>
+                            <div class="cert-marquee-item"><i class="bi bi-check-circle-fill"></i> FDA Registered</div>
                             <div class="cert-marquee-item"><i class="bi bi-check-circle-fill"></i> ISO 14001</div>
+                            <div class="cert-marquee-item"><i class="bi bi-patch-check-fill"></i> Quality Driven</div>
+                            <div class="cert-marquee-item"><i class="bi bi-globe2"></i> Global Export</div>
+                            <div class="cert-marquee-item"><i class="bi bi-shield-check"></i> Food Safety</div>
                         </div>
                     </div>
                 </div>
@@ -932,7 +1067,7 @@
                             <i class="bi bi-eye"></i>
                         </div>
                         <h3 data-translate="about.vm.vision.title">Our Vision</h3>
-                        <p data-translate="about.vm.vision.text">To set a benchmark in global seafood supply by delivering consistently reliable frozen seafood through disciplined quality control, proven cold chain integrity, and responsible sourcing.</p>
+                        <p data-translate="about.vm.vision.text">To be the benchmark in global seafood supply through consistent quality, proven cold chain integrity, and responsible sourcing practices.</p>
                         <div class="vm-number">01</div>
                     </div>
                     <div class="vm-card mission animate-on-scroll">
@@ -940,192 +1075,164 @@
                             <i class="bi bi-compass"></i>
                         </div>
                         <h3 data-translate="about.vm.mission.title">Our Mission</h3>
-                        <p data-translate="about.vm.mission.text">To source seafood responsibly and transparently, prioritizing traceability, regulatory compliance, and long-term resource sustainability.</p>
+                        <p data-translate="about.vm.mission.text">To deliver traceable, compliant seafood products while prioritizing resource sustainability and long-term partnerships.</p>
                         <div class="vm-number">02</div>
                     </div>
                 </div>
             </section>
-
-
-            <!-- Sister Brand Section -->
-            <section class="sister-brand-section">
-                <div class="container">
-                    <div class="section-header animate-on-scroll">
-                        <span class="section-label" data-translate="about.sister.label">Our Network</span>
-                        <h2 class="section-title" data-translate="about.sister.title">Sister Brand</h2>
-                    </div>
-                    <div class="brand-card animate-on-scroll">
-                        <h3 data-translate="about.sister.name">Lorem Ipsum Dolor Sit Amet</h3>
-                        <p data-translate="about.sister.text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-                        <p data-translate="about.sister.text2">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-                        <span class="brand-badge" data-translate="about.sister.badge">Coming Soon</span>
-                    </div>
-                </div>
-            </section>
-
-
-            <!-- Download Section -->
+            <!-- Download Section - Modern Card -->
             <section class="download-section">
                 <div class="container">
                     <div class="download-card animate-on-scroll">
+                        <div class="download-icon-box">
+                            <i class="bi bi-file-earmark-pdf"></i>
+                        </div>
                         <div class="download-content">
-                            <h2><span data-translate="about.download.title1">Download Our</span> <span data-translate="about.download.title2">Company Profile</span></h2>
-                            <p data-translate="about.download.desc">Get comprehensive information about our company, products, certifications, and capabilities in one document.</p>
+                            <h2 data-translate="about.download.title">Download Company Profile</h2>
+                            <p data-translate="about.download.desc">Get comprehensive information about our products, certifications, and capabilities.</p>
                             <div class="download-features">
                                 <div class="download-feature">
-                                    <i class="bi bi-check"></i>
+                                    <i class="bi bi-check-circle-fill"></i>
                                     <span data-translate="about.download.feature1">Product Catalog</span>
                                 </div>
                                 <div class="download-feature">
-                                    <i class="bi bi-check"></i>
+                                    <i class="bi bi-check-circle-fill"></i>
                                     <span data-translate="about.download.feature2">Certifications</span>
                                 </div>
                                 <div class="download-feature">
-                                    <i class="bi bi-check"></i>
+                                    <i class="bi bi-check-circle-fill"></i>
                                     <span data-translate="about.download.feature3">Facility Photos</span>
-                                </div>
-                                <div class="download-feature">
-                                    <i class="bi bi-check"></i>
-                                    <span data-translate="about.download.feature4">Contact Details</span>
                                 </div>
                             </div>
                         </div>
                         <div>
                             <a href="#" class="download-btn">
-                                <span data-translate="about.download.btn">Download PDF</span>
                                 <i class="bi bi-download"></i>
+                                <span data-translate="about.download.btn">Download PDF</span>
                             </a>
-                            <div class="download-meta" data-translate="about.download.meta">PDF • 5.2 MB • Updated 2024</div>
+                            <div class="download-meta">PDF • 5.2 MB</div>
                         </div>
                     </div>
                 </div>
             </section>
 
 
-            <!-- CTA Section -->
+            <!-- CTA Section - Newsletter Style -->
             <section class="cta-section">
                 <div class="container">
                     <h2 class="animate-on-scroll" data-translate="about.cta.title">Ready to Partner?</h2>
-                    <p class="animate-on-scroll" data-translate="about.cta.desc">Let's discuss how we can meet your seafood sourcing needs.</p>
-                    <a href="index.html#section_5" class="cta-btn animate-on-scroll">
-                        <span data-translate="about.cta.btn">Get In Touch</span>
-                        <i class="bi bi-arrow-right"></i>
-                    </a>
+                    <span class="cta-highlight animate-on-scroll" data-translate="about.cta.desc">Let's discuss your seafood sourcing needs</span>
+                    
+                    <form class="cta-form animate-on-scroll">
+                        <input type="email" class="cta-input" placeholder="Insert your business email" required>
+                        <button type="submit" class="cta-btn">
+                            <span data-translate="about.cta.btn">Get In Touch</span>
+                            <i class="bi bi-arrow-right"></i>
+                        </button>
+                    </form>
                 </div>
             </section>
 
 
-            <!-- Footer -->
+            <!-- Footer - Premium Modern Design -->
             <footer class="enhanced-footer">
                 <div class="container">
-                    <div class="row footer-content">
-                        <!-- About Column -->
-                        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                            <div class="footer-logo mb-3">
-                                <a class="navbar-brand d-flex align-items-center" href="./">
-                                    <img src="images/logo.png" class="navbar-brand-image img-fluid" alt="Oceanex Marine Industries">
-                                    <span class="navbar-brand-text">
-                                        Oceanex Marine
-                                        <small>Industries</small>
-                                    </span>
-                                </a>
+                    <div class="footer-content">
+                        <div class="footer-grid">
+                            <!-- Brand Column -->
+                            <div class="footer-brand">
+                                <div class="footer-logo">
+                                    <a class="navbar-brand" href="index.html">
+                                        <img src="images/logo.png" class="navbar-brand-image img-fluid" alt="Oceanex Marine Industries">
+                                        <span class="navbar-brand-text">
+                                            Oceanex
+                                            <small>Marine Industries</small>
+                                        </span>
+                                    </a>
+                                </div>
+                                <p class="footer-description" data-translate="footer.description">
+                                    Your trusted partner in premium seafood export. We deliver quality frozen seafood to global B2B markets with certified excellence.
+                                </p>
+                                <div class="social-links">
+                                    <a href="#" class="social-link" aria-label="Facebook">
+                                        <i class="bi bi-facebook"></i>
+                                    </a>
+                                    <a href="#" class="social-link" aria-label="Instagram">
+                                        <i class="bi bi-instagram"></i>
+                                    </a>
+                                    <a href="#" class="social-link" aria-label="LinkedIn">
+                                        <i class="bi bi-linkedin"></i>
+                                    </a>
+                                    <a href="#" class="social-link" aria-label="WhatsApp">
+                                        <i class="bi bi-whatsapp"></i>
+                                    </a>
+                                </div>
                             </div>
-                            <p class="footer-description mb-3" data-translate="footer.description">
-                                Your trusted partner in premium seafood export and import. Connecting global markets with the finest ocean products.
-                            </p>
-                            <div class="social-links">
-                                <a href="#" class="social-link" aria-label="Facebook">
-                                    <i class="bi bi-facebook"></i>
-                                </a>
-                                <a href="#" class="social-link" aria-label="Instagram">
-                                    <i class="bi bi-instagram"></i>
-                                </a>
-                                <a href="#" class="social-link" aria-label="LinkedIn">
-                                    <i class="bi bi-linkedin"></i>
-                                </a>
-                                <a href="#" class="social-link" aria-label="WhatsApp">
-                                    <i class="bi bi-whatsapp"></i>
-                                </a>
+
+                            <!-- Quick Links Column -->
+                            <div class="footer-column">
+                                <h5 class="footer-title" data-translate="footer.quickLinks">Quick Links</h5>
+                                <ul class="footer-links">
+                                    <li><a href="index.html" data-translate="nav.home">Home</a></li>
+                                    <li><a href="about.html" data-translate="nav.about">About Us</a></li>
+                                    <li><a href="product/" data-translate="nav.products">Products</a></li>
+                                    <li><a href="index.html#section_5" data-translate="nav.contact">Contact</a></li>
+                                </ul>
                             </div>
-                        </div>
 
-                        <!-- Quick Links Column -->
-                        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
-                            <h5 class="footer-title" data-translate="footer.quickLinks">Quick Links</h5>
-                            <ul class="footer-links">
-                                <li><a href="index.html" data-translate="nav.home">Home</a></li>
-                                <li><a href="about.html" data-translate="nav.about">About Us</a></li>
-                                <li><a href="product/" data-translate="nav.products">Products</a></li>
-                                <li><a href="index.html#section_4" data-translate="footer.services">Services</a></li>
-                                <li><a href="index.html#section_5" data-translate="nav.contact">Contact</a></li>
-                            </ul>
-                        </div>
+                            <!-- Products Column -->
+                            <div class="footer-column">
+                                <h5 class="footer-title" data-translate="footer.products">Products</h5>
+                                <ul class="footer-links">
+                                    <li><a href="product/">Premium Fish</a></li>
+                                    <li><a href="product/">Fresh Shrimp</a></li>
+                                    <li><a href="product/">Crab & Lobster</a></li>
+                                    <li><a href="product/">Frozen Seafood</a></li>
+                                </ul>
+                            </div>
 
-                        <!-- Products Column -->
-                        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
-                            <h5 class="footer-title" data-translate="footer.products">Products</h5>
-                            <ul class="footer-links">
-                                <li><a href="product/" data-translate="footer.premiumFish">Premium Fish</a></li>
-                                <li><a href="product/" data-translate="footer.freshShrimp">Fresh Shrimp</a></li>
-                                <li><a href="product/" data-translate="footer.crabLobster">Crab & Lobster</a></li>
-                                <li><a href="product/" data-translate="footer.shellfish">Shellfish</a></li>
-                                <li><a href="product/" data-translate="footer.frozenSeafood">Frozen Seafood</a></li>
-                            </ul>
-                        </div>
-
-                        <!-- Contact Info Column -->
-                        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                            <h5 class="footer-title" data-translate="footer.contactUs">Contact Us</h5>
-                            <ul class="footer-contact">
-                                <li>
-                                    <i class="bi bi-geo-alt-fill"></i>
-                                    <span>123 Harbor Drive,<br>Seafood District, CA 90210</span>
-                                </li>
-                                <li>
-                                    <i class="bi bi-telephone-fill"></i>
-                                    <a href="tel:+12345678900">+1 (234) 567-8900</a>
-                                </li>
-                                <li>
-                                    <i class="bi bi-envelope-fill"></i>
-                                    <a href="mailto:info@oceanex.com">info@oceanex.com</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <!-- Business Hours Column -->
-                        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
-                            <h5 class="footer-title" data-translate="footer.businessHours">Business Hours</h5>
-                            <ul class="footer-hours">
-                                <li>
-                                    <span class="day" data-translate="footer.monFri">Mon - Fri</span>
-                                    <span class="time">8:00 AM - 6:00 PM</span>
-                                </li>
-                                <li>
-                                    <span class="day" data-translate="footer.satSun">Sat - Sun</span>
-                                    <span class="time">6:30 AM - 8:30 PM</span>
-                                </li>
-                            </ul>
-                            <div class="footer-badges mt-3">
-                                <span class="badge" data-translate="trust.haccp">HACCP Certified</span>
-                                <span class="badge">ISO 22000</span>
+                            <!-- Contact Column -->
+                            <div class="footer-column footer-contact-column">
+                                <h5 class="footer-title" data-translate="footer.contactUs">Contact Us</h5>
+                                <ul class="footer-contact">
+                                    <li>
+                                        <div class="footer-contact-icon">
+                                            <i class="bi bi-geo-alt-fill"></i>
+                                        </div>
+                                        <span>123 Harbor Drive,<br>Seafood District, CA 90210</span>
+                                    </li>
+                                    <li>
+                                        <div class="footer-contact-icon">
+                                            <i class="bi bi-telephone-fill"></i>
+                                        </div>
+                                        <a href="tel:+12345678900">+1 (234) 567-8900</a>
+                                    </li>
+                                    <li>
+                                        <div class="footer-contact-icon">
+                                            <i class="bi bi-envelope-fill"></i>
+                                        </div>
+                                        <a href="mailto:info@oceanex.com">info@oceanex.com</a>
+                                    </li>
+                                </ul>
+                                <div class="footer-badges">
+                                    <span class="badge">HACCP</span>
+                                    <span class="badge">FDA</span>
+                                    <span class="badge">ISO 14001</span>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Bottom Bar -->
                     <div class="footer-bottom">
-                        <div class="row align-items-center">
-                            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                                <p class="copyright-text mb-0" data-translate="footer.copyright">
-                                    © 2025 Oceanex Marine Industries. All rights reserved.
-                                </p>
-                            </div>
-                            <div class="col-md-6 text-center text-md-end">
-                                <div class="footer-bottom-links">
-                                    <a href="#" data-translate="footer.privacyPolicy">Privacy Policy</a>
-                                    <a href="#" data-translate="footer.termsOfService">Terms of Service</a>
-                                    <a href="#" data-translate="footer.cookiePolicy">Cookie Policy</a>
-                                </div>
+                        <div class="footer-bottom-inner">
+                            <p class="copyright-text" data-translate="footer.copyright">
+                                © 2025 Oceanex Marine Industries. All rights reserved.
+                            </p>
+                            <div class="footer-bottom-links">
+                                <a href="#" data-translate="footer.privacyPolicy">Privacy Policy</a>
+                                <a href="#" data-translate="footer.termsOfService">Terms of Service</a>
+                                <a href="#" data-translate="footer.cookiePolicy">Cookie Policy</a>
                             </div>
                         </div>
                     </div>
@@ -1193,9 +1300,17 @@
                         newScript.textContent = script.textContent;
                         document.body.appendChild(newScript);
                     });
-                    // Re-init sticky navbar if needed
-                    if (typeof $.fn.sticky !== 'undefined') {
-                        $(".navbar").sticky({ topSpacing: 0 });
+                    // DO NOT use jQuery sticky - use CSS sticky instead
+                    // Add scrolled class for shadow effect
+                    const navbar = document.querySelector('.navbar');
+                    if (navbar) {
+                        window.addEventListener('scroll', function() {
+                            if (window.scrollY > 10) {
+                                navbar.classList.add('scrolled');
+                            } else {
+                                navbar.classList.remove('scrolled');
+                            }
+                        }, { passive: true });
                     }
                     // Apply translations to navbar
                     if (typeof translator !== 'undefined') {

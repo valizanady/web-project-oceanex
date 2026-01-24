@@ -24,6 +24,10 @@
                     <span class="lang-flag">🇬🇧</span>
                     <span>English</span>
                 </button>
+                <button class="lang-option" data-lang="id">
+                    <span class="lang-flag">🇮🇩</span>
+                    <span>Indonesia</span>
+                </button>
                 <button class="lang-option" data-lang="zh">
                     <span class="lang-flag">🇨🇳</span>
                     <span>中文</span>
@@ -412,7 +416,8 @@
 
 <script>
     // Floating Assistant Functionality
-    document.addEventListener('DOMContentLoaded', function() {
+    // Use IIFE to run immediately (for dynamically loaded content)
+    (function initFloatingAssistant() {
         const assistant = document.querySelector('.floating-assistant');
         const toggle = document.querySelector('.assistant-toggle');
         const bubble = document.querySelector('.assistant-bubble');
@@ -469,6 +474,7 @@
                 
                 // Show confirmation
                 showToast(lang === 'en' ? 'Language changed to English' : 
+                          lang === 'id' ? 'Bahasa diubah ke Indonesia' :
                           lang === 'zh' ? '语言已更改为中文' : 
                           '言語が日本語に変更されました');
             });
@@ -522,5 +528,5 @@
                 setTimeout(() => toast.remove(), 300);
             }, 2500);
         }
-    });
+    })();
 </script>

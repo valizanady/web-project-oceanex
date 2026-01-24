@@ -1,0 +1,1047 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="News Article - Oceanex Marine Industries">
+        <meta name="author" content="">
+
+        <title>News Article - Oceanex Marine Industries</title>
+
+        <!-- CSS FILES -->                
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+        <link href="css/templatemo-tiya-golf-club.css" rel="stylesheet">
+        <link href="css/global-styles.css" rel="stylesheet">
+        
+        <style>
+            /* News Detail Hero */
+            .news-detail-hero {
+                background: linear-gradient(135deg, #062351 0%, #0a4875 100%);
+                padding: 140px 0 60px;
+                position: relative;
+                overflow: hidden;
+            }
+            
+            .news-detail-hero::before {
+                content: '';
+                position: absolute;
+                top: -50%;
+                right: -20%;
+                width: 80%;
+                height: 200%;
+                background: radial-gradient(ellipse, rgba(235, 192, 66, 0.1) 0%, transparent 70%);
+                pointer-events: none;
+            }
+            
+            .breadcrumb-nav {
+                margin-bottom: 30px;
+            }
+            
+            .breadcrumb-nav a {
+                color: rgba(255, 255, 255, 0.7);
+                text-decoration: none;
+                font-size: 0.9rem;
+                transition: color 0.3s ease;
+            }
+            
+            .breadcrumb-nav a:hover {
+                color: #EBC042;
+            }
+            
+            .breadcrumb-nav span {
+                color: rgba(255, 255, 255, 0.5);
+                margin: 0 10px;
+            }
+            
+            .breadcrumb-nav .current {
+                color: #EBC042;
+            }
+            
+            .news-detail-meta {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                flex-wrap: wrap;
+                margin-bottom: 20px;
+            }
+            
+            .news-detail-category {
+                background: rgba(235, 192, 66, 0.2);
+                color: #EBC042;
+                padding: 8px 18px;
+                border-radius: 50px;
+                font-size: 0.85rem;
+                font-weight: 600;
+            }
+            
+            .news-detail-date {
+                color: rgba(255, 255, 255, 0.7);
+                font-size: 0.9rem;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+            
+            .news-detail-title {
+                color: #fff;
+                font-size: 2.5rem;
+                font-weight: 700;
+                line-height: 1.3;
+                margin-bottom: 20px;
+                max-width: 800px;
+            }
+            
+            .news-detail-author {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+            }
+            
+            .author-avatar {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                overflow: hidden;
+                border: 3px solid rgba(255, 255, 255, 0.2);
+            }
+            
+            .author-avatar img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            
+            .author-info {
+                color: rgba(255, 255, 255, 0.8);
+            }
+            
+            .author-info .name {
+                font-weight: 600;
+                color: #fff;
+            }
+            
+            .author-info .role {
+                font-size: 0.85rem;
+                color: rgba(255, 255, 255, 0.6);
+            }
+            
+            /* Featured Image Section */
+            .featured-image-section {
+                margin-top: -40px;
+                position: relative;
+                z-index: 10;
+            }
+            
+            .featured-image-wrapper {
+                border-radius: 20px;
+                overflow: hidden;
+                box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+            }
+            
+            .featured-image-wrapper img {
+                width: 100%;
+                height: 500px;
+                object-fit: cover;
+            }
+            
+            /* Article Content */
+            .article-content-section {
+                padding: 60px 0 80px;
+                background: #fff;
+            }
+            
+            .article-content {
+                max-width: 800px;
+                margin: 0 auto;
+            }
+            
+            .article-content p {
+                color: #555;
+                font-size: 1.1rem;
+                line-height: 1.9;
+                margin-bottom: 25px;
+            }
+            
+            .article-content h2 {
+                color: #062351;
+                font-size: 1.8rem;
+                font-weight: 700;
+                margin-top: 40px;
+                margin-bottom: 20px;
+            }
+            
+            .article-content h3 {
+                color: #062351;
+                font-size: 1.4rem;
+                font-weight: 600;
+                margin-top: 35px;
+                margin-bottom: 15px;
+            }
+            
+            .article-content ul, 
+            .article-content ol {
+                margin-bottom: 25px;
+                padding-left: 25px;
+            }
+            
+            .article-content li {
+                color: #555;
+                font-size: 1.05rem;
+                line-height: 1.8;
+                margin-bottom: 10px;
+            }
+            
+            .article-content blockquote {
+                background: linear-gradient(135deg, #f8f9fa 0%, #fff 100%);
+                border-left: 4px solid #EBC042;
+                padding: 30px 35px;
+                margin: 40px 0;
+                border-radius: 0 16px 16px 0;
+                font-style: italic;
+                font-size: 1.15rem;
+                color: #444;
+                line-height: 1.8;
+            }
+            
+            .article-content blockquote cite {
+                display: block;
+                margin-top: 15px;
+                font-style: normal;
+                font-weight: 600;
+                color: #062351;
+                font-size: 0.95rem;
+            }
+            
+            .article-content img {
+                width: 100%;
+                border-radius: 16px;
+                margin: 30px 0;
+                box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            }
+            
+            .image-caption {
+                text-align: center;
+                font-size: 0.9rem;
+                color: #888;
+                margin-top: -20px;
+                margin-bottom: 30px;
+            }
+            
+            /* Tags Section */
+            .article-tags {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                flex-wrap: wrap;
+                margin-top: 50px;
+                padding-top: 30px;
+                border-top: 1px solid #eee;
+            }
+            
+            .tags-label {
+                font-weight: 600;
+                color: #062351;
+            }
+            
+            .tag-item {
+                background: #f5f5f5;
+                color: #666;
+                padding: 8px 16px;
+                border-radius: 50px;
+                font-size: 0.85rem;
+                text-decoration: none;
+                transition: all 0.3s ease;
+            }
+            
+            .tag-item:hover {
+                background: #062351;
+                color: #fff;
+            }
+            
+            /* Share Section */
+            .article-share {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                margin-top: 30px;
+            }
+            
+            .share-label {
+                font-weight: 600;
+                color: #062351;
+            }
+            
+            .share-btn {
+                width: 44px;
+                height: 44px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                color: #fff;
+                font-size: 1.1rem;
+                text-decoration: none;
+                transition: all 0.3s ease;
+            }
+            
+            .share-btn.facebook { background: #1877f2; }
+            .share-btn.twitter { background: #1da1f2; }
+            .share-btn.linkedin { background: #0a66c2; }
+            .share-btn.whatsapp { background: #25d366; }
+            
+            .share-btn:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            }
+            
+            /* Author Bio Section */
+            .author-bio-section {
+                background: #f8f9fa;
+                border-radius: 20px;
+                padding: 40px;
+                margin-top: 50px;
+                display: flex;
+                gap: 25px;
+                align-items: flex-start;
+            }
+            
+            .author-bio-avatar {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                overflow: hidden;
+                flex-shrink: 0;
+            }
+            
+            .author-bio-avatar img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                margin: 0;
+                box-shadow: none;
+            }
+            
+            .author-bio-content h4 {
+                color: #062351;
+                font-size: 1.2rem;
+                font-weight: 700;
+                margin-bottom: 5px;
+            }
+            
+            .author-bio-content .author-role {
+                color: #EBC042;
+                font-size: 0.9rem;
+                font-weight: 600;
+                margin-bottom: 15px;
+            }
+            
+            .author-bio-content p {
+                color: #666;
+                font-size: 0.95rem;
+                line-height: 1.7;
+                margin-bottom: 0;
+            }
+            
+            /* Related News Section */
+            .related-news-section {
+                padding: 80px 0;
+                background: #fff;
+            }
+            
+            .related-news-header {
+                text-align: center;
+                margin-bottom: 50px;
+            }
+            
+            .related-news-header h2 {
+                font-size: 2rem;
+                color: #062351;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+            
+            .related-news-header p {
+                color: #888;
+                font-size: 1rem;
+            }
+            
+            .related-news-card {
+                background: #fff;
+                border-radius: 16px;
+                overflow: hidden;
+                box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+                height: 100%;
+                transition: all 0.4s ease;
+            }
+            
+            .related-news-card:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+            }
+            
+            .related-news-image {
+                height: 200px;
+                overflow: hidden;
+            }
+            
+            .related-news-image img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.5s ease;
+                border-radius: 0;
+                margin: 0;
+                box-shadow: none;
+            }
+            
+            .related-news-card:hover .related-news-image img {
+                transform: scale(1.08);
+            }
+            
+            .related-news-content {
+                padding: 25px;
+            }
+            
+            .related-news-meta {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                margin-bottom: 12px;
+            }
+            
+            .related-news-category {
+                background: rgba(6, 35, 81, 0.1);
+                color: #062351;
+                padding: 5px 12px;
+                border-radius: 50px;
+                font-size: 0.75rem;
+                font-weight: 600;
+            }
+            
+            .related-news-date {
+                color: #999;
+                font-size: 0.8rem;
+            }
+            
+            .related-news-content h3 {
+                font-size: 1.1rem;
+                font-weight: 600;
+                color: #062351;
+                margin-bottom: 10px;
+                line-height: 1.4;
+            }
+            
+            .related-news-content h3 a {
+                color: inherit;
+                text-decoration: none;
+                transition: color 0.3s ease;
+            }
+            
+            .related-news-content h3 a:hover {
+                color: #EBC042;
+            }
+            
+            .related-news-link {
+                color: #062351;
+                font-weight: 600;
+                font-size: 0.85rem;
+                text-decoration: none;
+                display: inline-flex;
+                align-items: center;
+                gap: 6px;
+                transition: all 0.3s ease;
+            }
+            
+            .related-news-link:hover {
+                color: #EBC042;
+                gap: 10px;
+            }
+            
+            /* Navigation Section */
+            .news-navigation {
+                background: #f8f9fa;
+                padding: 40px 0;
+                border-top: 1px solid #eee;
+            }
+            
+            .nav-item-link {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                padding: 25px;
+                background: #fff;
+                border-radius: 16px;
+                text-decoration: none;
+                transition: all 0.3s ease;
+                height: 100%;
+            }
+            
+            .nav-item-link:hover {
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+                transform: translateY(-3px);
+            }
+            
+            .nav-item-link.prev {
+                flex-direction: row;
+            }
+            
+            .nav-item-link.next {
+                flex-direction: row-reverse;
+                text-align: right;
+            }
+            
+            .nav-arrow {
+                width: 50px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #f5f5f5;
+                border-radius: 50%;
+                color: #062351;
+                font-size: 1.2rem;
+                flex-shrink: 0;
+                transition: all 0.3s ease;
+            }
+            
+            .nav-item-link:hover .nav-arrow {
+                background: #062351;
+                color: #fff;
+            }
+            
+            .nav-content .nav-label {
+                font-size: 0.85rem;
+                color: #999;
+                margin-bottom: 5px;
+            }
+            
+            .nav-content .nav-title {
+                font-size: 1rem;
+                color: #062351;
+                font-weight: 600;
+                line-height: 1.4;
+            }
+            
+            /* Responsive */
+            @media (max-width: 991px) {
+                .news-detail-title {
+                    font-size: 2rem;
+                }
+                
+                .featured-image-wrapper img {
+                    height: 400px;
+                }
+                
+                .author-bio-section {
+                    flex-direction: column;
+                    text-align: center;
+                    align-items: center;
+                }
+            }
+            
+            @media (max-width: 767px) {
+                .news-detail-hero {
+                    padding: 120px 0 50px;
+                }
+                
+                .news-detail-title {
+                    font-size: 1.6rem;
+                }
+                
+                .featured-image-wrapper img {
+                    height: 280px;
+                }
+                
+                .article-content p {
+                    font-size: 1rem;
+                }
+                
+                .article-content blockquote {
+                    padding: 25px;
+                    font-size: 1rem;
+                }
+                
+                .author-bio-section {
+                    padding: 30px;
+                }
+                
+                .nav-item-link {
+                    padding: 20px;
+                }
+                
+                .nav-arrow {
+                    width: 40px;
+                    height: 40px;
+                    font-size: 1rem;
+                }
+            }
+        </style>
+    </head>
+    
+    <body>
+
+        <main>
+
+            <!-- Navbar Include -->
+            <div id="navbar-placeholder"></div>
+
+            <!-- News Detail Hero -->
+            <section class="news-detail-hero">
+                <div class="container">
+                    <nav class="breadcrumb-nav">
+                        <a href="index.html" data-translate="nav.home">Home</a>
+                        <span>/</span>
+                        <a href="news.html" data-translate="nav.news">News</a>
+                        <span>/</span>
+                        <span class="current">Article</span>
+                    </nav>
+                    
+                    <div class="news-detail-meta">
+                        <span class="news-detail-category">Company News</span>
+                        <span class="news-detail-date"><i class="bi bi-calendar3"></i> December 15, 2024</span>
+                        <span class="news-detail-date"><i class="bi bi-clock"></i> 5 min read</span>
+                    </div>
+                    
+                    <h1 class="news-detail-title">New Sustainability Certification Achieved for All Product Lines</h1>
+                    
+                    <div class="news-detail-author">
+                        <div class="author-avatar">
+                            <img src="images/members/successful-asian-lady-boss-red-blazer-holding-clipboard-with-documens-pen-working-looking-happy-white-background.jpg" alt="Author">
+                        </div>
+                        <div class="author-info">
+                            <div class="name">Sarah Wijaya</div>
+                            <div class="role">Head of Communications</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Image -->
+            <section class="featured-image-section">
+                <div class="container">
+                    <div class="featured-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1670680894655-026c25069d0d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1200&q=80" alt="Featured Image">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Article Content -->
+            <section class="article-content-section">
+                <div class="container">
+                    <div class="article-content">
+                        <p>We are proud to announce that Oceanex Marine Industries has achieved the prestigious Marine Stewardship Council (MSC) certification across all our seafood product lines. This milestone represents our unwavering commitment to sustainable fishing practices and ocean conservation.</p>
+                        
+                        <p>The certification process took over 18 months of rigorous auditing, documentation, and process improvements. Our team worked tirelessly with independent auditors to ensure every aspect of our supply chain meets the highest international standards for sustainability.</p>
+                        
+                        <h2>What This Certification Means</h2>
+                        
+                        <p>The MSC certification is recognized globally as the gold standard for sustainable seafood. It guarantees that our products come from fisheries that:</p>
+                        
+                        <ul>
+                            <li>Maintain healthy fish populations and prevent overfishing</li>
+                            <li>Minimize environmental impact on marine ecosystems</li>
+                            <li>Implement effective fisheries management systems</li>
+                            <li>Comply with relevant local and international laws</li>
+                        </ul>
+                        
+                        <blockquote>
+                            "This certification represents years of dedication to sustainable practices. We believe that protecting our oceans is not just good for the environment—it's essential for the long-term success of our industry and the communities that depend on it."
+                            <cite>— Budi Santoso, CEO of Oceanex Marine Industries</cite>
+                        </blockquote>
+                        
+                        <h2>Our Sustainability Journey</h2>
+                        
+                        <p>This achievement is part of our broader sustainability strategy that we initiated in 2020. Over the past five years, we have:</p>
+                        
+                        <ul>
+                            <li>Reduced our carbon footprint by 35% through energy-efficient cold storage</li>
+                            <li>Eliminated single-use plastics from our packaging operations</li>
+                            <li>Partnered with 50+ local fishing communities to promote sustainable practices</li>
+                            <li>Invested $2 million in marine conservation programs</li>
+                        </ul>
+                        
+                        <img src="https://images.unsplash.com/photo-1583212292454-1fe6229603b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1000&q=80" alt="Ocean Conservation">
+                        <p class="image-caption">Our partnership with local fishermen ensures sustainable practices from catch to delivery.</p>
+                        
+                        <h2>What's Next</h2>
+                        
+                        <p>Looking ahead, we are committed to furthering our sustainability initiatives. In 2025, we plan to:</p>
+                        
+                        <ul>
+                            <li>Achieve carbon-neutral operations at our main processing facility</li>
+                            <li>Launch a blockchain-based traceability system for complete supply chain transparency</li>
+                            <li>Expand our sustainable fisheries partnership program to cover 100+ communities</li>
+                            <li>Obtain additional certifications including ASC (Aquaculture Stewardship Council)</li>
+                        </ul>
+                        
+                        <h3>A Message to Our Partners</h3>
+                        
+                        <p>We want to express our sincere gratitude to all our partners, suppliers, and customers who have supported us on this journey. Your commitment to sourcing sustainable seafood has made this achievement possible.</p>
+                        
+                        <p>For those looking to partner with a sustainability-focused seafood supplier, we invite you to reach out to our team. Together, we can make a positive impact on our oceans while meeting the growing global demand for responsibly sourced seafood.</p>
+                        
+                        <!-- Tags -->
+                        <div class="article-tags">
+                            <span class="tags-label">Tags:</span>
+                            <a href="#" class="tag-item">Sustainability</a>
+                            <a href="#" class="tag-item">MSC Certification</a>
+                            <a href="#" class="tag-item">Ocean Conservation</a>
+                            <a href="#" class="tag-item">Company News</a>
+                        </div>
+                        
+                        <!-- Share -->
+                        <div class="article-share">
+                            <span class="share-label">Share:</span>
+                            <a href="#" class="share-btn facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="share-btn twitter"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#" class="share-btn linkedin"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" class="share-btn whatsapp"><i class="bi bi-whatsapp"></i></a>
+                        </div>
+                        
+                        <!-- Author Bio -->
+                        <div class="author-bio-section">
+                            <div class="author-bio-avatar">
+                                <img src="images/members/successful-asian-lady-boss-red-blazer-holding-clipboard-with-documens-pen-working-looking-happy-white-background.jpg" alt="Sarah Wijaya">
+                            </div>
+                            <div class="author-bio-content">
+                                <h4>Sarah Wijaya</h4>
+                                <div class="author-role">Head of Communications</div>
+                                <p>Sarah has been with Oceanex Marine Industries for over 8 years, leading our communications and sustainability reporting initiatives. She is passionate about sharing our journey towards a more sustainable seafood industry.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+            <!-- Related News Section -->
+            <section class="related-news-section">
+                <div class="container">
+                    <div class="related-news-header">
+                        <h2 data-translate="newsDetail.related.title">Related Articles</h2>
+                        <p data-translate="newsDetail.related.subtitle">More stories you might be interested in</p>
+                    </div>
+                    
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="related-news-card">
+                                <div class="related-news-image">
+                                    <img src="https://images.unsplash.com/photo-1583212292454-1fe6229603b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600&q=80" alt="Related News">
+                                </div>
+                                <div class="related-news-content">
+                                    <div class="related-news-meta">
+                                        <span class="related-news-category">Sustainability</span>
+                                        <span class="related-news-date">Nov 28, 2024</span>
+                                    </div>
+                                    <h3><a href="news-detail.html?id=4">Our Commitment to Ocean Conservation</a></h3>
+                                    <a href="news-detail.html?id=4" class="related-news-link">
+                                        Read More <i class="bi bi-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-6">
+                            <div class="related-news-card">
+                                <div class="related-news-image">
+                                    <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600&q=80" alt="Related News">
+                                </div>
+                                <div class="related-news-content">
+                                    <div class="related-news-meta">
+                                        <span class="related-news-category">Expansion</span>
+                                        <span class="related-news-date">Dec 10, 2024</span>
+                                    </div>
+                                    <h3><a href="news-detail.html?id=2">Expanding Operations to Middle East Markets</a></h3>
+                                    <a href="news-detail.html?id=2" class="related-news-link">
+                                        Read More <i class="bi bi-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-6">
+                            <div class="related-news-card">
+                                <div class="related-news-image">
+                                    <img src="https://images.unsplash.com/photo-1741739813128-cb658a9a0f9a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600&q=80" alt="Related News">
+                                </div>
+                                <div class="related-news-content">
+                                    <div class="related-news-meta">
+                                        <span class="related-news-category">Company News</span>
+                                        <span class="related-news-date">Nov 20, 2024</span>
+                                    </div>
+                                    <h3><a href="news-detail.html?id=5">New Cold Storage Facility Inaugurated</a></h3>
+                                    <a href="news-detail.html?id=5" class="related-news-link">
+                                        Read More <i class="bi bi-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- News Navigation -->
+            <section class="news-navigation">
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <a href="news-detail.html?id=2" class="nav-item-link prev">
+                                <div class="nav-arrow">
+                                    <i class="bi bi-arrow-left"></i>
+                                </div>
+                                <div class="nav-content">
+                                    <div class="nav-label">Previous Article</div>
+                                    <div class="nav-title">Expanding Operations to Middle East Markets</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="news-detail.html?id=3" class="nav-item-link next">
+                                <div class="nav-arrow">
+                                    <i class="bi bi-arrow-right"></i>
+                                </div>
+                                <div class="nav-content">
+                                    <div class="nav-label">Next Article</div>
+                                    <div class="nav-title">Global Seafood Market Trends 2025</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Enhanced Footer -->
+        <footer class="enhanced-footer">
+            <div class="container">
+                <div class="row footer-content justify-content-center">
+                    <!-- About Column -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-4 mb-lg-0 text-center">
+                        <div class="footer-logo mb-3">
+                            <a class="navbar-brand d-flex align-items-center justify-content-center" href="./">
+                                <img src="images/logo.png" class="navbar-brand-image img-fluid" alt="Oceanex Marine Industries">
+                                <span class="navbar-brand-text">
+                                    Oceanex
+                                    <small>Marine Industries</small>
+                                </span>
+                            </a>
+                        </div>
+                        <p class="footer-description mb-3" data-translate="footer.description">
+                            Your trusted partner in premium seafood export and import. 
+                        </p>
+                        <div class="social-links justify-content-center">
+                            <a href="#" class="social-link" aria-label="Facebook">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="LinkedIn">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="WhatsApp">
+                                <i class="bi bi-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links Column -->
+                    <div class="col-lg-2 col-md-6 col-sm-6 mb-4 mb-lg-0 text-center">
+                        <h5 class="footer-title" data-translate="footer.quickLinks">Quick Links</h5>
+                        <ul class="footer-links">
+                            <li><a href="index.html" data-translate="nav.home">Home</a></li>
+                            <li><a href="about.html" data-translate="nav.about">About Us</a></li>
+                            <li><a href="product/" data-translate="nav.products">Products</a></li>
+                            <li><a href="news.html" data-translate="nav.news">News</a></li>
+                            <li><a href="index.html#section_5" data-translate="nav.contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Products Column -->
+                    <div class="col-lg-2 col-md-6 col-sm-6 mb-4 mb-lg-0">
+                        <h5 class="footer-title" data-translate="footer.products">Products</h5>
+                        <ul class="footer-links">
+                            <li><a href="product/" data-translate="footer.premiumFish">Premium Fish</a></li>
+                            <li><a href="product/" data-translate="footer.freshShrimp">Fresh Shrimp</a></li>
+                            <li><a href="product/" data-translate="footer.crabLobster">Crab & Lobster</a></li>
+                            <li><a href="product/" data-translate="footer.shellfish">Shellfish</a></li>
+                            <li><a href="product/" data-translate="footer.frozenSeafood">Frozen Seafood</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Info Column -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-4 mb-lg-0">
+                        <h5 class="footer-title" data-translate="footer.contactUs">Contact Us</h5>
+                        <ul class="footer-contact">
+                            <li>
+                                <i class="bi bi-geo-alt-fill"></i>
+                                <span data-translate="footer.address">Jl. Pelabuhan Raya No. 123,<br>Muara Baru, Jakarta Utara</span>
+                            </li>
+                            <li>
+                                <i class="bi bi-telephone-fill"></i>
+                                <a href="tel:+622166012345">+62 21 6601 2345</a>
+                            </li>
+                            <li>
+                                <i class="bi bi-envelope-fill"></i>
+                                <a href="mailto:export@oceanex.co.id">export@oceanex.co.id</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Business Hours Column -->
+                    <div class="col-lg-2 col-md-6 col-sm-6 mb-4 mb-lg-0">
+                        <h5 class="footer-title" data-translate="footer.businessHours">Business Hours</h5>
+                        <ul class="footer-hours">
+                            <li>
+                                <span class="day" data-translate="footer.monFri">Senin - Jumat</span>
+                                <span class="time">08:00 - 17:00 WIB</span>
+                            </li>
+                            <li>
+                                <span class="day" data-translate="footer.satSun">Sabtu - Minggu</span>
+                                <span class="time">Tutup</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Bottom Bar -->
+                <div class="footer-bottom">
+                    <p class="copyright-text mb-3" data-translate="footer.copyright">
+                        © 2025 Oceanex Marine Industries. All rights reserved.
+                    </p>
+                    <div class="footer-bottom-links">
+                        <a href="#" data-translate="footer.privacyPolicy">Privacy Policy</a>
+                        <a href="#" data-translate="footer.termsOfService">Terms of Service</a>
+                        <a href="#" data-translate="footer.cookiePolicy">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Mobile Bottom Navigation -->
+        <nav class="mobile-bottom-nav">
+            <div class="nav-items">
+                <a href="index.html" class="nav-item">
+                    <i class="bi bi-house-fill"></i>
+                    <span data-translate="nav.home">Home</span>
+                </a>
+                <a href="product/" class="nav-item">
+                    <i class="bi bi-box-seam"></i>
+                    <span data-translate="nav.products">Products</span>
+                </a>
+                <a href="index.html#section_5" class="nav-item cta">
+                    <i class="bi bi-chat-quote-fill"></i>
+                    <span>Quote</span>
+                </a>
+                <a href="news.html" class="nav-item active">
+                    <i class="bi bi-newspaper"></i>
+                    <span data-translate="nav.news">News</span>
+                </a>
+                <a href="index.html#section_5" class="nav-item">
+                    <i class="bi bi-telephone-fill"></i>
+                    <span data-translate="nav.contact">Contact</span>
+                </a>
+            </div>
+        </nav>
+
+        <!-- Scroll to Top Button -->
+        <button class="scroll-to-top" aria-label="Scroll to top">
+            <i class="bi bi-chevron-up"></i>
+        </button>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/custom.js"></script>
+        <script src="js/translations.js"></script>
+
+        <!-- Load Navbar -->
+        <script>
+            fetch('includes/navbar.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById('navbar-placeholder').innerHTML = html;
+                    const scripts = document.getElementById('navbar-placeholder').querySelectorAll('script');
+                    scripts.forEach(script => {
+                        const newScript = document.createElement('script');
+                        newScript.textContent = script.textContent;
+                        document.body.appendChild(newScript);
+                    });
+                    // DO NOT use jQuery sticky - use CSS sticky instead
+                    const navbar = document.querySelector('.navbar');
+                    if (navbar) {
+                        window.addEventListener('scroll', function() {
+                            if (window.scrollY > 10) {
+                                navbar.classList.add('scrolled');
+                            } else {
+                                navbar.classList.remove('scrolled');
+                            }
+                        }, { passive: true });
+                    }
+                    if (typeof translator !== 'undefined') {
+                        translator.applyTranslations();
+                    }
+                    // Set active nav item
+                    document.querySelectorAll('.nav-link').forEach(link => {
+                        if (link.getAttribute('data-page') === 'news') {
+                            link.classList.add('active');
+                        }
+                    });
+                });
+        </script>
+
+        <!-- Scroll & Share Scripts -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // Scroll to Top Button
+                const scrollTopBtn = document.querySelector('.scroll-to-top');
+                if (scrollTopBtn) {
+                    window.addEventListener('scroll', () => {
+                        if (window.scrollY > 300) {
+                            scrollTopBtn.classList.add('visible');
+                        } else {
+                            scrollTopBtn.classList.remove('visible');
+                        }
+                    });
+                    
+                    scrollTopBtn.addEventListener('click', () => {
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                    });
+                }
+                
+                // Social Share Buttons
+                const pageUrl = encodeURIComponent(window.location.href);
+                const pageTitle = encodeURIComponent(document.querySelector('.news-detail-title').textContent);
+                
+                document.querySelector('.share-btn.facebook')?.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    window.open(`https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`, '_blank', 'width=600,height=400');
+                });
+                
+                document.querySelector('.share-btn.twitter')?.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    window.open(`https://twitter.com/intent/tweet?url=${pageUrl}&text=${pageTitle}`, '_blank', 'width=600,height=400');
+                });
+                
+                document.querySelector('.share-btn.linkedin')?.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    window.open(`https://www.linkedin.com/shareArticle?mini=true&url=${pageUrl}&title=${pageTitle}`, '_blank', 'width=600,height=400');
+                });
+                
+                document.querySelector('.share-btn.whatsapp')?.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    window.open(`https://wa.me/?text=${pageTitle}%20${pageUrl}`, '_blank');
+                });
+            });
+        </script>
+
+    </body>
+</html>

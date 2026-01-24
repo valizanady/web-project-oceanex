@@ -1,0 +1,271 @@
+<!-- Footer - AMWAL Style Corporate B2B -->
+<footer class="footer-amwal">
+    <div class="container">
+        <div class="footer-grid">
+            <!-- About Oceanex -->
+            <div class="footer-col">
+                <h4 class="footer-heading">About Oceanex</h4>
+                <p class="footer-text">
+                    The finest company in seafood export and import. We deliver premium quality marine products from Indonesia to the world with the highest standards of quality and freshness.
+                </p>
+                <div class="footer-social">
+                    <a href="#" class="social-icon" aria-label="Facebook">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Twitter">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="YouTube">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Head Office -->
+            <div class="footer-col">
+                <h4 class="footer-heading">Head Office</h4>
+                <div class="footer-contact-list">
+                    <div class="footer-contact-item">
+                        <i class="bi bi-geo-alt"></i>
+                        <p>122 JHR Main Rd, Semeru St 3563, DKI Jakarta</p>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="bi bi-envelope"></i>
+                        <p>info@oceanex.com</p>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="bi bi-telephone"></i>
+                        <p>Tel: +62 21 5555 1234<br>Fax: +123 - 12345678</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Company Links -->
+            <div class="footer-col">
+                <h4 class="footer-heading">Company Links</h4>
+                <ul class="footer-links">
+                    <li><a href="about.html">› Our History</a></li>
+                    <li><a href="about.html">› Mission & Vision</a></li>
+                    <li><a href="#">› Careers</a></li>
+                    <li><a href="about.html">› Leadership</a></li>
+                    <li><a href="#">› Partnerships</a></li>
+                </ul>
+            </div>
+
+            <!-- Our Branches / Map -->
+            <div class="footer-col">
+                <h4 class="footer-heading">Our Branches</h4>
+                <div class="footer-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322283!2d106.8195613!3d-6.1751171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5d2e764b12d%3A0x3d2ad6e1e0e9bcc8!2sJakarta!5e0!3m2!1sen!2sid!4v1234567890"
+                        width="100%"
+                        height="100%"
+                        style="border: 0; border-radius: 8px;"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="product/">Products</a>
+                <a href="news.html">News</a>
+                <a href="index.html#section_5">Contact</a>
+            </div>
+            <p class="footer-copyright">
+                © 2026 Oceanex • Powered by <span class="text-orange">advanced B2B</span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<style>
+/* ============================================
+   FOOTER - AMWAL STYLE CORPORATE B2B
+   ============================================ */
+.footer-amwal {
+    background-color: #0d1a28;
+    padding: 64px 0 0 0;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 48px;
+}
+
+@media (max-width: 991px) {
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+}
+
+/* Footer Columns */
+.footer-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-heading {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.footer-text {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
+/* Social Icons */
+.footer-social {
+    display: flex;
+    gap: 12px;
+}
+
+.social-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.social-icon i {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+}
+
+.social-icon:hover {
+    background: var(--orange, #f9a825);
+}
+
+.social-icon:hover i {
+    color: #ffffff;
+}
+
+/* Contact List */
+.footer-contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-contact-item {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.footer-contact-item i {
+    color: var(--orange, #f9a825);
+    font-size: 18px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.footer-contact-item p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Links List */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-links li a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links li a:hover {
+    color: var(--orange, #f9a825);
+}
+
+/* Map */
+.footer-map {
+    width: 100%;
+    height: 180px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Bottom Bar */
+.footer-bottom {
+    margin-top: 48px;
+    padding: 32px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+@media (min-width: 768px) {
+    .footer-bottom {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.footer-bottom-links {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-bottom-links a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom-links a:hover {
+    color: var(--orange, #f9a825);
+}
+
+.footer-copyright {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    margin: 0;
+}
+
+.footer-copyright .text-orange {
+    color: var(--orange, #f9a825);
+}
+</style>

@@ -8,12 +8,16 @@
             </span>
         </a>
 
-        <div class="d-lg-none ms-auto me-3">
-            <a class="btn custom-btn custom-border-btn" href="../index.html#section_5" data-translate="nav.getQuote">Get Quote</a>
+        <!-- Mobile Header Right: Toggler Only -->
+        <div class="d-lg-none d-flex align-items-center">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+            </button>
         </div>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        
+        <!-- Desktop Toggler (hidden) -->
+        <button class="navbar-toggler d-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -50,16 +54,27 @@
                             </a>
                         </li>
                         <li>
+                            <a class="dropdown-item lang-option" href="#" data-lang="id">
+                                <span class="lang-flag">🇮🇩</span> Indonesia
+                            </a>
+                        </li>
+                        <li>
                             <a class="dropdown-item lang-option" href="#" data-lang="zh">
                                 <span class="lang-flag">🇨🇳</span> 中文
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item lang-option" href="#" data-lang="ja">
+                                <span class="lang-flag">🇯🇵</span> 日本語
                             </a>
                         </li>
                     </ul>
                 </li>
             </ul>
 
+            <!-- Contact Button - Desktop Only -->
             <div class="d-none d-lg-block ms-lg-3">
-                <a class="btn custom-btn custom-border-btn" href="../index.html#section_5" data-translate="nav.getQuote">Get Quote</a>
+                <a class="btn custom-btn custom-border-btn btn-contact-nav" href="../index.html#section_5" data-translate="nav.contactUs">Contact Us</a>
             </div>
         </div>
     </div>
@@ -73,7 +88,15 @@
     function updateLangDisplay(lang) {
         const currentLangSpan = document.querySelector('.current-lang');
         if (currentLangSpan) {
-            currentLangSpan.textContent = lang === 'zh' ? '中文' : 'EN';
+            if (lang === 'id') {
+                currentLangSpan.textContent = 'ID';
+            } else if (lang === 'zh') {
+                currentLangSpan.textContent = '中文';
+            } else if (lang === 'ja') {
+                currentLangSpan.textContent = '日本語';
+            } else {
+                currentLangSpan.textContent = 'EN';
+            }
         }
         
         document.querySelectorAll('.lang-option').forEach(opt => {
@@ -93,9 +116,11 @@
             localStorage.setItem('selectedLang', lang);
             updateLangDisplay(lang);
             
+            // Apply translations using global translator
             if (typeof changeLanguage === 'function') {
                 changeLanguage(lang);
             } else {
+                // Fallback: reload if translator not loaded yet
                 window.location.reload();
             }
         });
@@ -112,6 +137,7 @@
         const page = link.getAttribute('data-page');
         
         if (page === 'home' && (currentPath.endsWith('/') || currentPath.endsWith('index.html') || currentPath === '')) {
+            // Only set active for home if not on about or product page
             if (!currentPath.includes('about') && !currentPath.includes('product')) {
                 link.classList.add('active');
             }
