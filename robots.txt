@@ -1,0 +1,22 @@
+# Oceanex Marine Industries - Robots.txt
+# Website: https://oceanexmarine.com
+
+User-agent: *
+Allow: /
+
+# Sitemap Location
+Sitemap: https://oceanexmarine.com/sitemap.xml
+
+# Disallow admin/backend files
+Disallow: /send-email.php
+Disallow: /.htaccess
+Disallow: /*.md$
+
+# Allow CSS, JS, and Images for SEO
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Allow: /fonts/
+
+# Crawl-delay (optional - for slower bots)
+Crawl-delay: 1
