@@ -1,47 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-    <!-- Homepage -->
+    <!-- Homepage - Indonesian Seafood Supplier -->
     <url>
         <loc>https://oceanexmarine.com/</loc>
-        <lastmod>2026-01-25</lastmod>
+        <lastmod>2026-01-27</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://oceanexmarine.com/images/logo2.png</image:loc>
+            <image:title>Oceanex Marine Industries - Indonesian Seafood Supplier</image:title>
+            <image:caption>Leading Indonesian seafood exporter specializing in frozen tuna, squid, octopus, and premium seafood products</image:caption>
+        </image:image>
     </url>
 
-    <!-- About Page -->
+    <!-- About Page - Company Profile -->
     <url>
         <loc>https://oceanexmarine.com/about</loc>
-        <lastmod>2026-01-25</lastmod>
+        <lastmod>2026-01-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
 
-    <!-- Products Page -->
+    <!-- Products Catalog - Seafood Export -->
     <url>
         <loc>https://oceanexmarine.com/product/</loc>
-        <lastmod>2026-01-25</lastmod>
+        <lastmod>2026-01-27</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
+        <priority>0.95</priority>
+        <image:image>
+            <image:loc>https://oceanexmarine.com/images/products/fresh-tuna.jpg</image:loc>
+            <image:title>Fresh Tuna - Indonesian Tuna Supplier</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://oceanexmarine.com/images/products/red-snapper.jpg</image:loc>
+            <image:title>Red Snapper - Premium Fish Export Indonesia</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://oceanexmarine.com/images/products/squid.jpg</image:loc>
+            <image:title>Squid - Indonesian Squid Exporter</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://oceanexmarine.com/images/products/octopus.jpg</image:loc>
+            <image:title>Octopus - Frozen Octopus Supplier Indonesia</image:title>
+        </image:image>
     </url>
 
-    <!-- News Listing -->
+    <!-- News & Updates -->
     <url>
         <loc>https://oceanexmarine.com/news</loc>
-        <lastmod>2026-01-25</lastmod>
+        <lastmod>2026-01-27</lastmod>
         <changefreq>daily</changefreq>
-        <priority>0.8</priority>
+        <priority>0.7</priority>
     </url>
 
-    <!-- News Detail Example -->
+    <!-- Contact Page -->
     <url>
-        <loc>https://oceanexmarine.com/news-detail</loc>
-        <lastmod>2026-01-25</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
+        <loc>https://oceanexmarine.com/#section_5</loc>
+        <lastmod>2026-01-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
     </url>
 
 </urlset>
