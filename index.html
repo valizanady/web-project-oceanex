@@ -169,8 +169,10 @@
         <link rel="preload" href="css/bootstrap.min.css" as="style">
         <link rel="preload" href="css/global-styles.css" as="style">
         
+        <!-- DNS Prefetch & Preconnect -->
+        <link rel="dns-prefetch" href="https://ajax.googleapis.com">
+        <link rel="dns-prefetch" href="https://maps.googleapis.com">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -193,8 +195,36 @@
             });
         </script>
         
-        <!-- Google Maps Extended Component Library -->
-        <script type="module" src="https://ajax.googleapis.com/ajax/libs/@googlemaps/extended-component-library/0.6.11/index.min.js"></script>
+        <!-- Google Maps Extended Component Library - Lazy Loaded -->
+        <script>
+            // Lazy load Google Maps only when contact section is visible
+            const loadGoogleMaps = () => {
+                const script = document.createElement('script');
+                script.type = 'module';
+                script.src = 'https://ajax.googleapis.com/ajax/libs/@googlemaps/extended-component-library/0.6.11/index.min.js';
+                document.head.appendChild(script);
+            };
+            
+            // Use Intersection Observer to load when scrolled into view
+            if ('IntersectionObserver' in window) {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            loadGoogleMaps();
+                            observer.disconnect();
+                        }
+                    });
+                }, { rootMargin: '200px' });
+                
+                document.addEventListener('DOMContentLoaded', () => {
+                    const contactSection = document.getElementById('section_5');
+                    if (contactSection) observer.observe(contactSection);
+                });
+            } else {
+                // Fallback for older browsers
+                window.addEventListener('load', loadGoogleMaps);
+            }
+        </script>
         
         <style>
             /* Contact Location Card */
@@ -1669,8 +1699,8 @@ https://templatemo.com/tm-587-tiya-golf-club
                     });
                 });
                 
-                // Set initial active language
-                const currentLang = localStorage.getItem('preferred-language') || 'en';
+                // Set initial active language (use same key as translations.js)
+                const currentLang = localStorage.getItem('selectedLang') || 'en';
                 langOptions.forEach(opt => {
                     if (opt.dataset.lang === currentLang) {
                         opt.classList.add('active');
