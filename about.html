@@ -94,7 +94,7 @@
 
         <!-- CSS FILES - Optimized Loading -->
         <!-- Preload Critical Resources -->
-        <link rel="preload" href="images/hero/hero-1-ocean.jpg" as="image" fetchpriority="high">
+        <link rel="preload" href="videos/ocean-hero.jpg" as="image" fetchpriority="high">
         <link rel="preload" href="css/bootstrap.min.css" as="style">
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1731,11 +1731,9 @@
 
             <!-- Hero Section with Video Background -->
             <section class="about-hero">
-                <!-- Video Background - Lazy loaded -->
+                <!-- Image Background -->
                 <div class="hero-video-container">
-                    <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="images/hero/hero-1-ocean.jpg">
-                        <source src="videos/ocean-hero.jpg" type="jpg">
-                    </video>
+                    <img src="videos/ocean-hero.jpg" alt="Ocean" class="hero-video" loading="eager">
                     <div class="hero-video-overlay"></div>
                 </div>
                 
