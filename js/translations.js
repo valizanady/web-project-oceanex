@@ -77,6 +77,18 @@ const translations = {
         "products.octopus": "Octopus",
         "products.origin.indonesia": "Indonesia",
         
+        // Product Page
+        "product.exploreTitle": "Explore Our Premium Selection",
+        "product.viewSpecs": "View Specifications",
+        "product.requestQuote": "Request Quote",
+        "product.spec.sizeRange": "Size Range",
+        "product.spec.processing": "Processing",
+        "product.spec.packaging": "Packaging",
+        "product.spec.storage": "Storage",
+        "product.spec.shelfLife": "Shelf Life",
+        "product.spec.origin": "Origin",
+        "product.spec.certification": "Certification",
+        
         // News Section
         "news.title": "Latest News",
         "news.subtitle": "Stay updated with industry trends and company announcements",
@@ -422,6 +434,18 @@ const translations = {
         "products.squid": "鱿鱼",
         "products.octopus": "章鱼",
         "products.origin.indonesia": "印尼",
+        
+        // Product Page
+        "product.exploreTitle": "探索我们的优质精选",
+        "product.viewSpecs": "查看规格",
+        "product.requestQuote": "索取报价",
+        "product.spec.sizeRange": "尺寸范围",
+        "product.spec.processing": "加工方式",
+        "product.spec.packaging": "包装",
+        "product.spec.storage": "储存",
+        "product.spec.shelfLife": "保质期",
+        "product.spec.origin": "产地",
+        "product.spec.certification": "认证",
         
         // News Section
         "news.title": "最新新闻",
@@ -784,6 +808,18 @@ const translations = {
         "products.octopus": "タコ",
         "products.origin.indonesia": "インドネシア",
         
+        // Product Page
+        "product.exploreTitle": "プレミアムセレクションを探る",
+        "product.viewSpecs": "仕様を見る",
+        "product.requestQuote": "見積もりをリクエスト",
+        "product.spec.sizeRange": "サイズ範囲",
+        "product.spec.processing": "加工方法",
+        "product.spec.packaging": "包装",
+        "product.spec.storage": "保管",
+        "product.spec.shelfLife": "賞味期限",
+        "product.spec.origin": "産地",
+        "product.spec.certification": "認証",
+        
         // Stats Section
         "stats.experience": "年の経験",
         "stats.countries": "輸出国",
@@ -1106,6 +1142,18 @@ const translations = {
         "products.squid": "Cumi-Cumi",
         "products.octopus": "Gurita",
         "products.origin.indonesia": "Indonesia",
+        
+        // Product Page
+        "product.exploreTitle": "Jelajahi Pilihan Premium Kami",
+        "product.viewSpecs": "Lihat Spesifikasi",
+        "product.requestQuote": "Minta Penawaran",
+        "product.spec.sizeRange": "Rentang Ukuran",
+        "product.spec.processing": "Pengolahan",
+        "product.spec.packaging": "Kemasan",
+        "product.spec.storage": "Penyimpanan",
+        "product.spec.shelfLife": "Masa Simpan",
+        "product.spec.origin": "Asal",
+        "product.spec.certification": "Sertifikasi",
         
         // News Section
         "news.title": "Berita Terbaru",
