@@ -162,7 +162,7 @@ Already exists:
 ### **6. Logo**
 **Location**: `images/`
 
-- **Filename**: `logo.png`
+- **Filename**: `logo2.png`
 - **Size**: **200x200 px** (or proportional)
 - **Format**: PNG with transparent background
 - **Max File Size**: 30-50 KB

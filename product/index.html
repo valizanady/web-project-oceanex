@@ -3,6 +3,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../images/logo2.png">
+    <link rel="apple-touch-icon" href="../images/logo2.png">
+    
     <meta name="description" content="Premium Seafood Products - Oceanex Marine Industries">
     <title>Products - Oceanex Marine Industries</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -394,7 +399,7 @@
                 <div class="footer-brand">
                     <div class="footer-logo">
                         <a class="navbar-brand" href="../">
-                            <img src="../images/logo.png" class="navbar-brand-image img-fluid" alt="Oceanex Marine Industries">
+                            <img src="../images/logo2.png" class="navbar-brand-image img-fluid" alt="Oceanex Marine Industries">
                             <span class="navbar-brand-text">
                                 Oceanex
                                 <small>Marine Industries</small>
@@ -514,7 +519,7 @@ fetch('../includes/navbar.html').then(r=>r.text()).then(html=>{
     
     // Fix logo path
     const logo=document.querySelector('.navbar-brand img');
-    if(logo&&logo.getAttribute('src')==='images/logo.png')logo.setAttribute('src','../images/logo.png');
+    if(logo&&logo.getAttribute('src')==='images/logo2.png')logo.setAttribute('src','../images/logo2.png');
     
     // Fix navigation links
     document.querySelectorAll('.navbar a').forEach(link=>{
