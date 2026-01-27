@@ -27,8 +27,8 @@
     <!-- Geo Location Meta Tags -->
     <meta name="geo.region" content="ID-JK">
     <meta name="geo.placename" content="Jakarta Utara, Indonesia">
-    <meta name="geo.position" content="-6.1219;106.7927">
-    <meta name="ICBM" content="-6.1219, 106.7927">
+    <meta name="geo.position" content="-6.1044929;106.7753745">
+    <meta name="ICBM" content="-6.1044929, 106.7753745">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -81,18 +81,21 @@
             {"@type": "ListItem", "position": 8, "name": "Sardine", "url": "https://oceanexmarine.com/product/#sardine"},
             {"@type": "ListItem", "position": 9, "name": "Milkfish (Bandeng)", "url": "https://oceanexmarine.com/product/#milkfish"},
             {"@type": "ListItem", "position": 10, "name": "Croaker", "url": "https://oceanexmarine.com/product/#croaker"},
-            {"@type": "ListItem", "position": 11, "name": "Parrotfish", "url": "https://oceanexmarine.com/product/#parrotfish"},
-            {"@type": "ListItem", "position": 12, "name": "Scad", "url": "https://oceanexmarine.com/product/#scad"},
-            {"@type": "ListItem", "position": 13, "name": "Squid", "url": "https://oceanexmarine.com/product/#squid"},
-            {"@type": "ListItem", "position": 14, "name": "Octopus", "url": "https://oceanexmarine.com/product/#octopus"}
+            {"@type": "ListItem", "position": 11, "name": "Scad", "url": "https://oceanexmarine.com/product/#scad"},
+            {"@type": "ListItem", "position": 12, "name": "Squid", "url": "https://oceanexmarine.com/product/#squid"},
+            {"@type": "ListItem", "position": 13, "name": "Octopus", "url": "https://oceanexmarine.com/product/#octopus"}
         ]
     }
     </script>
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="../css/bootstrap.min.css" as="style">
+    <link rel="preload" href="../images/hero-products.jpg" as="image">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/bootstrap-icons.css" rel="stylesheet">
+    <link href="../css/bootstrap-icons.css" rel="stylesheet" media="print" onload="this.media='all'">
     <link href="../css/templatemo-tiya-golf-club.css" rel="stylesheet">
     <link href="../css/global-styles.css" rel="stylesheet">
     
@@ -168,7 +171,7 @@
                 <!-- Baby Tuna -->
                 <article class="product-card" data-category="fish">
                     <div class="product-image">
-                        <img src="../images/products/baby-tuna.jpg" alt="Baby Tuna">
+                        <img src="../images/products/baby-tuna.jpg" alt="Baby Tuna" loading="lazy">
                     </div>
                     <div class="product-body">
                         <h3>Baby Tuna</h3>
@@ -185,13 +188,13 @@
                     </div>
                 </article>
 
-                <!-- Fresh Tuna -->
+                <!-- Yellowfin Tuna -->
                 <article class="product-card" data-category="fish">
                     <div class="product-image">
-                        <img src="../images/products/fresh-tuna.jpg" alt="Fresh Tuna">
+                        <img src="../images/products/fresh-tuna.jpg" alt="Yellowfin Tuna" loading="lazy">
                     </div>
                     <div class="product-body">
-                        <h3>Fresh Tuna</h3>
+                        <h3>Yellowfin Tuna</h3>
                         <button class="btn-view-specs"><span>View Specifications</span><i class="bi bi-plus"></i></button>
                     </div>
                     <div class="product-specs">
@@ -208,7 +211,7 @@
                 <!-- Skipjack Tuna (Cakalang) -->
                 <article class="product-card" data-category="fish">
                     <div class="product-image">
-                        <img src="../images/products/skipjack.jpg" alt="Skipjack Tuna">
+                        <img src="../images/products/skipjack.jpg" alt="Skipjack Tuna" loading="lazy">
                     </div>
                     <div class="product-body">
                         <h3>Skipjack Tuna</h3>
@@ -228,7 +231,7 @@
                 <!-- Red Snapper (Kakap Merah) -->
                 <article class="product-card" data-category="fish">
                     <div class="product-image">
-                        <img src="../images/products/red-snapper.jpg" alt="Red Snapper">
+                        <img src="../images/products/red-snapper.jpg" alt="Red Snapper" loading="lazy">
                     </div>
                     <div class="product-body">
                         <h3>Red Snapper</h3>
@@ -248,7 +251,7 @@
                 <!-- Grouper (Kerapu) -->
                 <article class="product-card" data-category="fish">
                     <div class="product-image">
-                        <img src="../images/products/grouper.jpg" alt="Grouper">
+                        <img src="../images/products/grouper.jpg" alt="Grouper" loading="lazy">
                     </div>
                     <div class="product-body">
                         <h3>Grouper</h3>
@@ -268,7 +271,7 @@
                 <!-- Spanish Mackerel (Tenggiri) -->
                 <article class="product-card" data-category="fish">
                     <div class="product-image">
-                        <img src="../images/products/spanish-mackerel.jpg" alt="Spanish Mackerel">
+                        <img src="../images/products/spanish-mackerel.jpg" alt="Spanish Mackerel" loading="lazy">
                     </div>
                     <div class="product-body">
                         <h3>Spanish Mackerel</h3>
@@ -288,7 +291,7 @@
                 <!-- Indian Mackerel (Kembung) -->
                 <article class="product-card" data-category="fish">
                     <div class="product-image">
-                        <img src="../images/products/indian-mackerel.jpg" alt="Indian Mackerel">
+                        <img src="../images/products/indian-mackerel.jpg" alt="Indian Mackerel" loading="lazy">
                     </div>
                     <div class="product-body">
                         <h3>Indian Mackerel</h3>
@@ -308,7 +311,7 @@
                 <!-- Sardine (Lemuru) -->
                 <article class="product-card" data-category="fish">
                     <div class="product-image">
-                        <img src="../images/products/sardine.jpg" alt="Sardine">
+                        <img src="../images/products/sardine.jpg" alt="Sardine" loading="lazy">
                     </div>
                     <div class="product-body">
                         <h3>Sardine</h3>
@@ -328,7 +331,7 @@
                 <!-- Milkfish (Bandeng) -->
                 <article class="product-card" data-category="fish">
                     <div class="product-image">
-                        <img src="../images/products/milkfish.jpg" alt="Milkfish">
+                        <img src="../images/products/milkfish.jpg" alt="Milkfish" loading="lazy">
                     </div>
                     <div class="product-body">
                         <h3>Milkfish</h3>
@@ -348,7 +351,7 @@
                 <!-- Croaker (Gulama) -->
                 <article class="product-card" data-category="fish">
                     <div class="product-image">
-                        <img src="../images/products/croaker.jpg" alt="Croaker">
+                        <img src="../images/products/croaker.jpg" alt="Croaker" loading="lazy">
                     </div>
                     <div class="product-body">
                         <h3>Croaker</h3>
@@ -365,30 +368,10 @@
                     </div>
                 </article>
 
-                <!-- Parrotfish (Kakatua) -->
-                <article class="product-card" data-category="fish">
-                    <div class="product-image">
-                        <img src="../images/products/parrotfish.jpg" alt="Parrotfish">
-                    </div>
-                    <div class="product-body">
-                        <h3>Parrotfish</h3>
-                        <button class="btn-view-specs"><span>View Specifications</span><i class="bi bi-plus"></i></button>
-                    </div>
-                    <div class="product-specs">
-                        <div class="specs-grid">
-                            <div class="spec-item"><span class="spec-label">Size Range</span><span class="spec-value">300-500g, 500g-1kg</span></div>
-                            <div class="spec-item"><span class="spec-label">Processing</span><span class="spec-value">Whole, Gutted</span></div>
-                            <div class="spec-item"><span class="spec-label">Packaging</span><span class="spec-value">IQF, Vacuum Sealed</span></div>
-                            <div class="spec-item"><span class="spec-label">Storage</span><span class="spec-value">-18°C Frozen</span></div>
-                        </div>
-                        <a href="../index.html#section_5" class="btn-quote"><i class="bi bi-chat-quote"></i> Request Quote</a>
-                    </div>
-                </article>
-
                 <!-- Scad (Layang) -->
                 <article class="product-card" data-category="fish">
                     <div class="product-image">
-                        <img src="../images/products/scad.jpg" alt="Scad">
+                        <img src="../images/products/scad.jpg" alt="Scad" loading="lazy">
                     </div>
                     <div class="product-body">
                         <h3>Scad</h3>
@@ -408,7 +391,7 @@
                 <!-- Squid (Cumi-Cumi) -->
                 <article class="product-card" data-category="cephalopod">
                     <div class="product-image">
-                        <img src="../images/products/squid.jpg" alt="Squid">
+                        <img src="../images/products/squid.jpg" alt="Squid" loading="lazy">
                     </div>
                     <div class="product-body">
                         <h3>Squid</h3>
@@ -428,7 +411,7 @@
                 <!-- Octopus (Gurita) -->
                 <article class="product-card" data-category="cephalopod">
                     <div class="product-image">
-                        <img src="../images/products/octopus.jpg" alt="Octopus">
+                        <img src="../images/products/octopus.jpg" alt="Octopus" loading="lazy">
                     </div>
                     <div class="product-body">
                         <h3>Octopus</h3>
@@ -504,7 +487,7 @@
                 <div class="footer-column">
                     <h5 class="footer-title">Products</h5>
                     <ul class="footer-links">
-                        <li><a href="./">Fresh Tuna</a></li>
+                        <li><a href="./">Yellowfin Tuna</a></li>
                         <li><a href="./">Red Snapper</a></li>
                         <li><a href="./">Squid</a></li>
                         <li><a href="./">Octopus</a></li>

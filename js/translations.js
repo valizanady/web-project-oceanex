@@ -62,8 +62,17 @@ const translations = {
         "products.subtitle": "Premium seafood selection for discerning B2B clients",
         "products.viewAll": "View All",
         "products.learnMore": "Learn More →",
-        "products.freshTuna": "Fresh Tuna",
+        "products.yellowfinTuna": "Yellowfin Tuna",
+        "products.skipjackTuna": "Skipjack Tuna",
+        "products.babyTuna": "Baby Tuna",
         "products.redSnapper": "Red Snapper",
+        "products.grouper": "Grouper",
+        "products.spanishMackerel": "Spanish Mackerel",
+        "products.indianMackerel": "Indian Mackerel",
+        "products.sardine": "Sardine",
+        "products.milkfish": "Milkfish",
+        "products.croaker": "Croaker",
+        "products.scad": "Scad",
         "products.squid": "Squid",
         "products.octopus": "Octopus",
         "products.origin.indonesia": "Indonesia",
@@ -399,8 +408,17 @@ const translations = {
         "products.subtitle": "为挑剔的B2B客户精选优质海鲜",
         "products.viewAll": "查看全部",
         "products.learnMore": "了解更多 →",
-        "products.freshTuna": "新鲜金枪鱼",
+        "products.yellowfinTuna": "黄鳍金枪鱼",
+        "products.skipjackTuna": "�的鱼",
+        "products.babyTuna": "小金枪鱼",
         "products.redSnapper": "红鲷鱼",
+        "products.grouper": "石斑鱼",
+        "products.spanishMackerel": "马鲛鱼",
+        "products.indianMackerel": "印度�的鱼",
+        "products.sardine": "沙丁鱼",
+        "products.milkfish": "虱目鱼",
+        "products.croaker": "黄花鱼",
+        "products.scad": "竹荚鱼",
         "products.squid": "鱿鱼",
         "products.octopus": "章鱼",
         "products.origin.indonesia": "印尼",
@@ -751,8 +769,17 @@ const translations = {
         "products.viewAll": "全製品を見る",
         "products.explore": "詳細を見る",
         "products.learnMore": "詳細を見る →",
-        "products.freshTuna": "新鮮なマグロ",
+        "products.yellowfinTuna": "キハダマグロ",
+        "products.skipjackTuna": "カツオ",
+        "products.babyTuna": "ベビーツナ",
         "products.redSnapper": "赤鯛",
+        "products.grouper": "ハタ",
+        "products.spanishMackerel": "サワラ",
+        "products.indianMackerel": "グルクマ",
+        "products.sardine": "イワシ",
+        "products.milkfish": "サバヒー",
+        "products.croaker": "イシモチ",
+        "products.scad": "アジ",
         "products.squid": "イカ",
         "products.octopus": "タコ",
         "products.origin.indonesia": "インドネシア",
@@ -1065,8 +1092,17 @@ const translations = {
         "products.subtitle": "Pilihan seafood premium untuk mitra B2B yang mengutamakan kualitas",
         "products.viewAll": "Lihat Semua",
         "products.learnMore": "Selengkapnya →",
-        "products.freshTuna": "Tuna Segar",
+        "products.yellowfinTuna": "Tuna Sirip Kuning",
+        "products.skipjackTuna": "Cakalang",
+        "products.babyTuna": "Baby Tuna",
         "products.redSnapper": "Kakap Merah",
+        "products.grouper": "Kerapu",
+        "products.spanishMackerel": "Tenggiri",
+        "products.indianMackerel": "Kembung",
+        "products.sardine": "Sarden",
+        "products.milkfish": "Bandeng",
+        "products.croaker": "Gulamah",
+        "products.scad": "Layang",
         "products.squid": "Cumi-Cumi",
         "products.octopus": "Gurita",
         "products.origin.indonesia": "Indonesia",
@@ -1340,6 +1376,318 @@ const translations = {
         "product.cta.title": "Tidak menemukan yang dicari?",
         "product.cta.desc": "Kami menyediakan beragam produk seafood. Sampaikan kebutuhan spesifik Anda kepada kami.",
         "product.cta.btn": "Minta Penawaran Khusus"
+    },
+    
+    // ============================================
+    // KOREAN (한국어) - SEO Optimized
+    // ============================================
+    ko: {
+        // Navbar
+        "nav.home": "홈",
+        "nav.about": "회사 소개",
+        "nav.products": "제품",
+        "nav.news": "뉴스",
+        "nav.contact": "문의",
+        "nav.getQuote": "견적 요청",
+        "nav.contactUs": "연락하기",
+        
+        // Hero Slides - SEO Optimized
+        "hero.slide1.title1": "바다의",
+        "hero.slide1.title2": "풍요로움을 보존합니다",
+        "hero.slide1.desc": "2020년부터 인도네시아의 풍부한 해양 자원을 전 세계 시장에 연결하는 해산물 공급업체입니다.",
+        "hero.slide2.title1": "인도네시아 바다를",
+        "hero.slide2.title2": "세계 시장으로",
+        "hero.slide2.desc": "품질, 안전, 신뢰성을 보장하는 통합 공급망으로 효율적인 제품 흐름을 제공합니다.",
+        "hero.explore": "제품 보기",
+        "hero.contact": "문의하기",
+        
+        // Why Choose Section
+        "why.tag": "왜 저희를",
+        "why.title": "왜 Oceanex Marine인가요?",
+        "why.subtitle": "귀사의 명성은 일관된 제품 품질과 신뢰할 수 있는 배송에 달려 있다는 것을 알고 있습니다.",
+        "why.quality.title": "품질 중심",
+        "why.quality.desc": "원산지에서 배송까지 엄격한 등급 기준과 완전한 추적성",
+        "why.quality.tag1": "A+ 등급",
+        "why.quality.tag2": "인증됨",
+        "why.quality.tag3": "추적 가능",
+        "why.coldchain.title": "콜드체인 우수성",
+        "why.coldchain.desc": "제품 무결성을 유지하는 온도 관리 저장 및 물류",
+        "why.custom.title": "맞춤 솔루션",
+        "why.custom.desc": "귀사의 사양에 맞게 맞춤 제작",
+        "why.btn.learn": "자세히 보기",
+        "why.btn.explore": "탐색",
+        "why.btn.discover": "발견",
+        "why.btn.start": "시작하기",
+        
+        // Products Section - SEO Optimized for Korean Market
+        "products.title": "제품 라인업",
+        "products.subtitle": "까다로운 B2B 고객을 위한 프리미엄 해산물 셀렉션",
+        "products.viewAll": "전체 보기",
+        "products.learnMore": "자세히 보기 →",
+        "products.yellowfinTuna": "황다랑어",
+        "products.skipjackTuna": "가다랑어",
+        "products.babyTuna": "베이비 참치",
+        "products.redSnapper": "붉은 도미",
+        "products.grouper": "그루퍼",
+        "products.spanishMackerel": "삼치",
+        "products.indianMackerel": "고등어",
+        "products.sardine": "정어리",
+        "products.milkfish": "밀크피쉬",
+        "products.croaker": "조기",
+        "products.scad": "전갱이",
+        "products.squid": "오징어",
+        "products.octopus": "문어",
+        "products.origin.indonesia": "인도네시아",
+        
+        // Contact Section
+        "contact.title": "문의하기",
+        "contact.subtitle": "프리미엄 해산물에 관심이 있으시면 메시지를 남겨주세요. 24시간 내에 답변드리겠습니다.",
+        "contact.desc": "가격, 샘플, 파트너십 기회에 대해 문의하세요",
+        "contact.form.selectInquiry": "무엇을 도와드릴까요?",
+        "contact.form.inquiryLabel": "관심 분야 *",
+        "contact.subject.product": "제품 및 가격 문의",
+        "contact.subject.bulk": "대량 주문 / 도매",
+        "contact.subject.sample": "샘플 요청",
+        "contact.subject.partnership": "파트너십 / 유통",
+        "contact.subject.general": "일반 문의",
+        "contact.form.name": "성함 *",
+        "contact.form.email": "이메일 주소 *",
+        "contact.form.phone": "WhatsApp / 전화 (빠른 응답)",
+        "contact.form.messageLabel": "제품 유형, 수량, 목적지 국가 등 자세한 내용 (선택사항)",
+        "contact.form.submit": "메시지 보내기",
+        "contact.form.privacy": "귀하의 정보는 안전하게 보호됩니다. 보통 24시간 내에 답변드립니다.",
+        "contact.location.title": "위치",
+        "contact.location.address": "Jl. Dermaga Raya No.12, Pluit, Kec. Penjaringan, 자카르타 북부, 인도네시아 14450",
+        
+        // Floating Assistant
+        "assistant.bubble": "👋 무엇을 도와드릴까요?",
+        "assistant.language": "언어",
+        "assistant.whatsapp": "WhatsApp",
+        "assistant.email": "이메일",
+        "assistant.contact": "문의 양식",
+        
+        // Footer - SEO Optimized
+        "footer.description": "인도네시아의 풍부한 해양 자원을 전 세계 시장에 연결하는 해산물 공급업체입니다. 아시아와 오세아니아 전역에 신선 및 냉동 해산물 유통을 전문으로 합니다.",
+        "footer.quickLinks": "빠른 링크",
+        "footer.products": "제품",
+        "footer.services": "서비스",
+        "footer.contactUs": "문의하기",
+        "footer.copyright": "© 2026 PT Hijau Mitra Sejati (Oceanex Marine Industries). 모든 권리 보유.",
+        "footer.privacyPolicy": "개인정보 처리방침",
+        "footer.termsOfService": "이용약관",
+        "footer.cookiePolicy": "쿠키 정책",
+        
+        // About Page
+        "about.established": "2020년 설립",
+        "about.hero.title1": "바다의",
+        "about.hero.title2": "풍요로움을 보존합니다",
+        "about.hero.subtitle": "바다와 시장을 연결합니다",
+        "about.hero.tagline": "인도네시아의 풍부한 해양 자원을 아시아와 오세아니아 전역의 글로벌 시장에 연결하는 해산물 공급업체입니다.",
+        "about.story.label": "우리의 이야기",
+        "about.story.title": "Oceanex Marine Industries",
+        "about.story.para1": "인도네시아는 파푸아 동쪽 해역부터 수마트라 서쪽 해안까지 세계에서 가장 풍부한 해양 자원을 보유하고 있습니다.",
+        "about.story.para2": "Oceanex Marine Industries에서 우리의 역할은 품질 좋은 해산물 공급을 넘어섭니다 — 우리 사업과 생계를 지원하는 해양 생태계를 존중하고 보존하기 위해 최선을 다합니다.",
+        "about.story.para3": "바다의 혜택을 받는 자로서, 우리는 미래를 위한 건강한 어족 자원을 보장하기 위해 책임감 있는 소싱과 장기적인 관리를 촉진합니다.",
+        
+        // Certifications
+        "about.cert.label": "품질 보증",
+        "about.cert.title": "인증 현황",
+        "about.cert.subtitle": "각 인증에 마우스를 올려 품질 기준에 대해 자세히 알아보세요.",
+        
+        // Vision Mission
+        "about.vm.vision.title": "비전",
+        "about.vm.vision.text": "미래 세대를 위해 해양 생태계를 보존하면서 세계적 수준의 해산물 제품을 제공하여 인도네시아를 글로벌 해양 축으로 만듭니다.",
+        "about.vm.mission.title": "미션",
+        "about.vm.mission.text": "지속 가능하고, 추적 가능하며, 프리미엄 품질의 해산물을 글로벌 시장에 제공하여 모든 이에게 바다를 더 나은 생계 수단으로 만듭니다.",
+        
+        // Download Section
+        "about.download.title": "회사 소개서 다운로드",
+        "about.download.desc": "제품, 인증, 역량에 대한 종합적인 정보를 받아보세요.",
+        "about.download.feature1": "제품 카탈로그",
+        "about.download.feature2": "인증서",
+        "about.download.feature3": "시설 사진",
+        "about.download.btn": "PDF 다운로드",
+        
+        // CTA Section
+        "about.cta.title": "파트너가 되실 준비가 되셨나요?",
+        "about.cta.desc": "해산물 소싱 요구 사항에 대해 논의해 보겠습니다",
+        "about.cta.btn": "문의하기",
+        
+        // Product Page
+        "product.hero.tag": "프리미엄 해산물",
+        "product.hero.title": "제품 카탈로그",
+        "product.hero.subtitle": "지속 가능한 소싱, 전문 가공, 전 세계 배송",
+        "product.search": "제품 검색...",
+        "product.filter.all": "전체",
+        "product.filter.fish": "어류",
+        "product.viewSpecs": "사양 보기",
+        "product.requestQuote": "견적 요청",
+        
+        // Spec Labels
+        "product.spec.sizeRange": "크기 범위",
+        "product.spec.processing": "가공",
+        "product.spec.packaging": "포장",
+        "product.spec.storage": "저장",
+        
+        // No Results
+        "product.noResults.title": "제품을 찾을 수 없습니다",
+        "product.noResults.desc": "검색어나 필터를 변경해 보세요"
+    },
+    
+    // ============================================
+    // VIETNAMESE (Tiếng Việt) - SEO Optimized
+    // ============================================
+    vi: {
+        // Navbar
+        "nav.home": "Trang chủ",
+        "nav.about": "Giới thiệu",
+        "nav.products": "Sản phẩm",
+        "nav.news": "Tin tức",
+        "nav.contact": "Liên hệ",
+        "nav.getQuote": "Nhận báo giá",
+        "nav.contactUs": "Liên hệ",
+        
+        // Hero Slides - SEO Optimized
+        "hero.slide1.title1": "Bảo tồn",
+        "hero.slide1.title2": "Sự phong phú của đại dương",
+        "hero.slide1.desc": "Nhà cung cấp hải sản Indonesia kết nối nguồn tài nguyên biển phong phú của quốc gia với thị trường toàn cầu từ năm 2020.",
+        "hero.slide2.title1": "Kết nối biển Indonesia",
+        "hero.slide2.title2": "Với thị trường toàn cầu",
+        "hero.slide2.desc": "Chuỗi cung ứng tích hợp đảm bảo dòng chảy sản phẩm hiệu quả với chất lượng, an toàn và độ tin cậy.",
+        "hero.explore": "Xem sản phẩm",
+        "hero.contact": "Liên hệ",
+        
+        // Why Choose Section
+        "why.tag": "Tại sao chọn chúng tôi",
+        "why.title": "Tại sao chọn Oceanex Marine?",
+        "why.subtitle": "Chúng tôi hiểu rằng uy tín của bạn phụ thuộc vào chất lượng sản phẩm nhất quán và giao hàng đáng tin cậy.",
+        "why.quality.title": "Chất lượng hàng đầu",
+        "why.quality.desc": "Tiêu chuẩn phân loại nghiêm ngặt và truy xuất nguồn gốc hoàn toàn từ nguồn đến giao hàng",
+        "why.quality.tag1": "Hạng A+",
+        "why.quality.tag2": "Chứng nhận",
+        "why.quality.tag3": "Truy xuất",
+        "why.coldchain.title": "Chuỗi lạnh xuất sắc",
+        "why.coldchain.desc": "Kho bảo quản và logistics kiểm soát nhiệt độ để duy trì tính toàn vẹn sản phẩm",
+        "why.custom.title": "Giải pháp tùy chỉnh",
+        "why.custom.desc": "Được điều chỉnh theo thông số kỹ thuật của bạn",
+        "why.btn.learn": "Tìm hiểu thêm",
+        "why.btn.explore": "Khám phá",
+        "why.btn.discover": "Khám phá",
+        "why.btn.start": "Bắt đầu",
+        
+        // Products Section - SEO Optimized for Vietnamese Market
+        "products.title": "Sản phẩm của chúng tôi",
+        "products.subtitle": "Lựa chọn hải sản cao cấp cho khách hàng B2B khắt khe",
+        "products.viewAll": "Xem tất cả",
+        "products.learnMore": "Tìm hiểu thêm →",
+        "products.yellowfinTuna": "Cá ngừ vây vàng",
+        "products.skipjackTuna": "Cá ngừ vằn",
+        "products.babyTuna": "Cá ngừ non",
+        "products.redSnapper": "Cá hồng",
+        "products.grouper": "Cá mú",
+        "products.spanishMackerel": "Cá thu",
+        "products.indianMackerel": "Cá bạc má",
+        "products.sardine": "Cá mòi",
+        "products.milkfish": "Cá măng",
+        "products.croaker": "Cá đù",
+        "products.scad": "Cá nục",
+        "products.squid": "Mực",
+        "products.octopus": "Bạch tuộc",
+        "products.origin.indonesia": "Indonesia",
+        
+        // Contact Section
+        "contact.title": "Liên hệ với chúng tôi",
+        "contact.subtitle": "Quan tâm đến hải sản cao cấp của chúng tôi? Để lại tin nhắn và chúng tôi sẽ phản hồi trong vòng 24 giờ.",
+        "contact.desc": "Liên hệ đội ngũ của chúng tôi về giá cả, mẫu và cơ hội hợp tác",
+        "contact.form.selectInquiry": "Chúng tôi có thể giúp gì cho bạn?",
+        "contact.form.inquiryLabel": "Tôi quan tâm đến... *",
+        "contact.subject.product": "Thông tin sản phẩm & giá cả",
+        "contact.subject.bulk": "Đặt hàng số lượng lớn / Bán buôn",
+        "contact.subject.sample": "Yêu cầu mẫu sản phẩm",
+        "contact.subject.partnership": "Đối tác / Phân phối",
+        "contact.subject.general": "Câu hỏi chung",
+        "contact.form.name": "Họ tên *",
+        "contact.form.email": "Địa chỉ email *",
+        "contact.form.phone": "WhatsApp / Điện thoại (để phản hồi nhanh hơn)",
+        "contact.form.messageLabel": "Cho chúng tôi biết thêm — loại sản phẩm, số lượng, quốc gia đích, v.v. (tùy chọn)",
+        "contact.form.submit": "Gửi tin nhắn",
+        "contact.form.privacy": "Thông tin của bạn được bảo mật. Chúng tôi thường phản hồi trong vòng 24 giờ.",
+        "contact.location.title": "Vị trí",
+        "contact.location.address": "Jl. Dermaga Raya No.12, Pluit, Kec. Penjaringan, Jakarta Bắc, Indonesia 14450",
+        
+        // Floating Assistant
+        "assistant.bubble": "👋 Tôi có thể giúp gì cho bạn?",
+        "assistant.language": "Ngôn ngữ",
+        "assistant.whatsapp": "WhatsApp",
+        "assistant.email": "Email",
+        "assistant.contact": "Form liên hệ",
+        
+        // Footer - SEO Optimized
+        "footer.description": "Nhà cung cấp hải sản Indonesia chuyên kết nối nguồn tài nguyên biển phong phú của quốc gia với thị trường toàn cầu. Chuyên phân phối hải sản tươi và đông lạnh khắp Châu Á và Châu Đại Dương.",
+        "footer.quickLinks": "Liên kết nhanh",
+        "footer.products": "Sản phẩm",
+        "footer.services": "Dịch vụ",
+        "footer.contactUs": "Liên hệ",
+        "footer.copyright": "© 2026 PT Hijau Mitra Sejati (Oceanex Marine Industries). Đã đăng ký bản quyền.",
+        "footer.privacyPolicy": "Chính sách bảo mật",
+        "footer.termsOfService": "Điều khoản dịch vụ",
+        "footer.cookiePolicy": "Chính sách Cookie",
+        
+        // About Page
+        "about.established": "Thành lập năm 2020",
+        "about.hero.title1": "Bảo tồn",
+        "about.hero.title2": "Sự phong phú của đại dương",
+        "about.hero.subtitle": "Kết nối đại dương với thị trường",
+        "about.hero.tagline": "Nhà cung cấp hải sản Indonesia tận tâm kết nối nguồn tài nguyên biển phong phú của quốc gia với thị trường toàn cầu khắp Châu Á và Châu Đại Dương.",
+        "about.story.label": "Câu chuyện của chúng tôi",
+        "about.story.title": "Oceanex Marine Industries",
+        "about.story.para1": "Indonesia là nơi có nguồn tài nguyên biển phong phú nhất thế giới, trải dài từ vùng biển phía đông Papua đến bờ biển phía tây Sumatra.",
+        "about.story.para2": "Tại Oceanex Marine Industries, chúng tôi tin rằng vai trò của mình vượt xa việc cung cấp hải sản chất lượng — chúng tôi cam kết tôn trọng và bảo tồn các hệ sinh thái biển hỗ trợ kinh doanh và sinh kế của chúng tôi.",
+        "about.story.para3": "Với tư cách là người hưởng lợi từ sự phong phú của đại dương, chúng tôi thúc đẩy nguồn cung có trách nhiệm và quản lý lâu dài để giúp đảm bảo quần thể cá khỏe mạnh cho tương lai.",
+        
+        // Certifications
+        "about.cert.label": "Đảm bảo chất lượng",
+        "about.cert.title": "Chứng nhận của chúng tôi",
+        "about.cert.subtitle": "Di chuột qua mỗi chứng nhận để tìm hiểu thêm về tiêu chuẩn chất lượng của chúng tôi.",
+        
+        // Vision Mission
+        "about.vm.vision.title": "Tầm nhìn",
+        "about.vm.vision.text": "Biến Indonesia thành trục hàng hải toàn cầu bằng cách cung cấp sản phẩm hải sản đẳng cấp thế giới trong khi bảo tồn hệ sinh thái đại dương cho các thế hệ tương lai.",
+        "about.vm.mission.title": "Sứ mệnh",
+        "about.vm.mission.text": "Biến biển thành sinh kế tốt hơn cho tất cả mọi người bằng cách cung cấp hải sản bền vững, có thể truy xuất nguồn gốc và chất lượng cao cấp cho thị trường toàn cầu.",
+        
+        // Download Section
+        "about.download.title": "Tải hồ sơ công ty",
+        "about.download.desc": "Nhận thông tin đầy đủ về sản phẩm, chứng nhận và năng lực của chúng tôi.",
+        "about.download.feature1": "Danh mục sản phẩm",
+        "about.download.feature2": "Chứng nhận",
+        "about.download.feature3": "Ảnh cơ sở",
+        "about.download.btn": "Tải PDF",
+        
+        // CTA Section
+        "about.cta.title": "Sẵn sàng hợp tác?",
+        "about.cta.desc": "Hãy thảo luận về nhu cầu cung cấp hải sản của bạn",
+        "about.cta.btn": "Liên hệ ngay",
+        
+        // Product Page
+        "product.hero.tag": "Hải sản cao cấp",
+        "product.hero.title": "Danh mục sản phẩm",
+        "product.hero.subtitle": "Nguồn cung bền vững, chế biến chuyên nghiệp, vận chuyển toàn cầu",
+        "product.search": "Tìm sản phẩm...",
+        "product.filter.all": "Tất cả",
+        "product.filter.fish": "Cá",
+        "product.viewSpecs": "Xem thông số",
+        "product.requestQuote": "Yêu cầu báo giá",
+        
+        // Spec Labels
+        "product.spec.sizeRange": "Kích cỡ",
+        "product.spec.processing": "Chế biến",
+        "product.spec.packaging": "Đóng gói",
+        "product.spec.storage": "Bảo quản",
+        
+        // No Results
+        "product.noResults.title": "Không tìm thấy sản phẩm",
+        "product.noResults.desc": "Thử thay đổi từ khóa hoặc bộ lọc tìm kiếm"
     }
 };
 

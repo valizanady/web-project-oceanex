@@ -27,8 +27,8 @@
         <!-- Geo Location Meta Tags -->
         <meta name="geo.region" content="ID-JK">
         <meta name="geo.placename" content="Jakarta Utara, Indonesia">
-        <meta name="geo.position" content="-6.1219;106.7927">
-        <meta name="ICBM" content="-6.1219, 106.7927">
+        <meta name="geo.position" content="-6.1044929;106.7753745">
+        <meta name="ICBM" content="-6.1044929, 106.7753745">
         
         <!-- Open Graph / Facebook -->
         <meta property="og:type" content="website">
@@ -92,19 +92,23 @@
         }
         </script>
 
-        <!-- CSS FILES -->                
+        <!-- CSS FILES - Optimized Loading -->
+        <!-- Preload Critical Resources -->
+        <link rel="preload" href="images/hero/hero-1-ocean.jpg" as="image" fetchpriority="high">
+        <link rel="preload" href="css/bootstrap.min.css" as="style">
+        
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/bootstrap-icons.css" rel="stylesheet">
+        <link href="css/bootstrap-icons.css" rel="stylesheet" media="print" onload="this.media='all'">
         <link href="css/templatemo-tiya-golf-club.css" rel="stylesheet">
         
         <!-- Global Styles - Consistent across all pages -->
         <link href="css/global-styles.css" rel="stylesheet">
 
-        <!-- PostHog Analytics -->
-        <script>
+        <!-- PostHog Analytics - Deferred -->
+        <script defer>
             !function(t,e){var o,n,p,r;e.__SV||(window.posthog && window.posthog.__loaded)||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init ss us bi os hs es ns capture Bi calculateEventProperties cs register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey displaySurvey cancelPendingSurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException startExceptionAutocapture stopExceptionAutocapture loadToolbar get_property getSessionProperty ps vs createPersonProfile gs Zr ys opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing get_explicit_consent_status is_capturing clear_opt_in_out_capturing ds debug O fs getPageViewId captureTraceFeedback captureTraceMetric Yr".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
             posthog.init('phc_ybe5690pza4Vg0KZwkseyYvPH8WKwMXzvXXCM4E1foQ', {
                 api_host: 'https://us.i.posthog.com',
@@ -1726,11 +1730,10 @@
 
             <!-- Hero Section with Video Background -->
             <section class="about-hero">
-                <!-- Video Background -->
+                <!-- Video Background - Lazy loaded -->
                 <div class="hero-video-container">
-                    <video class="hero-video" autoplay muted loop playsinline poster="images/about-hero-poster.jpg">
+                    <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="images/hero/hero-1-ocean.jpg">
                         <source src="videos/ocean-hero.mp4" type="video/mp4">
-                        <source src="videos/ocean-hero.webm" type="video/webm">
                     </video>
                     <div class="hero-video-overlay"></div>
                 </div>
@@ -1773,16 +1776,13 @@
                         <div class="col-lg-6 animate-on-scroll">
                             <div class="story-gallery">
                                 <div class="gallery-item gallery-item-1">
-                                    <img src="images/story/story-1.jpg" alt="Fresh Seafood Processing">
-                                    <!-- PLACEHOLDER: images/story/story-1.jpg - Fresh seafood processing photo -->
+                                    <img src="images/story/story-1.jpg" alt="Fresh Seafood Processing" loading="lazy">
                                 </div>
                                 <div class="gallery-item gallery-item-2">
-                                    <img src="images/story/story-2.jpg" alt="Quality Control">
-                                    <!-- PLACEHOLDER: images/story/story-2.jpg - Quality control inspection photo -->
+                                    <img src="images/story/story-2.jpg" alt="Quality Control" loading="lazy">
                                 </div>
                                 <div class="gallery-item gallery-item-3">
-                                    <img src="images/story/story-3.jpg" alt="Cold Storage Facility">
-                                    <!-- PLACEHOLDER: images/story/story-3.jpg - Cold storage facility photo -->
+                                    <img src="images/story/story-3.jpg" alt="Cold Storage Facility" loading="lazy">
                                 </div>
                                 <div class="story-year-floating">
                                     <strong>2020</strong>
@@ -2111,7 +2111,7 @@
                             <div class="footer-column">
                                 <h5 class="footer-title" data-translate="footer.products">Products</h5>
                                 <ul class="footer-links">
-                                    <li><a href="product/">Fresh Tuna</a></li>
+                                    <li><a href="product/">Yellowfin Tuna</a></li>
                                     <li><a href="product/">Red Snapper</a></li>
                                     <li><a href="product/">Squid</a></li>
                                     <li><a href="product/">Octopus</a></li>
@@ -2207,12 +2207,12 @@
         <!-- JAVASCRIPT FILES -->
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/jquery.sticky.js"></script>
-        <script src="js/click-scroll.js"></script>
-        <script src="js/custom.js"></script>
+        <script src="js/jquery.sticky.js" defer></script>
+        <script src="js/click-scroll.js" defer></script>
+        <script src="js/custom.js" defer></script>
         
         <!-- Translation System -->
-        <script src="js/translations.js"></script>
+        <script src="js/translations.js" defer></script>
 
         <!-- Load Navbar -->
         <script>
