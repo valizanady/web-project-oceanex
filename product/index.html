@@ -43,12 +43,8 @@
         .product-image img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
         .product-card:hover .product-image img{transform:scale(1.05)}
         .product-badge{position:absolute;top:15px;left:15px;background:rgba(255,255,255,.85);backdrop-filter:blur(10px);color:var(--navy);padding:6px 14px;border-radius:20px;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.5px;border:1px solid rgba(255,255,255,.3)}
-        .product-body{padding:25px}
-        .product-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px}
-        .product-card h3{font-size:1.2rem;font-weight:600;color:var(--navy);margin:0}
-        .product-origin{display:flex;align-items:center;gap:5px;color:#888;font-size:.85rem}
-        .product-origin i{color:var(--gold)}
-        .product-desc{color:#666;font-size:.9rem;line-height:1.6;margin-bottom:20px}
+        .product-body{padding:20px 25px}
+        .product-card h3{font-size:1.2rem;font-weight:600;color:var(--navy);margin:0 0 15px 0}
         .btn-view-specs{width:100%;display:flex;align-items:center;justify-content:space-between;padding:12px 0;background:none;border:none;border-top:1px solid #eee;color:var(--navy);font-size:.9rem;font-weight:500;cursor:pointer;transition:color .3s}
         .btn-view-specs:hover{color:var(--gold)}
         .btn-view-specs i{transition:transform .3s}
@@ -86,277 +82,294 @@
                 <h2>Explore Our Selection</h2>
             </div>
             <div class="products-grid" id="productsContainer">
+                <!-- Baby Tuna -->
                 <article class="product-card" data-category="fish">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1574781330855-d0db8cc6a79c?w=600&q=80" alt="Wild Atlantic Salmon">
-                        <span class="product-badge">Grade A+</span>
+                        <img src="../images/products/baby-tuna.jpg" alt="Baby Tuna">
+                        <span class="product-badge">Premium</span>
                     </div>
                     <div class="product-body">
-                        <div class="product-header">
-                            <h3>Wild Atlantic Salmon</h3>
-                            <span class="product-origin"><i class="bi bi-geo-alt"></i> Norway</span>
-                        </div>
-                        <p class="product-desc">Premium whole salmon with rich flavor and firm texture. Perfect for sashimi, grilling, or smoking.</p>
+                        <h3>Baby Tuna</h3>
                         <button class="btn-view-specs"><span>View Specifications</span><i class="bi bi-plus"></i></button>
                     </div>
                     <div class="product-specs">
                         <div class="specs-grid">
-                            <div class="spec-item"><span class="spec-label">Size Range</span><span class="spec-value">2-4kg, 4-6kg, 6-8kg</span></div>
-                            <div class="spec-item"><span class="spec-label">Processing</span><span class="spec-value">Whole, Fillet, Portions</span></div>
+                            <div class="spec-item"><span class="spec-label">Size Range</span><span class="spec-value">500g-2kg</span></div>
+                            <div class="spec-item"><span class="spec-label">Processing</span><span class="spec-value">Whole, Gutted, Fillet</span></div>
                             <div class="spec-item"><span class="spec-label">Packaging</span><span class="spec-value">IQF, Vacuum Sealed</span></div>
                             <div class="spec-item"><span class="spec-label">Storage</span><span class="spec-value">-18°C Frozen</span></div>
                         </div>
                         <a href="../index.html#section_5" class="btn-quote"><i class="bi bi-chat-quote"></i> Request Quote</a>
                     </div>
                 </article>
-                <article class="product-card" data-category="shrimp">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?w=600&q=80" alt="Black Tiger Shrimp">
-                        <span class="product-badge">Premium</span>
-                    </div>
-                    <div class="product-body">
-                        <div class="product-header">
-                            <h3>Black Tiger Shrimp</h3>
-                            <span class="product-origin"><i class="bi bi-geo-alt"></i> Indonesia</span>
-                        </div>
-                        <p class="product-desc">Large, succulent tiger prawns with distinctive stripes. Ideal for high-end restaurants and hotels.</p>
-                        <button class="btn-view-specs"><span>View Specifications</span><i class="bi bi-plus"></i></button>
-                    </div>
-                    <div class="product-specs">
-                        <div class="specs-grid">
-                            <div class="spec-item"><span class="spec-label">Size Range</span><span class="spec-value">U10, U15, U20, 21-25</span></div>
-                            <div class="spec-item"><span class="spec-label">Processing</span><span class="spec-value">HOSO, HLSO, PD, PUD</span></div>
-                            <div class="spec-item"><span class="spec-label">Packaging</span><span class="spec-value">IQF, Block Frozen</span></div>
-                            <div class="spec-item"><span class="spec-label">Storage</span><span class="spec-value">-18°C Frozen</span></div>
-                        </div>
-                        <a href="../index.html#section_5" class="btn-quote"><i class="bi bi-chat-quote"></i> Request Quote</a>
-                    </div>
-                </article>
-                <article class="product-card" data-category="crab">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1559737558-2f5a35f4523b?w=600&q=80" alt="King Crab Legs">
-                        <span class="product-badge">Premium</span>
-                    </div>
-                    <div class="product-body">
-                        <div class="product-header">
-                            <h3>King Crab Legs</h3>
-                            <span class="product-origin"><i class="bi bi-geo-alt"></i> Alaska, USA</span>
-                        </div>
-                        <p class="product-desc">Wild-caught Alaskan king crab with sweet, tender meat. The ultimate luxury seafood.</p>
-                        <button class="btn-view-specs"><span>View Specifications</span><i class="bi bi-plus"></i></button>
-                    </div>
-                    <div class="product-specs">
-                        <div class="specs-grid">
-                            <div class="spec-item"><span class="spec-label">Size Range</span><span class="spec-value">6-9, 9-12, 12-14 count</span></div>
-                            <div class="spec-item"><span class="spec-label">Processing</span><span class="spec-value">Cooked, Split Legs</span></div>
-                            <div class="spec-item"><span class="spec-label">Packaging</span><span class="spec-value">IQF, 10lb Box</span></div>
-                            <div class="spec-item"><span class="spec-label">Storage</span><span class="spec-value">-18°C Frozen</span></div>
-                        </div>
-                        <a href="../index.html#section_5" class="btn-quote"><i class="bi bi-chat-quote"></i> Request Quote</a>
-                    </div>
-                </article>
+
+                <!-- Fresh Tuna -->
                 <article class="product-card" data-category="fish">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&q=80" alt="Bluefin Tuna">
+                        <img src="../images/products/fresh-tuna.jpg" alt="Fresh Tuna">
                         <span class="product-badge">Sashimi Grade</span>
                     </div>
                     <div class="product-body">
-                        <div class="product-header">
-                            <h3>Bluefin Tuna</h3>
-                            <span class="product-origin"><i class="bi bi-geo-alt"></i> Japan</span>
-                        </div>
-                        <p class="product-desc">Premium sashimi-grade bluefin with exceptional marbling. The pinnacle of tuna quality.</p>
+                        <h3>Fresh Tuna</h3>
                         <button class="btn-view-specs"><span>View Specifications</span><i class="bi bi-plus"></i></button>
                     </div>
                     <div class="product-specs">
                         <div class="specs-grid">
-                            <div class="spec-item"><span class="spec-label">Size Range</span><span class="spec-value">30-50kg, 50-80kg</span></div>
-                            <div class="spec-item"><span class="spec-label">Processing</span><span class="spec-value">Whole, Loin, Blocks</span></div>
+                            <div class="spec-item"><span class="spec-label">Size Range</span><span class="spec-value">10-30kg, 30-50kg</span></div>
+                            <div class="spec-item"><span class="spec-label">Processing</span><span class="spec-value">Whole, Loin, Steak</span></div>
                             <div class="spec-item"><span class="spec-label">Packaging</span><span class="spec-value">Vacuum Sealed</span></div>
                             <div class="spec-item"><span class="spec-label">Storage</span><span class="spec-value">-60°C Ultra Frozen</span></div>
                         </div>
                         <a href="../index.html#section_5" class="btn-quote"><i class="bi bi-chat-quote"></i> Request Quote</a>
                     </div>
                 </article>
-                <article class="product-card" data-category="shrimp">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1623855244183-52fd8d3ce2f7?w=600&q=80" alt="Vannamei Shrimp">
-                        <span class="product-badge">Grade A</span>
-                    </div>
-                    <div class="product-body">
-                        <div class="product-header">
-                            <h3>Vannamei Shrimp</h3>
-                            <span class="product-origin"><i class="bi bi-geo-alt"></i> Vietnam</span>
-                        </div>
-                        <p class="product-desc">Farm-raised white shrimp with mild, sweet flavor. Versatile and consistently high quality.</p>
-                        <button class="btn-view-specs"><span>View Specifications</span><i class="bi bi-plus"></i></button>
-                    </div>
-                    <div class="product-specs">
-                        <div class="specs-grid">
-                            <div class="spec-item"><span class="spec-label">Size Range</span><span class="spec-value">16-20, 21-25, 26-30</span></div>
-                            <div class="spec-item"><span class="spec-label">Processing</span><span class="spec-value">HLSO, PD, PTO, Butterfly</span></div>
-                            <div class="spec-item"><span class="spec-label">Packaging</span><span class="spec-value">IQF, Semi-IQF</span></div>
-                            <div class="spec-item"><span class="spec-label">Storage</span><span class="spec-value">-18°C Frozen</span></div>
-                        </div>
-                        <a href="../index.html#section_5" class="btn-quote"><i class="bi bi-chat-quote"></i> Request Quote</a>
-                    </div>
-                </article>
-                <article class="product-card" data-category="crab">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1510130387422-82bed34b37e9?w=600&q=80" alt="Snow Crab">
-                        <span class="product-badge">Grade A</span>
-                    </div>
-                    <div class="product-body">
-                        <div class="product-header">
-                            <h3>Snow Crab Clusters</h3>
-                            <span class="product-origin"><i class="bi bi-geo-alt"></i> Canada</span>
-                        </div>
-                        <p class="product-desc">Wild-caught snow crab with delicate, sweet meat. Pre-cooked and ready to serve.</p>
-                        <button class="btn-view-specs"><span>View Specifications</span><i class="bi bi-plus"></i></button>
-                    </div>
-                    <div class="product-specs">
-                        <div class="specs-grid">
-                            <div class="spec-item"><span class="spec-label">Size Range</span><span class="spec-value">5-8oz, 8-10oz clusters</span></div>
-                            <div class="spec-item"><span class="spec-label">Processing</span><span class="spec-value">Cooked, Clusters</span></div>
-                            <div class="spec-item"><span class="spec-label">Packaging</span><span class="spec-value">IQF, 30lb Master</span></div>
-                            <div class="spec-item"><span class="spec-label">Storage</span><span class="spec-value">-18°C Frozen</span></div>
-                        </div>
-                        <a href="../index.html#section_5" class="btn-quote"><i class="bi bi-chat-quote"></i> Request Quote</a>
-                    </div>
-                </article>
-                <article class="product-card" data-category="shellfish">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?w=600&q=80" alt="Sea Scallops">
-                        <span class="product-badge">Dry Pack</span>
-                    </div>
-                    <div class="product-body">
-                        <div class="product-header">
-                            <h3>Sea Scallops</h3>
-                            <span class="product-origin"><i class="bi bi-geo-alt"></i> USA East Coast</span>
-                        </div>
-                        <p class="product-desc">Premium dry-pack scallops with natural sweetness. No added water or phosphates.</p>
-                        <button class="btn-view-specs"><span>View Specifications</span><i class="bi bi-plus"></i></button>
-                    </div>
-                    <div class="product-specs">
-                        <div class="specs-grid">
-                            <div class="spec-item"><span class="spec-label">Size Range</span><span class="spec-value">U10, U12, 10-20 count</span></div>
-                            <div class="spec-item"><span class="spec-label">Processing</span><span class="spec-value">Dry Pack, Chemical Free</span></div>
-                            <div class="spec-item"><span class="spec-label">Packaging</span><span class="spec-value">IQF, 5lb Bag</span></div>
-                            <div class="spec-item"><span class="spec-label">Storage</span><span class="spec-value">-18°C Frozen</span></div>
-                        </div>
-                        <a href="../index.html#section_5" class="btn-quote"><i class="bi bi-chat-quote"></i> Request Quote</a>
-                    </div>
-                </article>
+
+                <!-- Skipjack Tuna (Cakalang) -->
                 <article class="product-card" data-category="fish">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1599084993091-1cb5c0721cc6?w=600&q=80" alt="Yellowfin Tuna">
+                        <img src="../images/products/skipjack.jpg" alt="Skipjack Tuna">
                         <span class="product-badge">Grade A</span>
                     </div>
                     <div class="product-body">
-                        <div class="product-header">
-                            <h3>Yellowfin Tuna</h3>
-                            <span class="product-origin"><i class="bi bi-geo-alt"></i> Philippines</span>
-                        </div>
-                        <p class="product-desc">Wild-caught yellowfin with lean, flavorful meat. Excellent for searing and grilling.</p>
+                        <h3>Skipjack Tuna</h3>
                         <button class="btn-view-specs"><span>View Specifications</span><i class="bi bi-plus"></i></button>
                     </div>
                     <div class="product-specs">
                         <div class="specs-grid">
-                            <div class="spec-item"><span class="spec-label">Size Range</span><span class="spec-value">10-20kg, 20-40kg</span></div>
-                            <div class="spec-item"><span class="spec-label">Processing</span><span class="spec-value">Loin, Steak, Cube</span></div>
-                            <div class="spec-item"><span class="spec-label">Packaging</span><span class="spec-value">CO Treated, Vacuum</span></div>
-                            <div class="spec-item"><span class="spec-label">Storage</span><span class="spec-value">-18°C / -60°C</span></div>
+                            <div class="spec-item"><span class="spec-label">Size Range</span><span class="spec-value">1.5-3kg, 3-5kg</span></div>
+                            <div class="spec-item"><span class="spec-label">Processing</span><span class="spec-value">Whole Round, Loin</span></div>
+                            <div class="spec-item"><span class="spec-label">Packaging</span><span class="spec-value">IQF, Block Frozen</span></div>
+                            <div class="spec-item"><span class="spec-label">Storage</span><span class="spec-value">-18°C Frozen</span></div>
                         </div>
                         <a href="../index.html#section_5" class="btn-quote"><i class="bi bi-chat-quote"></i> Request Quote</a>
                     </div>
                 </article>
-                <article class="product-card" data-category="shellfish">
+
+                <!-- Red Snapper (Kakap Merah) -->
+                <article class="product-card" data-category="fish">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1553659971-f01207815844?w=600&q=80" alt="Lobster Tails">
+                        <img src="../images/products/red-snapper.jpg" alt="Red Snapper">
                         <span class="product-badge">Premium</span>
                     </div>
                     <div class="product-body">
-                        <div class="product-header">
-                            <h3>Lobster Tails</h3>
-                            <span class="product-origin"><i class="bi bi-geo-alt"></i> Caribbean</span>
-                        </div>
-                        <p class="product-desc">Warm water spiny lobster tails with firm, sweet meat. Restaurant favorite worldwide.</p>
+                        <h3>Red Snapper</h3>
                         <button class="btn-view-specs"><span>View Specifications</span><i class="bi bi-plus"></i></button>
                     </div>
                     <div class="product-specs">
                         <div class="specs-grid">
-                            <div class="spec-item"><span class="spec-label">Size Range</span><span class="spec-value">4oz, 5oz, 6oz, 8oz</span></div>
-                            <div class="spec-item"><span class="spec-label">Processing</span><span class="spec-value">Raw, Shell-on</span></div>
-                            <div class="spec-item"><span class="spec-label">Packaging</span><span class="spec-value">IQF, Retail Box</span></div>
+                            <div class="spec-item"><span class="spec-label">Size Range</span><span class="spec-value">300-500g, 500g-1kg</span></div>
+                            <div class="spec-item"><span class="spec-label">Processing</span><span class="spec-value">Whole, Gutted, Fillet</span></div>
+                            <div class="spec-item"><span class="spec-label">Packaging</span><span class="spec-value">IQF, Vacuum Sealed</span></div>
                             <div class="spec-item"><span class="spec-label">Storage</span><span class="spec-value">-18°C Frozen</span></div>
                         </div>
                         <a href="../index.html#section_5" class="btn-quote"><i class="bi bi-chat-quote"></i> Request Quote</a>
                     </div>
                 </article>
+
+                <!-- Grouper (Kerapu) -->
                 <article class="product-card" data-category="fish">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=600&q=80" alt="Atlantic Cod">
-                        <span class="product-badge">Grade A</span>
+                        <img src="../images/products/grouper.jpg" alt="Grouper">
+                        <span class="product-badge">Premium</span>
                     </div>
                     <div class="product-body">
-                        <div class="product-header">
-                            <h3>Atlantic Cod Fillet</h3>
-                            <span class="product-origin"><i class="bi bi-geo-alt"></i> Iceland</span>
-                        </div>
-                        <p class="product-desc">Wild-caught Atlantic cod with mild, flaky white meat. Classic fish for various cuisines.</p>
+                        <h3>Grouper</h3>
                         <button class="btn-view-specs"><span>View Specifications</span><i class="bi bi-plus"></i></button>
                     </div>
                     <div class="product-specs">
                         <div class="specs-grid">
-                            <div class="spec-item"><span class="spec-label">Size Range</span><span class="spec-value">4-6oz, 6-8oz, 8-10oz</span></div>
-                            <div class="spec-item"><span class="spec-label">Processing</span><span class="spec-value">Skinless, Boneless</span></div>
-                            <div class="spec-item"><span class="spec-label">Packaging</span><span class="spec-value">IQF, Shatter Pack</span></div>
+                            <div class="spec-item"><span class="spec-label">Size Range</span><span class="spec-value">500g-1kg, 1-2kg</span></div>
+                            <div class="spec-item"><span class="spec-label">Processing</span><span class="spec-value">Whole, Fillet, Portion</span></div>
+                            <div class="spec-item"><span class="spec-label">Packaging</span><span class="spec-value">IQF, Vacuum Sealed</span></div>
                             <div class="spec-item"><span class="spec-label">Storage</span><span class="spec-value">-18°C Frozen</span></div>
                         </div>
                         <a href="../index.html#section_5" class="btn-quote"><i class="bi bi-chat-quote"></i> Request Quote</a>
                     </div>
                 </article>
-                <article class="product-card" data-category="shellfish">
+
+                <!-- Spanish Mackerel (Tenggiri) -->
+                <article class="product-card" data-category="fish">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1604909052743-94e838986d24?w=600&q=80" alt="Blue Mussels">
-                        <span class="product-badge">Farm Fresh</span>
+                        <img src="../images/products/spanish-mackerel.jpg" alt="Spanish Mackerel">
+                        <span class="product-badge">Grade A</span>
                     </div>
                     <div class="product-body">
-                        <div class="product-header">
-                            <h3>Blue Mussels</h3>
-                            <span class="product-origin"><i class="bi bi-geo-alt"></i> Chile</span>
-                        </div>
-                        <p class="product-desc">Rope-grown Chilean mussels with plump meat and clean taste. Ready to cook.</p>
+                        <h3>Spanish Mackerel</h3>
                         <button class="btn-view-specs"><span>View Specifications</span><i class="bi bi-plus"></i></button>
                     </div>
                     <div class="product-specs">
                         <div class="specs-grid">
-                            <div class="spec-item"><span class="spec-label">Size Range</span><span class="spec-value">Medium, Large, Jumbo</span></div>
-                            <div class="spec-item"><span class="spec-label">Processing</span><span class="spec-value">Whole Shell, Half Shell</span></div>
-                            <div class="spec-item"><span class="spec-label">Packaging</span><span class="spec-value">IQF, 1kg Bag</span></div>
+                            <div class="spec-item"><span class="spec-label">Size Range</span><span class="spec-value">1-2kg, 2-4kg</span></div>
+                            <div class="spec-item"><span class="spec-label">Processing</span><span class="spec-value">Whole, Steak, Fillet</span></div>
+                            <div class="spec-item"><span class="spec-label">Packaging</span><span class="spec-value">IQF, Block Frozen</span></div>
                             <div class="spec-item"><span class="spec-label">Storage</span><span class="spec-value">-18°C Frozen</span></div>
                         </div>
                         <a href="../index.html#section_5" class="btn-quote"><i class="bi bi-chat-quote"></i> Request Quote</a>
                     </div>
                 </article>
-                <article class="product-card" data-category="shellfish">
+
+                <!-- Indian Mackerel (Kembung) -->
+                <article class="product-card" data-category="fish">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1590759668628-05b0fc34bb70?w=600&q=80" alt="Squid">
+                        <img src="../images/products/indian-mackerel.jpg" alt="Indian Mackerel">
                         <span class="product-badge">Grade A</span>
                     </div>
                     <div class="product-body">
-                        <div class="product-header">
-                            <h3>Squid / Calamari</h3>
-                            <span class="product-origin"><i class="bi bi-geo-alt"></i> China</span>
-                        </div>
-                        <p class="product-desc">Clean, tender squid tubes and tentacles. Perfect for frying, grilling, or stuffing.</p>
+                        <h3>Indian Mackerel</h3>
                         <button class="btn-view-specs"><span>View Specifications</span><i class="bi bi-plus"></i></button>
                     </div>
                     <div class="product-specs">
                         <div class="specs-grid">
-                            <div class="spec-item"><span class="spec-label">Size Range</span><span class="spec-value">3-5in, 5-7in, 7-10in</span></div>
-                            <div class="spec-item"><span class="spec-label">Processing</span><span class="spec-value">Tubes, T&T, Rings</span></div>
-                            <div class="spec-item"><span class="spec-label">Packaging</span><span class="spec-value">IQF, Block</span></div>
+                            <div class="spec-item"><span class="spec-label">Size Range</span><span class="spec-value">80-120g, 120-150g</span></div>
+                            <div class="spec-item"><span class="spec-label">Processing</span><span class="spec-value">Whole Round, Gutted</span></div>
+                            <div class="spec-item"><span class="spec-label">Packaging</span><span class="spec-value">IQF, Block Frozen</span></div>
+                            <div class="spec-item"><span class="spec-label">Storage</span><span class="spec-value">-18°C Frozen</span></div>
+                        </div>
+                        <a href="../index.html#section_5" class="btn-quote"><i class="bi bi-chat-quote"></i> Request Quote</a>
+                    </div>
+                </article>
+
+                <!-- Sardine (Lemuru) -->
+                <article class="product-card" data-category="fish">
+                    <div class="product-image">
+                        <img src="../images/products/sardine.jpg" alt="Sardine">
+                        <span class="product-badge">Grade A</span>
+                    </div>
+                    <div class="product-body">
+                        <h3>Sardine</h3>
+                        <button class="btn-view-specs"><span>View Specifications</span><i class="bi bi-plus"></i></button>
+                    </div>
+                    <div class="product-specs">
+                        <div class="specs-grid">
+                            <div class="spec-item"><span class="spec-label">Size Range</span><span class="spec-value">50-80g, 80-100g</span></div>
+                            <div class="spec-item"><span class="spec-label">Processing</span><span class="spec-value">Whole Round, HGT</span></div>
+                            <div class="spec-item"><span class="spec-label">Packaging</span><span class="spec-value">Block Frozen, IQF</span></div>
+                            <div class="spec-item"><span class="spec-label">Storage</span><span class="spec-value">-18°C Frozen</span></div>
+                        </div>
+                        <a href="../index.html#section_5" class="btn-quote"><i class="bi bi-chat-quote"></i> Request Quote</a>
+                    </div>
+                </article>
+
+                <!-- Milkfish (Bandeng) -->
+                <article class="product-card" data-category="fish">
+                    <div class="product-image">
+                        <img src="../images/products/milkfish.jpg" alt="Milkfish">
+                        <span class="product-badge">Grade A</span>
+                    </div>
+                    <div class="product-body">
+                        <h3>Milkfish</h3>
+                        <button class="btn-view-specs"><span>View Specifications</span><i class="bi bi-plus"></i></button>
+                    </div>
+                    <div class="product-specs">
+                        <div class="specs-grid">
+                            <div class="spec-item"><span class="spec-label">Size Range</span><span class="spec-value">300-500g, 500-800g</span></div>
+                            <div class="spec-item"><span class="spec-label">Processing</span><span class="spec-value">Whole, Boneless, Belly</span></div>
+                            <div class="spec-item"><span class="spec-label">Packaging</span><span class="spec-value">IQF, Vacuum Sealed</span></div>
+                            <div class="spec-item"><span class="spec-label">Storage</span><span class="spec-value">-18°C Frozen</span></div>
+                        </div>
+                        <a href="../index.html#section_5" class="btn-quote"><i class="bi bi-chat-quote"></i> Request Quote</a>
+                    </div>
+                </article>
+
+                <!-- Croaker (Gulama) -->
+                <article class="product-card" data-category="fish">
+                    <div class="product-image">
+                        <img src="../images/products/croaker.jpg" alt="Croaker">
+                        <span class="product-badge">Grade A</span>
+                    </div>
+                    <div class="product-body">
+                        <h3>Croaker</h3>
+                        <button class="btn-view-specs"><span>View Specifications</span><i class="bi bi-plus"></i></button>
+                    </div>
+                    <div class="product-specs">
+                        <div class="specs-grid">
+                            <div class="spec-item"><span class="spec-label">Size Range</span><span class="spec-value">200-400g, 400-600g</span></div>
+                            <div class="spec-item"><span class="spec-label">Processing</span><span class="spec-value">Whole, Gutted, Fillet</span></div>
+                            <div class="spec-item"><span class="spec-label">Packaging</span><span class="spec-value">IQF, Block Frozen</span></div>
+                            <div class="spec-item"><span class="spec-label">Storage</span><span class="spec-value">-18°C Frozen</span></div>
+                        </div>
+                        <a href="../index.html#section_5" class="btn-quote"><i class="bi bi-chat-quote"></i> Request Quote</a>
+                    </div>
+                </article>
+
+                <!-- Parrotfish (Kakatua) -->
+                <article class="product-card" data-category="fish">
+                    <div class="product-image">
+                        <img src="../images/products/parrotfish.jpg" alt="Parrotfish">
+                        <span class="product-badge">Premium</span>
+                    </div>
+                    <div class="product-body">
+                        <h3>Parrotfish</h3>
+                        <button class="btn-view-specs"><span>View Specifications</span><i class="bi bi-plus"></i></button>
+                    </div>
+                    <div class="product-specs">
+                        <div class="specs-grid">
+                            <div class="spec-item"><span class="spec-label">Size Range</span><span class="spec-value">300-500g, 500g-1kg</span></div>
+                            <div class="spec-item"><span class="spec-label">Processing</span><span class="spec-value">Whole, Gutted</span></div>
+                            <div class="spec-item"><span class="spec-label">Packaging</span><span class="spec-value">IQF, Vacuum Sealed</span></div>
+                            <div class="spec-item"><span class="spec-label">Storage</span><span class="spec-value">-18°C Frozen</span></div>
+                        </div>
+                        <a href="../index.html#section_5" class="btn-quote"><i class="bi bi-chat-quote"></i> Request Quote</a>
+                    </div>
+                </article>
+
+                <!-- Scad (Layang) -->
+                <article class="product-card" data-category="fish">
+                    <div class="product-image">
+                        <img src="../images/products/scad.jpg" alt="Scad">
+                        <span class="product-badge">Grade A</span>
+                    </div>
+                    <div class="product-body">
+                        <h3>Scad</h3>
+                        <button class="btn-view-specs"><span>View Specifications</span><i class="bi bi-plus"></i></button>
+                    </div>
+                    <div class="product-specs">
+                        <div class="specs-grid">
+                            <div class="spec-item"><span class="spec-label">Size Range</span><span class="spec-value">60-80g, 80-120g</span></div>
+                            <div class="spec-item"><span class="spec-label">Processing</span><span class="spec-value">Whole Round, Gutted</span></div>
+                            <div class="spec-item"><span class="spec-label">Packaging</span><span class="spec-value">Block Frozen, IQF</span></div>
+                            <div class="spec-item"><span class="spec-label">Storage</span><span class="spec-value">-18°C Frozen</span></div>
+                        </div>
+                        <a href="../index.html#section_5" class="btn-quote"><i class="bi bi-chat-quote"></i> Request Quote</a>
+                    </div>
+                </article>
+
+                <!-- Squid (Cumi-Cumi) -->
+                <article class="product-card" data-category="cephalopod">
+                    <div class="product-image">
+                        <img src="../images/products/squid.jpg" alt="Squid">
+                        <span class="product-badge">Premium</span>
+                    </div>
+                    <div class="product-body">
+                        <h3>Squid</h3>
+                        <button class="btn-view-specs"><span>View Specifications</span><i class="bi bi-plus"></i></button>
+                    </div>
+                    <div class="product-specs">
+                        <div class="specs-grid">
+                            <div class="spec-item"><span class="spec-label">Size Range</span><span class="spec-value">8-12cm, 12-16cm, 16-20cm</span></div>
+                            <div class="spec-item"><span class="spec-label">Processing</span><span class="spec-value">Whole, Tube, T&T, Rings</span></div>
+                            <div class="spec-item"><span class="spec-label">Packaging</span><span class="spec-value">IQF, Block Frozen</span></div>
+                            <div class="spec-item"><span class="spec-label">Storage</span><span class="spec-value">-18°C Frozen</span></div>
+                        </div>
+                        <a href="../index.html#section_5" class="btn-quote"><i class="bi bi-chat-quote"></i> Request Quote</a>
+                    </div>
+                </article>
+
+                <!-- Octopus (Gurita) -->
+                <article class="product-card" data-category="cephalopod">
+                    <div class="product-image">
+                        <img src="../images/products/octopus.jpg" alt="Octopus">
+                        <span class="product-badge">Premium</span>
+                    </div>
+                    <div class="product-body">
+                        <h3>Octopus</h3>
+                        <button class="btn-view-specs"><span>View Specifications</span><i class="bi bi-plus"></i></button>
+                    </div>
+                    <div class="product-specs">
+                        <div class="specs-grid">
+                            <div class="spec-item"><span class="spec-label">Size Range</span><span class="spec-value">500g-1kg, 1-2kg, 2-4kg</span></div>
+                            <div class="spec-item"><span class="spec-label">Processing</span><span class="spec-value">Whole, Cleaned, Tentacles</span></div>
+                            <div class="spec-item"><span class="spec-label">Packaging</span><span class="spec-value">IQF, Block Frozen</span></div>
                             <div class="spec-item"><span class="spec-label">Storage</span><span class="spec-value">-18°C Frozen</span></div>
                         </div>
                         <a href="../index.html#section_5" class="btn-quote"><i class="bi bi-chat-quote"></i> Request Quote</a>
@@ -375,69 +388,102 @@
 </main>
 <footer class="enhanced-footer">
     <div class="container">
-        <div class="row footer-content justify-content-center">
-            <div class="col-lg-3 col-md-6 col-sm-6 mb-4 mb-lg-0 text-center">
-                <div class="footer-logo mb-3">
-                    <a class="navbar-brand d-flex align-items-center justify-content-center" href="../">
-                        <img src="../images/logo.png" class="navbar-brand-image img-fluid" alt="Oceanex">
-                        <span class="navbar-brand-text">Oceanex<small>Marine Industries</small></span>
-                    </a>
-                </div>
-                <p class="footer-description mb-3">Your trusted partner in premium seafood export and import.</p>
-                <div class="social-links justify-content-center">
-                    <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
-                    <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
-                    <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
-                    <a href="#" class="social-link"><i class="bi bi-whatsapp"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 mb-4 mb-lg-0 text-center">
-                <h5 class="footer-title">Quick Links</h5>
-                <ul class="footer-links">
-                    <li><a href="../">Home</a></li>
-                    <li><a href="../about">About Us</a></li>
-                    <li><a href="./">Products</a></li>
-                    <li><a href="../#section_4">Services</a></li>
-                    <li><a href="../#section_5">Contact</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 mb-4 mb-lg-0 text-center">
-                <h5 class="footer-title">Products</h5>
-                <ul class="footer-links">
-                    <li><a href="./">Premium Fish</a></li>
-                    <li><a href="./">Fresh Shrimp</a></li>
-                    <li><a href="./">Crab & Lobster</a></li>
-                    <li><a href="./">Shellfish</a></li>
-                    <li><a href="./">Frozen Seafood</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 mb-4 mb-lg-0 text-center d-none d-md-block footer-contact-col">
-                <h5 class="footer-title">Contact Us</h5>
-                <ul class="footer-contact">
-                    <li><i class="bi bi-geo-alt-fill"></i><span>123 Harbor Drive,<br>Seafood District, CA 90210</span></li>
-                    <li><i class="bi bi-telephone-fill"></i><a href="tel:+12345678900">+1 (234) 567-8900</a></li>
-                    <li><i class="bi bi-envelope-fill"></i><a href="mailto:info@oceanex.com">info@oceanex.com</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 mb-4 mb-lg-0 text-center">
-                <h5 class="footer-title">Business Hours</h5>
-                <ul class="footer-hours">
-                    <li><span class="day">Mon - Fri</span><span class="time">8:00 AM - 6:00 PM</span></li>
-                    <li><span class="day">Sat - Sun</span><span class="time">6:30 AM - 8:30 PM</span></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-12 text-center mb-3">
-                    <div class="footer-bottom-links">
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Terms of Service</a>
-                        <a href="#">Cookie Policy</a>
+        <div class="footer-content">
+            <div class="footer-grid">
+                <!-- Brand Column -->
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <a class="navbar-brand" href="../">
+                            <img src="../images/logo.png" class="navbar-brand-image img-fluid" alt="Oceanex Marine Industries">
+                            <span class="navbar-brand-text">
+                                Oceanex
+                                <small>Marine Industries</small>
+                            </span>
+                        </a>
+                    </div>
+                    <p class="footer-description">
+                        Your trusted partner in premium seafood export. We deliver quality frozen seafood to global B2B markets with certified excellence.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="WhatsApp">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
                     </div>
                 </div>
-                <div class="col-12 text-center">
-                    <p class="copyright-text mb-0">© 2026 Oceanex Marine Industries. All rights reserved.</p>
+
+                <!-- Quick Links Column -->
+                <div class="footer-column">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="../">Home</a></li>
+                        <li><a href="../about">About Us</a></li>
+                        <li><a href="./">Products</a></li>
+                        <li><a href="../#section_5">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Products Column -->
+                <div class="footer-column">
+                    <h5 class="footer-title">Products</h5>
+                    <ul class="footer-links">
+                        <li><a href="./">Premium Fish</a></li>
+                        <li><a href="./">Fresh Shrimp</a></li>
+                        <li><a href="./">Crab & Lobster</a></li>
+                        <li><a href="./">Frozen Seafood</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Column -->
+                <div class="footer-column footer-contact-column">
+                    <h5 class="footer-title">Contact Us</h5>
+                    <ul class="footer-contact">
+                        <li>
+                            <div class="footer-contact-icon">
+                                <i class="bi bi-geo-alt-fill"></i>
+                            </div>
+                            <span>Melati Street No.15, RT 03/RW.08,<br>Kedung Jaya, Tanah Sareal, Bogor</span>
+                        </li>
+                        <li>
+                            <div class="footer-contact-icon">
+                                <i class="bi bi-telephone-fill"></i>
+                            </div>
+                            <a href="tel:+6281291549791">+62 812 9154 9791</a>
+                        </li>
+                        <li>
+                            <div class="footer-contact-icon">
+                                <i class="bi bi-envelope-fill"></i>
+                            </div>
+                            <a href="mailto:info@oceanexmarine.com">info@oceanexmarine.com</a>
+                        </li>
+                    </ul>
+                    <div class="footer-badges">
+                        <span class="badge">HACCP</span>
+                        <span class="badge">FDA</span>
+                        <span class="badge">ISO 14001</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-inner">
+                <p class="copyright-text">
+                    © 2025 <strong>PT Hijau Mitra Sejati</strong> — Oceanex Marine Industries. All rights reserved.
+                </p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
                 </div>
             </div>
         </div>
