@@ -604,6 +604,7 @@ button.navbar-toggler span {
     font-size: 14px;
     line-height: 1.8;
     margin-bottom: 24px;
+    text-align: justify;
 }
 
 @media (max-width: 576px) {
