@@ -388,6 +388,25 @@ p, span, a, li, div, input, textarea, button, label {
     margin-left: auto;
 }
 
+/* PDF Icon Link in Navbar */
+.pdf-icon-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gold) !important;
+    font-size: 20px !important;
+    height: 40px;
+    width: 40px;
+    margin-right: 16px;
+    text-decoration: none !important;
+    transition: all var(--transition-fast) !important;
+}
+
+.pdf-icon-link:hover {
+    color: var(--orange) !important;
+    transform: scale(1.1);
+}
+
 /* Contact Us Button in Navbar */
 .btn-contact-nav {
     display: inline-flex;

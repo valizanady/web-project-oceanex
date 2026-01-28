@@ -13,6 +13,7 @@ const translations = {
         "nav.contact": "Contact",
         "nav.getQuote": "Get Quote",
         "nav.contactUs": "Contact Us",
+        "nav.downloadBrochure": "Download Brochure",
         
         // Hero Slides - SEO Optimized
         "hero.slide1.title1": "Preserving",
@@ -371,6 +372,7 @@ const translations = {
         "nav.contact": "联系我们",
         "nav.getQuote": "获取报价",
         "nav.contactUs": "联系我们",
+        "nav.downloadBrochure": "下载手册",
         
         // Hero Slides
         "hero.slide1.title1": "传递海洋精华",
@@ -732,6 +734,7 @@ const translations = {
         "nav.contact": "お問い合わせ",
         "nav.getQuote": "見積依頼",
         "nav.contactUs": "お問い合わせ",
+        "nav.downloadBrochure": "パンフレットダウンロード",
         
         // Hero Slides
         "hero.slide1.title1": "海の恵みを",
@@ -1079,6 +1082,7 @@ const translations = {
         "nav.contact": "Kontak",
         "nav.getQuote": "Minta Penawaran",
         "nav.contactUs": "Hubungi Kami",
+        "nav.downloadBrochure": "Unduh Brosur",
         
         // Hero Slides
         "hero.slide1.title1": "Hasil Laut Terbaik",
