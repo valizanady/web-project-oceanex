@@ -655,162 +655,330 @@ https://templatemo.com/tm-587-tiya-golf-club
             </section>
 
 
-            <!-- Trust Badges / Logo Carousel - Running Marquee -->
-            <section class="trust-carousel-section">
+            <!-- Process Showcase - Auto Sliding Gallery -->
+            <section class="process-showcase-section">
                 <div class="container">
-                    <div class="trust-carousel-header">
-                        <span class="trust-label" data-translate="trust.label">Trusted By Industry Leaders</span>
+                    <div class="process-showcase-header animate-on-scroll">
+                        <span class="section-label">Our Process</span>
+                        <h2>From Ocean to Your Market</h2>
+                        <p class="section-subtitle">State-of-the-art facilities ensuring quality at every step</p>
                     </div>
                 </div>
                 
-                <div class="trust-marquee-wrapper">
-                    <div class="trust-marquee">
-                        <!-- First Set -->
-                        <div class="trust-item">
-                            <img src="images/trust/trust-1.jpg" alt="Trusted Partner 1" loading="lazy">
+                <!-- Full-Width Slider -->
+                <div class="process-slider-wrapper">
+                    <div class="process-slider">
+                        <!-- Slide 1 -->
+                        <div class="process-slide active">
+                            <img src="images/trust/trust-1.jpg" alt="Fishing & Sourcing - 9,754 Affiliated Fishers" loading="lazy">
+                            <div class="process-slide-overlay"></div>
+                            <div class="process-slide-content">
+                                <span class="process-number">01</span>
+                                <h3>Fishing & Sourcing</h3>
+                                <p>9,754 affiliated fishers across Indonesia's rich marine waters</p>
+                            </div>
                         </div>
-                        <div class="trust-item">
-                            <img src="images/trust/trust-2.jpg" alt="Trusted Partner 2" loading="lazy">
+                        
+                        <!-- Slide 2 -->
+                        <div class="process-slide">
+                            <img src="images/trust/trust-2.jpg" alt="Cold Storage - 86,000 kg Capacity" loading="lazy">
+                            <div class="process-slide-overlay"></div>
+                            <div class="process-slide-content">
+                                <span class="process-number">02</span>
+                                <h3>Cold Storage</h3>
+                                <p>86,000 kg capacity with -25°C to -60°C temperature control</p>
+                            </div>
                         </div>
-                        <div class="trust-item">
-                            <img src="images/trust/trust-3.jpg" alt="Trusted Partner 3" loading="lazy">
+                        
+                        <!-- Slide 3 -->
+                        <div class="process-slide">
+                            <img src="images/trust/trust-3.jpg" alt="Processing - 30 MT/Month Capacity" loading="lazy">
+                            <div class="process-slide-overlay"></div>
+                            <div class="process-slide-content">
+                                <span class="process-number">03</span>
+                                <h3>Processing & Quality Control</h3>
+                                <p>HACCP certified facility with 30 MT/month processing capacity</p>
+                            </div>
                         </div>
-                        <div class="trust-item">
-                            <img src="images/trust/trust-4.jpg" alt="Trusted Partner 4" loading="lazy">
+                        
+                        <!-- Slide 4 -->
+                        <div class="process-slide">
+                            <img src="images/trust/trust-4.jpg" alt="Export & Delivery - Global Markets" loading="lazy">
+                            <div class="process-slide-overlay"></div>
+                            <div class="process-slide-content">
+                                <span class="process-number">04</span>
+                                <h3>Export & Delivery</h3>
+                                <p>82% acceptance rate to China, Japan, Korea, Vietnam & Australia</p>
+                            </div>
                         </div>
-                        <!-- Duplicate for seamless loop -->
-                        <div class="trust-item">
-                            <img src="images/trust/trust-1.jpg" alt="Trusted Partner 1" loading="lazy">
-                        </div>
-                        <div class="trust-item">
-                            <img src="images/trust/trust-2.jpg" alt="Trusted Partner 2" loading="lazy">
-                        </div>
-                        <div class="trust-item">
-                            <img src="images/trust/trust-3.jpg" alt="Trusted Partner 3" loading="lazy">
-                        </div>
-                        <div class="trust-item">
-                            <img src="images/trust/trust-4.jpg" alt="Trusted Partner 4" loading="lazy">
-                        </div>
+                    </div>
+                    
+                    <!-- Navigation Dots -->
+                    <div class="process-dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                        <span class="dot" data-slide="3"></span>
                     </div>
                 </div>
             </section>
 
             <style>
-                /* Trust Carousel - Running Marquee */
-                .trust-carousel-section {
-                    background: #fff;
-                    padding: 60px 0;
+                /* Process Showcase Section */
+                .process-showcase-section {
+                    background: #f8f9fa;
+                    padding: 80px 0 0;
                     overflow: hidden;
                 }
                 
-                .trust-carousel-header {
+                .process-showcase-header {
                     text-align: center;
-                    margin-bottom: 40px;
+                    margin-bottom: 60px;
                 }
                 
-                .trust-label {
+                .process-showcase-header .section-label {
                     display: inline-block;
                     font-size: 11px;
                     text-transform: uppercase;
                     letter-spacing: 3px;
-                    color: #062351;
+                    color: var(--accent-gold);
                     font-weight: 600;
-                    position: relative;
-                    padding: 0 30px;
+                    margin-bottom: 16px;
                 }
                 
-                .trust-label::before,
-                .trust-label::after {
-                    content: '';
+                .process-showcase-header h2 {
+                    font-size: 2.5rem;
+                    font-weight: 700;
+                    color: #062351;
+                    margin-bottom: 16px;
+                }
+                
+                .process-showcase-header .section-subtitle {
+                    color: #6b7280;
+                    font-size: 1.1rem;
+                    max-width: 600px;
+                    margin: 0 auto;
+                }
+                
+                /* Slider Wrapper - Full Width */
+                .process-slider-wrapper {
+                    position: relative;
+                    width: 100%;
+                    height: 500px;
+                    overflow: hidden;
+                }
+                
+                .process-slider {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                }
+                
+                /* Individual Slides */
+                .process-slide {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0;
+                    transition: opacity 1s ease-in-out;
+                    z-index: 0;
+                }
+                
+                .process-slide.active {
+                    opacity: 1;
+                    z-index: 1;
+                }
+                
+                .process-slide img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+                
+                .process-slide-overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(
+                        to right,
+                        rgba(6, 35, 81, 0.85) 0%,
+                        rgba(6, 35, 81, 0.6) 50%,
+                        rgba(6, 35, 81, 0.3) 100%
+                    );
+                }
+                
+                /* Slide Content */
+                .process-slide-content {
                     position: absolute;
                     top: 50%;
-                    width: 20px;
-                    height: 1px;
+                    left: 10%;
+                    transform: translateY(-50%);
+                    max-width: 500px;
+                    color: #fff;
+                    z-index: 2;
+                }
+                
+                .process-number {
+                    display: inline-block;
+                    font-size: 14px;
+                    font-weight: 700;
+                    color: var(--accent-gold);
+                    letter-spacing: 2px;
+                    margin-bottom: 16px;
+                    padding: 8px 20px;
+                    background: rgba(184, 134, 11, 0.2);
+                    border-radius: 30px;
+                    border: 1px solid var(--accent-gold);
+                }
+                
+                .process-slide-content h3 {
+                    font-size: 2.5rem;
+                    font-weight: 700;
+                    color: #fff;
+                    margin-bottom: 16px;
+                    line-height: 1.2;
+                }
+                
+                .process-slide-content p {
+                    font-size: 1.1rem;
+                    color: rgba(255, 255, 255, 0.9);
+                    line-height: 1.6;
+                }
+                
+                /* Navigation Dots */
+                .process-dots {
+                    position: absolute;
+                    bottom: 30px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    display: flex;
+                    gap: 12px;
+                    z-index: 10;
+                }
+                
+                .dot {
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                    background: rgba(255, 255, 255, 0.4);
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    border: 2px solid transparent;
+                }
+                
+                .dot:hover {
+                    background: rgba(255, 255, 255, 0.6);
+                    transform: scale(1.1);
+                }
+                
+                .dot.active {
                     background: var(--accent-gold);
+                    border-color: #fff;
+                    width: 32px;
+                    border-radius: 6px;
                 }
                 
-                .trust-label::before {
-                    left: 0;
-                }
-                
-                .trust-label::after {
-                    right: 0;
-                }
-                
-                /* Marquee Container */
-                .trust-marquee-wrapper {
-                    width: 100%;
-                    overflow: hidden;
-                    position: relative;
-                }
-                
-                .trust-marquee {
-                    display: flex;
-                    gap: 80px;
-                    animation: marqueeScroll 30s linear infinite;
-                    width: max-content;
-                }
-                
-                @keyframes marqueeScroll {
-                    0% {
-                        transform: translateX(0);
+                /* Responsive */
+                @media (max-width: 992px) {
+                    .process-slider-wrapper {
+                        height: 400px;
                     }
-                    100% {
-                        transform: translateX(-50%);
+                    
+                    .process-slide-content {
+                        left: 5%;
+                        max-width: 90%;
                     }
-                }
-                
-                /* Pause on hover */
-                .trust-marquee:hover {
-                    animation-play-state: paused;
-                }
-                
-                .trust-item {
-                    flex-shrink: 0;
-                    width: 200px;
-                    height: 120px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    background: #f8f9fa;
-                    border-radius: 12px;
-                    padding: 20px;
-                    transition: all 0.3s ease;
-                }
-                
-                .trust-item:hover {
-                    background: #fff;
-                    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-                    transform: translateY(-5px);
-                }
-                
-                .trust-item img {
-                    max-width: 100%;
-                    max-height: 80px;
-                    object-fit: contain;
-                    filter: grayscale(100%) opacity(0.7);
-                    transition: all 0.3s ease;
-                }
-                
-                .trust-item:hover img {
-                    filter: grayscale(0%) opacity(1);
+                    
+                    .process-slide-content h3 {
+                        font-size: 1.8rem;
+                    }
+                    
+                    .process-slide-content p {
+                        font-size: 1rem;
+                    }
                 }
                 
                 @media (max-width: 768px) {
-                    .trust-item {
-                        width: 150px;
-                        height: 90px;
+                    .process-slider-wrapper {
+                        height: 350px;
                     }
                     
-                    .trust-item img {
-                        max-height: 60px;
+                    .process-showcase-header h2 {
+                        font-size: 1.8rem;
                     }
                     
-                    .trust-marquee {
-                        gap: 40px;
+                    .process-slide-content h3 {
+                        font-size: 1.5rem;
+                    }
+                    
+                    .process-slide-content p {
+                        font-size: 0.9rem;
+                    }
+                    
+                    .process-slide-overlay {
+                        background: linear-gradient(
+                            to bottom,
+                            rgba(6, 35, 81, 0.7) 0%,
+                            rgba(6, 35, 81, 0.85) 100%
+                        );
                     }
                 }
             </style>
+            
+            <script>
+                // Auto-slide Process Showcase
+                (function() {
+                    const slides = document.querySelectorAll('.process-slide');
+                    const dots = document.querySelectorAll('.process-dots .dot');
+                    let currentSlide = 0;
+                    const slideInterval = 4000; // 4 seconds per slide
+                    
+                    function showSlide(index) {
+                        // Remove active class from all
+                        slides.forEach(slide => slide.classList.remove('active'));
+                        dots.forEach(dot => dot.classList.remove('active'));
+                        
+                        // Add active class to current
+                        slides[index].classList.add('active');
+                        dots[index].classList.add('active');
+                    }
+                    
+                    function nextSlide() {
+                        currentSlide = (currentSlide + 1) % slides.length;
+                        showSlide(currentSlide);
+                    }
+                    
+                    // Auto-advance slides
+                    let autoSlide = setInterval(nextSlide, slideInterval);
+                    
+                    // Manual navigation via dots
+                    dots.forEach((dot, index) => {
+                        dot.addEventListener('click', () => {
+                            currentSlide = index;
+                            showSlide(currentSlide);
+                            
+                            // Reset auto-slide timer
+                            clearInterval(autoSlide);
+                            autoSlide = setInterval(nextSlide, slideInterval);
+                        });
+                    });
+                    
+                    // Pause on hover
+                    const sliderWrapper = document.querySelector('.process-slider-wrapper');
+                    sliderWrapper.addEventListener('mouseenter', () => {
+                        clearInterval(autoSlide);
+                    });
+                    
+                    sliderWrapper.addEventListener('mouseleave', () => {
+                        autoSlide = setInterval(nextSlide, slideInterval);
+                    });
+                })();
+            </script>
 
 
             <!-- Statistics Section - Ocean Wave Design -->

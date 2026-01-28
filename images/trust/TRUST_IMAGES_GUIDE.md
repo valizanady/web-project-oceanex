@@ -1,13 +1,13 @@
-# Trust Carousel Images Guide
+# Process Showcase Images Guide
 
 ## 📸 Image Requirements
 
 ### File Names:
 ```
-trust-1.jpg
-trust-2.jpg
-trust-3.jpg
-trust-4.jpg
+trust-1.jpg → Fishing & Sourcing
+trust-2.jpg → Cold Storage
+trust-3.jpg → Processing & Quality Control
+trust-4.jpg → Export & Delivery
 ```
 
 ---
@@ -15,14 +15,346 @@ trust-4.jpg
 ## 🎨 Design Specifications
 
 ### Dimensions:
-- **Recommended Size**: 600px × 400px (width × height)
-- **Minimum Size**: 400px × 300px
-- **Maximum File Size**: 200KB per image
-- **Format**: JPG or PNG (JPG preferred for smaller file size)
+- **Recommended Size**: 1920px × 1080px (Full HD, 16:9 ratio)
+- **Minimum Size**: 1280px × 720px
+- **Maximum File Size**: 500KB per image (compress with TinyPNG)
+- **Format**: JPG (optimized for web)
 
 ### Aspect Ratio:
-- **3:2 ratio** (horizontal landscape)
-- Example: 600×400, 900×600, 1200×800
+- **16:9 ratio** (horizontal landscape) - IMPORTANT for full-width display
+- Example: 1920×1080, 1600×900, 1280×720
+
+---
+
+## 📋 What Photos to Use - PROCESS SHOWCASE
+
+### **trust-1.jpg - Fishing & Sourcing** 🎣
+**Content**: 
+- Fishing boats in Indonesian waters
+- Fishermen catching fish
+- Fresh fish on boat deck
+- Ocean/sea scene with boats
+
+**Message**: "9,754 affiliated fishers across Indonesia"
+
+**Alternative Ideas:**
+- Sunrise fishing scene
+- Fish market/auction
+- Traditional fishing methods
+- Fishing fleet docked at port
+
+**Where to Get:**
+- Take photos at Pluit harbor
+- Stock photos: Unsplash, Pexels (search "Indonesia fishing")
+- Your own fishing partner photos (with permission)
+
+---
+
+### **trust-2.jpg - Cold Storage** ❄️
+**Content**:
+- Cold storage facility interior
+- Freezer rooms with -25°C signage
+- Rows of frozen seafood boxes
+- Temperature monitoring equipment
+- Staff in cold storage gear
+
+**Message**: "86,000 kg capacity with temperature control"
+
+**Alternative Ideas:**
+- Forklift loading frozen products
+- Thermometer showing -25°C
+- Stacked boxes of frozen seafood
+- Modern refrigeration units
+
+**Where to Get:**
+- BEST: Take photos of YOUR actual cold storage facility
+- Stock photos: "industrial freezer", "cold storage warehouse"
+- Competitor website photos (for inspiration only, don't copy)
+
+---
+
+### **trust-3.jpg - Processing & Quality Control** 🔍
+**Content**:
+- Processing line workers (in uniforms, hair nets)
+- Fish being filleted/processed
+- Quality control inspection
+- HACCP certification visible on wall
+- Clean, professional facility
+
+**Message**: "HACCP certified with 30 MT/month capacity"
+
+**Alternative Ideas:**
+- Lab technician doing quality tests
+- Sorting fish by grade/size
+- Packaging line
+- Workers in full hygiene gear
+
+**Where to Get:**
+- BEST: Photos of YOUR processing facility
+- Stock photos: "food processing plant", "fish processing"
+- Schedule photoshoot at your facility (hire photographer $50-100)
+
+---
+
+### **trust-4.jpg - Export & Delivery** 🚢
+**Content**:
+- Container loading at port
+- Refrigerated truck/container
+- Cargo ship/shipping containers
+- Airport cargo terminal
+- Forklift loading pallets
+
+**Message**: "82% acceptance rate to global markets"
+
+**Alternative Ideas:**
+- World map with shipping routes
+- Packages ready for shipment
+- Customs clearance documents
+- Airplane cargo hold
+- Happy customer receiving shipment
+
+**Where to Get:**
+- Take photos at Jakarta port (Tanjung Priok)
+- Stock photos: "shipping container", "cargo port"
+- Logistics partner photos (with permission)
+
+---
+
+## 🎨 Photo Style Guidelines
+
+### Composition:
+- **Horizontal landscape** (16:9 ratio)
+- Main subject should be in **left or center** (text overlays on left)
+- Leave **negative space** on the left side for text
+- High resolution and sharp focus
+- Good lighting (bright, professional)
+
+### Colors:
+- Natural, realistic colors
+- Avoid heavy filters
+- Professional, industrial look
+- Blue/grey tones work well (matches brand)
+
+### Don't Use:
+- ❌ Portrait orientation photos
+- ❌ Blurry or low-quality images
+- ❌ Photos with existing text/watermarks
+- ❌ Cluttered backgrounds
+- ❌ Dark or underexposed photos
+
+---
+
+## 🛠️ How to Get These Photos
+
+### **Option 1: Take Your Own Photos** (BEST & FREE)
+1. **Schedule facility photoshoot:**
+   - Morning light is best
+   - Clean and organize area first
+   - Staff in proper uniforms
+   - Use smartphone (iPhone 12+ or Samsung S20+ is enough)
+
+2. **What to photograph:**
+   - Wide shots of facilities
+   - Action shots (people working)
+   - Equipment and technology
+   - Products and processes
+
+3. **Tips:**
+   - Take 50+ photos (choose best 4 later)
+   - Horizontal orientation only
+   - Multiple angles of same scene
+   - Natural lighting when possible
+
+---
+
+### **Option 2: Stock Photos** (QUICK START)
+
+**Free Stock Photo Sites:**
+- **Unsplash.com** - High quality, free commercial use
+- **Pexels.com** - Large selection, free
+- **Pixabay.com** - Free images and videos
+
+**Search Terms:**
+```
+trust-1: "fishing boat indonesia", "fishermen", "ocean fishing"
+trust-2: "cold storage warehouse", "industrial freezer", "refrigerated storage"
+trust-3: "food processing plant", "fish processing", "quality control lab"
+trust-4: "shipping container port", "cargo loading", "export logistics"
+```
+
+**How to Download:**
+1. Go to Unsplash.com
+2. Search term (e.g., "fishing boat")
+3. Filter: Landscape orientation
+4. Download largest size (usually 4K or 6K)
+5. Save as `trust-1.jpg`, etc.
+
+---
+
+### **Option 3: Hire Photographer** ($200-500)
+
+**What to Ask For:**
+- Industrial/commercial photography experience
+- 4 hours shoot at your facilities
+- Minimum 50 edited photos delivered
+- High resolution (4K)
+- Commercial usage rights
+
+**Where to Find:**
+- Instagram: #jakartaphotographer #industrialphotography
+- Fiverr.com (search "industrial photography")
+- Local photography studios
+- Google "industrial photographer Jakarta"
+
+---
+
+## 📐 Image Editing & Optimization
+
+### **Step 1: Resize to Correct Dimensions**
+
+**Using Photoshop/GIMP:**
+1. Open image
+2. Image → Image Size
+3. Set to: 1920px width × 1080px height
+4. Maintain aspect ratio: OFF (crop if needed)
+5. Save as JPG
+
+**Using Online Tool (Easiest):**
+1. Go to: https://www.iloveimg.com/resize-image
+2. Upload image
+3. Select "Resize by pixels"
+4. Enter: 1920 × 1080
+5. Download
+
+---
+
+### **Step 2: Optimize File Size**
+
+**Goal**: Each image under 500KB
+
+**Using TinyPNG (BEST):**
+1. Go to: https://tinypng.com/
+2. Upload your 4 images
+3. Download compressed versions
+4. Usually reduces 70% file size with no visible quality loss
+
+**Using Photoshop:**
+1. File → Export → Save for Web
+2. Format: JPEG
+3. Quality: 60-80
+4. Check file size (should be <500KB)
+
+---
+
+### **Step 3: Check Final Images**
+
+Before uploading, verify:
+- [ ] Dimensions: 1920×1080 (or similar 16:9 ratio)
+- [ ] File size: Under 500KB each
+- [ ] File names: exactly `trust-1.jpg`, `trust-2.jpg`, `trust-3.jpg`, `trust-4.jpg`
+- [ ] Format: JPG (not PNG or HEIC)
+- [ ] Quality: Clear, sharp, professional
+- [ ] Orientation: Horizontal landscape
+- [ ] Left side has space for text overlay
+
+---
+
+## 🚀 QUICK START (30 Minutes)
+
+**Fastest way to get this done:**
+
+1. **Go to Unsplash.com**
+2. **Download these 4 images:**
+   - Search "fishing boat ocean" → save best one as `trust-1.jpg`
+   - Search "cold storage warehouse" → save best one as `trust-2.jpg`
+   - Search "food processing plant" → save best one as `trust-3.jpg`
+   - Search "shipping container port" → save best one as `trust-4.jpg`
+
+3. **Resize all to 1920×1080:**
+   - Use iloveimg.com/resize-image
+
+4. **Compress:**
+   - Upload all 4 to tinypng.com
+   - Download compressed versions
+
+5. **Upload to `/images/trust/` folder**
+
+6. **Refresh website** - Done! ✅
+
+---
+
+## 🎯 Pro Tips
+
+### **For Best Results:**
+1. Use YOUR actual facility photos (builds authenticity)
+2. Include people/action (more engaging than empty rooms)
+3. Show scale (large facilities, many workers = trust)
+4. Display certifications visible in photos
+5. Mix close-ups and wide shots
+
+### **Text Overlay Friendly:**
+- Keep main subjects in **center or right side**
+- **Left 30%** of image should be darker or plain
+- Avoid busy patterns on left side
+- If photo is too bright, gradient overlay will help (already in code)
+
+---
+
+## 📁 File Placement
+
+Save all images in this folder:
+```
+/images/trust/
+├── trust-1.jpg (Fishing & Sourcing)
+├── trust-2.jpg (Cold Storage)
+├── trust-3.jpg (Processing & QC)
+└── trust-4.jpg (Export & Delivery)
+```
+
+---
+
+## 🔄 Current vs. New Setup
+
+**Old Version**: Small logo carousel (200×120px)  
+**New Version**: Full-width auto-sliding showcase (1920×1080px, 500px height display)
+
+**What Changed:**
+- ✅ Much bigger, more dramatic display
+- ✅ Auto-slides every 4 seconds
+- ✅ Full-width across screen
+- ✅ Text overlays explaining each step
+- ✅ Professional gradient overlay
+- ✅ Clickable dots for manual navigation
+- ✅ Pauses on hover
+
+---
+
+## ✅ Final Checklist
+
+Before going live:
+- [ ] All 4 images uploaded to `/images/trust/`
+- [ ] File names are exactly: `trust-1.jpg`, `trust-2.jpg`, etc.
+- [ ] Images are 16:9 ratio (1920×1080 or similar)
+- [ ] Each file under 500KB
+- [ ] Photos are high quality and professional
+- [ ] Tested on mobile and desktop
+- [ ] Auto-slide is working (4 seconds interval)
+- [ ] Navigation dots are clickable
+
+---
+
+## 📞 Need Help?
+
+**Quick Solutions:**
+1. **Can't take photos?** → Use Unsplash stock photos (30 min)
+2. **Photos too large?** → Use TinyPNG.com to compress
+3. **Wrong size?** → Use iloveimg.com to resize
+4. **Need photographer?** → Search Instagram #jakartaphotographer
+
+---
+
+**Last Updated**: 2025-01-28  
+**Section**: Process Showcase (Auto-Sliding Gallery)
 
 ---
 
