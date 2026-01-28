@@ -32,6 +32,7 @@ const translations = {
         "hero.contact": "Get In Touch",
         
         // Trust Badges
+        "trust.label": "Trusted By Industry Leaders",
         "trust.haccp": "HACCP Certified",
         "trust.haccpSub": "Food Safety",
         "trust.fda": "FDA Approved",
@@ -391,6 +392,7 @@ const translations = {
         "hero.contact": "联系我们",
         
         // Trust Badges
+        "trust.label": "行业领先企业信赖之选",
         "trust.haccp": "HACCP认证",
         "trust.haccpSub": "食品安全",
         "trust.fda": "FDA批准",
@@ -753,6 +755,7 @@ const translations = {
         "hero.contact": "お問い合わせ",
         
         // Trust Badges
+        "trust.label": "業界リーダーからの信頼",
         "trust.haccp": "HACCP認証",
         "trust.haccpSub": "食品安全",
         "trust.fda": "FDA承認",
@@ -1101,6 +1104,7 @@ const translations = {
         "hero.contact": "Hubungi Kami",
         
         // Trust Badges
+        "trust.label": "Dipercaya oleh Pelaku Industri Terkemuka",
         "trust.haccp": "Tersertifikasi HACCP",
         "trust.haccpSub": "Keamanan Pangan",
         "trust.fda": "Lolos FDA",

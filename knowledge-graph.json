@@ -1,0 +1,209 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://oceanexmarine.com/#organization",
+      "name": "Oceanex Marine Industries",
+      "alternateName": "PT Hijau Mitra Sejati",
+      "legalName": "PT Hijau Mitra Sejati",
+      "url": "https://oceanexmarine.com",
+      "logo": "https://oceanexmarine.com/images/logo2.png",
+      "foundingDate": "2020",
+      "description": "Leading Indonesian seafood supplier and exporter specializing in premium frozen tuna, red snapper, squid and octopus. HACCP, FDA & ISO 14001 certified B2B supplier to Asia and Oceania markets.",
+      "slogan": "Connecting Oceans to Markets",
+      "knowsAbout": [
+        "Seafood Export",
+        "Frozen Fish Supply",
+        "Tuna Export Indonesia",
+        "B2B Seafood Trading",
+        "HACCP Certified Seafood",
+        "Sustainable Fishing",
+        "Cold Chain Management",
+        "Marine Product Distribution",
+        "Indonesian Seafood Industry",
+        "Asian Seafood Markets"
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "certificate",
+          "name": "HACCP Certification",
+          "description": "Hazard Analysis Critical Control Points - Food Safety System"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "certificate",
+          "name": "FDA Registration",
+          "description": "U.S. Food and Drug Administration Registered Facility"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "certificate",
+          "name": "ISO 14001",
+          "description": "Environmental Management System Certification"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Jl. Dermaga Raya No.12, Pluit",
+        "addressLocality": "Jakarta Utara",
+        "addressRegion": "DKI Jakarta",
+        "postalCode": "14450",
+        "addressCountry": "ID"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -6.1044929,
+        "longitude": 106.7753745
+      },
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+62-812-9154-9791",
+          "contactType": "sales",
+          "email": "info@oceanexmarine.com",
+          "areaServed": [
+            "ID", "CN", "JP", "KR", "VN", "AU", "SG", "MY", "TW", "HK", "TH", "PH"
+          ],
+          "availableLanguage": ["en", "id", "zh", "ja"]
+        }
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/company/oceanexmarine",
+        "https://www.facebook.com/oceanexmarine",
+        "https://www.instagram.com/oceanexmarine"
+      ],
+      "numberOfEmployees": {
+        "@type": "QuantitativeValue",
+        "value": 78
+      },
+      "areaServed": [
+        {"@type": "Country", "name": "Indonesia"},
+        {"@type": "Country", "name": "China"},
+        {"@type": "Country", "name": "Japan"},
+        {"@type": "Country", "name": "South Korea"},
+        {"@type": "Country", "name": "Vietnam"},
+        {"@type": "Country", "name": "Australia"},
+        {"@type": "Country", "name": "Singapore"},
+        {"@type": "Country", "name": "Malaysia"},
+        {"@type": "Country", "name": "Taiwan"},
+        {"@type": "Country", "name": "Hong Kong"}
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://oceanexmarine.com/product/#yellowfin-tuna",
+      "name": "Yellowfin Tuna",
+      "description": "Premium grade frozen yellowfin tuna from Indonesian waters. HACCP certified, available in whole, loin, and steak cuts. Ideal for sashimi, sushi, and food processing.",
+      "category": "Frozen Seafood",
+      "brand": {
+        "@id": "https://oceanexmarine.com/#organization"
+      },
+      "manufacturer": {
+        "@id": "https://oceanexmarine.com/#organization"
+      },
+      "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock",
+        "price": "Contact for pricing",
+        "priceCurrency": "USD",
+        "priceValidUntil": "2026-12-31",
+        "url": "https://oceanexmarine.com/product/",
+        "seller": {
+          "@id": "https://oceanexmarine.com/#organization"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://oceanexmarine.com/product/#red-snapper",
+      "name": "Red Snapper",
+      "description": "Fresh-frozen red snapper from Indonesian waters. FDA registered facility. Available whole and filleted for export to global markets.",
+      "category": "Frozen Seafood",
+      "brand": {
+        "@id": "https://oceanexmarine.com/#organization"
+      },
+      "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock",
+        "price": "Contact for pricing",
+        "priceCurrency": "USD"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://oceanexmarine.com/product/#squid",
+      "name": "Squid",
+      "description": "Premium frozen squid processed with IQF technology. Multiple size grades available. Exported to China, Japan, Korea markets.",
+      "category": "Frozen Seafood",
+      "brand": {
+        "@id": "https://oceanexmarine.com/#organization"
+      },
+      "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock",
+        "price": "Contact for pricing",
+        "priceCurrency": "USD"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://oceanexmarine.com/product/#octopus",
+      "name": "Octopus",
+      "description": "High-quality frozen octopus from Indonesian waters. Whole and tentacle options available. Ideal for Asian and Mediterranean cuisines.",
+      "category": "Frozen Seafood",
+      "brand": {
+        "@id": "https://oceanexmarine.com/#organization"
+      },
+      "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock",
+        "price": "Contact for pricing",
+        "priceCurrency": "USD"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://oceanexmarine.com/#service",
+      "serviceType": "B2B Seafood Export",
+      "provider": {
+        "@id": "https://oceanexmarine.com/#organization"
+      },
+      "areaServed": [
+        {"@type": "Country", "name": "China"},
+        {"@type": "Country", "name": "Japan"},
+        {"@type": "Country", "name": "South Korea"},
+        {"@type": "Country", "name": "Vietnam"},
+        {"@type": "Country", "name": "Australia"}
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Frozen Seafood Export Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Wholesale Frozen Tuna Export"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Custom Seafood Processing"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Cold Chain Logistics"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
