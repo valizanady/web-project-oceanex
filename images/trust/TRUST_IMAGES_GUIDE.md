@@ -1,6 +1,6 @@
-# Process Showcase Images Guide
+# Process Showcase Images Guide - CARD SLIDER VERSION
 
-## 📸 Image Requirements
+## 📸 Image Requirements (OPTIMIZED & COMPRESSED)
 
 ### File Names:
 ```
@@ -12,17 +12,24 @@ trust-4.jpg → Export & Delivery
 
 ---
 
-## 🎨 Design Specifications
+## 🎨 Design Specifications (COMPRESSED SIZE)
 
 ### Dimensions:
-- **Recommended Size**: 1920px × 1080px (Full HD, 16:9 ratio)
-- **Minimum Size**: 1280px × 720px
-- **Maximum File Size**: 500KB per image (compress with TinyPNG)
+- **Recommended Size**: 900px × 600px (3:2 ratio)
+- **Minimum Size**: 800px × 533px
+- **Maximum File Size**: 200KB per image (heavily compressed!)
 - **Format**: JPG (optimized for web)
 
 ### Aspect Ratio:
-- **16:9 ratio** (horizontal landscape) - IMPORTANT for full-width display
-- Example: 1920×1080, 1600×900, 1280×720
+- **3:2 ratio** (horizontal landscape)
+- Example: 900×600, 1200×800, 1500×1000
+
+### Why This Size?
+- ✅ Card display max-width: 900px
+- ✅ Image height in card: 400px (desktop)
+- ✅ Smaller file = faster loading
+- ✅ Good quality on all devices
+- ✅ Total 4 images = ~800KB (very light!)
 
 ---
 

@@ -655,7 +655,7 @@ https://templatemo.com/tm-587-tiya-golf-club
             </section>
 
 
-            <!-- Process Showcase - Auto Sliding Gallery -->
+            <!-- Process Showcase - Card Slider with Arrows -->
             <section class="process-showcase-section">
                 <div class="container">
                     <div class="process-showcase-header animate-on-scroll">
@@ -663,71 +663,76 @@ https://templatemo.com/tm-587-tiya-golf-club
                         <h2>From Ocean to Your Market</h2>
                         <p class="section-subtitle">State-of-the-art facilities ensuring quality at every step</p>
                     </div>
-                </div>
-                
-                <!-- Full-Width Slider -->
-                <div class="process-slider-wrapper">
-                    <div class="process-slider">
-                        <!-- Slide 1 -->
-                        <div class="process-slide active">
-                            <img src="images/trust/trust-1.jpg" alt="Fishing & Sourcing - 9,754 Affiliated Fishers" loading="lazy">
-                            <div class="process-slide-overlay"></div>
-                            <div class="process-slide-content">
-                                <span class="process-number">01</span>
-                                <h3>Fishing & Sourcing</h3>
-                                <p>9,754 affiliated fishers across Indonesia's rich marine waters</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Slide 2 -->
-                        <div class="process-slide">
-                            <img src="images/trust/trust-2.jpg" alt="Cold Storage - 86,000 kg Capacity" loading="lazy">
-                            <div class="process-slide-overlay"></div>
-                            <div class="process-slide-content">
-                                <span class="process-number">02</span>
-                                <h3>Cold Storage</h3>
-                                <p>86,000 kg capacity with -25°C to -60°C temperature control</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Slide 3 -->
-                        <div class="process-slide">
-                            <img src="images/trust/trust-3.jpg" alt="Processing - 30 MT/Month Capacity" loading="lazy">
-                            <div class="process-slide-overlay"></div>
-                            <div class="process-slide-content">
-                                <span class="process-number">03</span>
-                                <h3>Processing & Quality Control</h3>
-                                <p>HACCP certified facility with 30 MT/month processing capacity</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Slide 4 -->
-                        <div class="process-slide">
-                            <img src="images/trust/trust-4.jpg" alt="Export & Delivery - Global Markets" loading="lazy">
-                            <div class="process-slide-overlay"></div>
-                            <div class="process-slide-content">
-                                <span class="process-number">04</span>
-                                <h3>Export & Delivery</h3>
-                                <p>82% acceptance rate to China, Japan, Korea, Vietnam & Australia</p>
-                            </div>
-                        </div>
-                    </div>
                     
-                    <!-- Navigation Dots -->
-                    <div class="process-dots">
-                        <span class="dot active" data-slide="0"></span>
-                        <span class="dot" data-slide="1"></span>
-                        <span class="dot" data-slide="2"></span>
-                        <span class="dot" data-slide="3"></span>
+                    <!-- Card Slider with Arrow Navigation -->
+                    <div class="process-card-slider">
+                        <!-- Previous Arrow -->
+                        <button class="slider-arrow slider-arrow-prev" aria-label="Previous slide">
+                            <i class="bi bi-chevron-left"></i>
+                        </button>
+                        
+                        <!-- Cards Container -->
+                        <div class="process-cards-wrapper">
+                            <div class="process-cards">
+                                <!-- Card 1 -->
+                                <div class="process-card active">
+                                    <div class="process-card-image">
+                                        <img src="images/trust/trust-1.jpg" alt="Fishing & Sourcing" loading="lazy">
+                                        <div class="process-card-overlay"></div>
+                                        <span class="process-badge">01</span>
+                                    </div>
+                                </div>
+                                
+                                <!-- Card 2 -->
+                                <div class="process-card">
+                                    <div class="process-card-image">
+                                        <img src="images/trust/trust-2.jpg" alt="Cold Storage" loading="lazy">
+                                        <div class="process-card-overlay"></div>
+                                        <span class="process-badge">02</span>
+                                    </div>
+                                </div>
+                                
+                                <!-- Card 3 -->
+                                <div class="process-card">
+                                    <div class="process-card-image">
+                                        <img src="images/trust/trust-3.jpg" alt="Processing & Quality Control" loading="lazy">
+                                        <div class="process-card-overlay"></div>
+                                        <span class="process-badge">03</span>
+                                    </div>
+                                </div>
+                                
+                                <!-- Card 4 -->
+                                <div class="process-card">
+                                    <div class="process-card-image">
+                                        <img src="images/trust/trust-4.jpg" alt="Export & Delivery" loading="lazy">
+                                        <div class="process-card-overlay"></div>
+                                        <span class="process-badge">04</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Next Arrow -->
+                        <button class="slider-arrow slider-arrow-next" aria-label="Next slide">
+                            <i class="bi bi-chevron-right"></i>
+                        </button>
+                        
+                        <!-- Navigation Dots -->
+                        <div class="process-dots">
+                            <span class="dot active" data-slide="0"></span>
+                            <span class="dot" data-slide="1"></span>
+                            <span class="dot" data-slide="2"></span>
+                            <span class="dot" data-slide="3"></span>
+                        </div>
                     </div>
                 </div>
             </section>
 
             <style>
-                /* Process Showcase Section */
+                /* Process Showcase Section - Card Style */
                 .process-showcase-section {
                     background: #f8f9fa;
-                    padding: 80px 0 0;
+                    padding: 80px 0;
                     overflow: hidden;
                 }
                 
@@ -760,223 +765,339 @@ https://templatemo.com/tm-587-tiya-golf-club
                     margin: 0 auto;
                 }
                 
-                /* Slider Wrapper - Full Width */
-                .process-slider-wrapper {
+                /* Card Slider Container */
+                .process-card-slider {
+                    position: relative;
+                    max-width: 900px;
+                    margin: 0 auto;
+                    padding: 0 60px;
+                }
+                
+                .process-cards-wrapper {
+                    overflow: hidden;
+                    border-radius: 16px;
+                }
+                
+                .process-cards {
+                    display: flex;
+                    transition: transform 0.5s ease-in-out;
+                }
+                
+                /* Individual Process Card */
+                .process-card {
+                    min-width: 100%;
+                    flex-shrink: 0;
+                    background: #fff;
+                    border-radius: 16px;
+                    overflow: hidden;
+                    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+                    opacity: 0.5;
+                    transform: scale(0.95);
+                    transition: all 0.5s ease;
+                }
+                
+                .process-card.active {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+                
+                /* Card Image */
+                .process-card-image {
                     position: relative;
                     width: 100%;
-                    height: 500px;
+                    height: 400px;
                     overflow: hidden;
                 }
                 
-                .process-slider {
-                    position: relative;
-                    width: 100%;
-                    height: 100%;
-                }
-                
-                /* Individual Slides */
-                .process-slide {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    opacity: 0;
-                    transition: opacity 1s ease-in-out;
-                    z-index: 0;
-                }
-                
-                .process-slide.active {
-                    opacity: 1;
-                    z-index: 1;
-                }
-                
-                .process-slide img {
+                .process-card-image img {
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
                     object-position: center;
+                    transition: transform 0.5s ease;
                 }
                 
-                .process-slide-overlay {
+                .process-card:hover .process-card-image img {
+                    transform: scale(1.05);
+                }
+                
+                .process-card-overlay {
                     position: absolute;
                     top: 0;
                     left: 0;
                     width: 100%;
                     height: 100%;
                     background: linear-gradient(
-                        to right,
-                        rgba(6, 35, 81, 0.85) 0%,
-                        rgba(6, 35, 81, 0.6) 50%,
-                        rgba(6, 35, 81, 0.3) 100%
+                        to bottom,
+                        transparent 0%,
+                        rgba(6, 35, 81, 0.3) 50%,
+                        rgba(6, 35, 81, 0.7) 100%
                     );
                 }
                 
-                /* Slide Content */
-                .process-slide-content {
+                /* Process Badge */
+                .process-badge {
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                    width: 60px;
+                    height: 60px;
+                    background: var(--accent-gold);
+                    color: #062351;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    z-index: 2;
+                    box-shadow: 0 4px 12px rgba(184, 134, 11, 0.3);
+                }
+                
+                /* Card Content */
+                .process-card-content {
+                    padding: 32px;
+                    text-align: center;
+                }
+                
+                .process-card-content h3 {
+                    font-size: 1.75rem;
+                    font-weight: 700;
+                    color: #062351;
+                    margin-bottom: 12px;
+                }
+                
+                .process-card-content p {
+                    color: #6b7280;
+                    font-size: 1rem;
+                    line-height: 1.6;
+                }
+                
+                /* Arrow Navigation */
+                .slider-arrow {
                     position: absolute;
                     top: 50%;
-                    left: 10%;
                     transform: translateY(-50%);
-                    max-width: 500px;
-                    color: #fff;
-                    z-index: 2;
-                }
-                
-                .process-number {
-                    display: inline-block;
-                    font-size: 14px;
-                    font-weight: 700;
+                    width: 50px;
+                    height: 50px;
+                    background: #fff;
+                    border: 2px solid var(--accent-gold);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    z-index: 10;
+                    transition: all 0.3s ease;
                     color: var(--accent-gold);
-                    letter-spacing: 2px;
-                    margin-bottom: 16px;
-                    padding: 8px 20px;
-                    background: rgba(184, 134, 11, 0.2);
-                    border-radius: 30px;
-                    border: 1px solid var(--accent-gold);
+                    font-size: 1.5rem;
                 }
                 
-                .process-slide-content h3 {
-                    font-size: 2.5rem;
-                    font-weight: 700;
+                .slider-arrow:hover {
+                    background: var(--accent-gold);
                     color: #fff;
-                    margin-bottom: 16px;
-                    line-height: 1.2;
+                    transform: translateY(-50%) scale(1.1);
+                    box-shadow: 0 4px 12px rgba(184, 134, 11, 0.3);
                 }
                 
-                .process-slide-content p {
-                    font-size: 1.1rem;
-                    color: rgba(255, 255, 255, 0.9);
-                    line-height: 1.6;
+                .slider-arrow-prev {
+                    left: 0;
+                }
+                
+                .slider-arrow-next {
+                    right: 0;
                 }
                 
                 /* Navigation Dots */
                 .process-dots {
-                    position: absolute;
-                    bottom: 30px;
-                    left: 50%;
-                    transform: translateX(-50%);
                     display: flex;
+                    justify-content: center;
                     gap: 12px;
-                    z-index: 10;
+                    margin-top: 32px;
                 }
                 
                 .dot {
                     width: 12px;
                     height: 12px;
                     border-radius: 50%;
-                    background: rgba(255, 255, 255, 0.4);
+                    background: #d1d5db;
                     cursor: pointer;
                     transition: all 0.3s ease;
                     border: 2px solid transparent;
                 }
                 
                 .dot:hover {
-                    background: rgba(255, 255, 255, 0.6);
+                    background: #9ca3af;
                     transform: scale(1.1);
                 }
                 
                 .dot.active {
                     background: var(--accent-gold);
-                    border-color: #fff;
+                    border-color: var(--accent-gold);
                     width: 32px;
                     border-radius: 6px;
                 }
                 
                 /* Responsive */
                 @media (max-width: 992px) {
-                    .process-slider-wrapper {
-                        height: 400px;
+                    .process-card-slider {
+                        padding: 0 50px;
                     }
                     
-                    .process-slide-content {
-                        left: 5%;
-                        max-width: 90%;
+                    .process-card-image {
+                        height: 320px;
                     }
                     
-                    .process-slide-content h3 {
-                        font-size: 1.8rem;
+                    .process-card-content h3 {
+                        font-size: 1.5rem;
                     }
                     
-                    .process-slide-content p {
-                        font-size: 1rem;
+                    .slider-arrow {
+                        width: 40px;
+                        height: 40px;
+                        font-size: 1.2rem;
                     }
                 }
                 
                 @media (max-width: 768px) {
-                    .process-slider-wrapper {
-                        height: 350px;
+                    .process-card-slider {
+                        padding: 0 40px;
                     }
                     
                     .process-showcase-header h2 {
                         font-size: 1.8rem;
                     }
                     
-                    .process-slide-content h3 {
-                        font-size: 1.5rem;
+                    .process-card-image {
+                        height: 280px;
                     }
                     
-                    .process-slide-content p {
+                    .process-card-content {
+                        padding: 24px;
+                    }
+                    
+                    .process-card-content h3 {
+                        font-size: 1.3rem;
+                    }
+                    
+                    .process-card-content p {
                         font-size: 0.9rem;
                     }
                     
-                    .process-slide-overlay {
-                        background: linear-gradient(
-                            to bottom,
-                            rgba(6, 35, 81, 0.7) 0%,
-                            rgba(6, 35, 81, 0.85) 100%
-                        );
+                    .process-badge {
+                        width: 50px;
+                        height: 50px;
+                        font-size: 1.2rem;
+                        top: 16px;
+                        right: 16px;
+                    }
+                }
+                
+                @media (max-width: 576px) {
+                    .process-card-slider {
+                        padding: 0 35px;
+                    }
+                    
+                    .slider-arrow {
+                        width: 35px;
+                        height: 35px;
+                        font-size: 1rem;
+                    }
+                    
+                    .process-card-image {
+                        height: 240px;
                     }
                 }
             </style>
             
             <script>
-                // Auto-slide Process Showcase
+                // Process Card Slider with Arrow Navigation
                 (function() {
-                    const slides = document.querySelectorAll('.process-slide');
+                    const cards = document.querySelectorAll('.process-card');
+                    const cardsContainer = document.querySelector('.process-cards');
                     const dots = document.querySelectorAll('.process-dots .dot');
+                    const prevBtn = document.querySelector('.slider-arrow-prev');
+                    const nextBtn = document.querySelector('.slider-arrow-next');
                     let currentSlide = 0;
-                    const slideInterval = 4000; // 4 seconds per slide
+                    const slideInterval = 5000; // 5 seconds per slide
+                    let autoSlide;
                     
                     function showSlide(index) {
-                        // Remove active class from all
-                        slides.forEach(slide => slide.classList.remove('active'));
+                        // Remove active class from all cards and dots
+                        cards.forEach(card => card.classList.remove('active'));
                         dots.forEach(dot => dot.classList.remove('active'));
                         
                         // Add active class to current
-                        slides[index].classList.add('active');
+                        cards[index].classList.add('active');
                         dots[index].classList.add('active');
+                        
+                        // Move cards container
+                        const offset = -index * 100;
+                        cardsContainer.style.transform = `translateX(${offset}%)`;
                     }
                     
                     function nextSlide() {
-                        currentSlide = (currentSlide + 1) % slides.length;
+                        currentSlide = (currentSlide + 1) % cards.length;
+                        showSlide(currentSlide);
+                    }
+                    
+                    function prevSlide() {
+                        currentSlide = (currentSlide - 1 + cards.length) % cards.length;
                         showSlide(currentSlide);
                     }
                     
                     // Auto-advance slides
-                    let autoSlide = setInterval(nextSlide, slideInterval);
+                    function startAutoSlide() {
+                        autoSlide = setInterval(nextSlide, slideInterval);
+                    }
+                    
+                    function stopAutoSlide() {
+                        clearInterval(autoSlide);
+                    }
+                    
+                    // Arrow button click events
+                    nextBtn.addEventListener('click', () => {
+                        nextSlide();
+                        stopAutoSlide();
+                        startAutoSlide(); // Restart timer
+                    });
+                    
+                    prevBtn.addEventListener('click', () => {
+                        prevSlide();
+                        stopAutoSlide();
+                        startAutoSlide(); // Restart timer
+                    });
                     
                     // Manual navigation via dots
                     dots.forEach((dot, index) => {
                         dot.addEventListener('click', () => {
                             currentSlide = index;
                             showSlide(currentSlide);
-                            
-                            // Reset auto-slide timer
-                            clearInterval(autoSlide);
-                            autoSlide = setInterval(nextSlide, slideInterval);
+                            stopAutoSlide();
+                            startAutoSlide(); // Restart timer
                         });
                     });
                     
                     // Pause on hover
-                    const sliderWrapper = document.querySelector('.process-slider-wrapper');
-                    sliderWrapper.addEventListener('mouseenter', () => {
-                        clearInterval(autoSlide);
+                    const sliderWrapper = document.querySelector('.process-card-slider');
+                    sliderWrapper.addEventListener('mouseenter', stopAutoSlide);
+                    sliderWrapper.addEventListener('mouseleave', startAutoSlide);
+                    
+                    // Keyboard navigation
+                    document.addEventListener('keydown', (e) => {
+                        if (e.key === 'ArrowLeft') {
+                            prevSlide();
+                            stopAutoSlide();
+                            startAutoSlide();
+                        } else if (e.key === 'ArrowRight') {
+                            nextSlide();
+                            stopAutoSlide();
+                            startAutoSlide();
+                        }
                     });
                     
-                    sliderWrapper.addEventListener('mouseleave', () => {
-                        autoSlide = setInterval(nextSlide, slideInterval);
-                    });
+                    // Start auto-slide on page load
+                    startAutoSlide();
                 })();
             </script>
 
