@@ -582,6 +582,193 @@ https://templatemo.com/tm-587-tiya-golf-club
                     </div>
                 </div>
             </section>
+
+            <!-- Tuna Series Branding Section -->
+            <section class="tuna-series-section">
+                <div class="container">
+                    <div class="tuna-series-wrapper">
+                        <div class="row align-items-center">
+                            <div class="col-lg-5">
+                                <div class="tuna-series-content animate-on-scroll">
+                                    <span class="tuna-series-label">Premium Collection</span>
+                                    <h2 class="tuna-series-title">Tuna Series</h2>
+                                    <p class="tuna-series-desc">Discover our premium tuna collection — from ocean to your market with uncompromised quality and freshness.</p>
+                                    <a href="https://drive.google.com/file/d/1QE6KsfmkeAhEkLk0lz4u1QzdpfKM3mih/view" target="_blank" class="tuna-series-btn">
+                                        See Details <i class="bi bi-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="tuna-series-video animate-on-scroll">
+                                    <div class="video-wrapper">
+                                        <iframe 
+                                            src="https://drive.google.com/file/d/1QE6KsfmkeAhEkLk0lz4u1QzdpfKM3mih/preview" 
+                                            allow="autoplay; encrypted-media" 
+                                            allowfullscreen
+                                            loading="lazy">
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <style>
+                /* Tuna Series Branding Section */
+                .tuna-series-section {
+                    background: linear-gradient(135deg, #062351 0%, #0a3d62 50%, #062351 100%);
+                    padding: 80px 0;
+                    position: relative;
+                    overflow: hidden;
+                }
+                
+                .tuna-series-section::before {
+                    content: '';
+                    position: absolute;
+                    top: -50%;
+                    right: -20%;
+                    width: 80%;
+                    height: 200%;
+                    background: radial-gradient(ellipse, rgba(235, 192, 66, 0.08) 0%, transparent 70%);
+                    pointer-events: none;
+                }
+                
+                .tuna-series-wrapper {
+                    position: relative;
+                    z-index: 2;
+                }
+                
+                .tuna-series-content {
+                    padding-right: 40px;
+                }
+                
+                .tuna-series-label {
+                    display: inline-block;
+                    background: rgba(235, 192, 66, 0.15);
+                    color: #EBC042;
+                    padding: 8px 20px;
+                    border-radius: 50px;
+                    font-size: 0.8rem;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    margin-bottom: 20px;
+                }
+                
+                .tuna-series-title {
+                    font-size: 3.5rem;
+                    font-weight: 800;
+                    color: #fff;
+                    margin-bottom: 20px;
+                    line-height: 1.1;
+                }
+                
+                .tuna-series-desc {
+                    color: rgba(255, 255, 255, 0.8);
+                    font-size: 1.1rem;
+                    line-height: 1.7;
+                    margin-bottom: 30px;
+                }
+                
+                .tuna-series-btn {
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 10px;
+                    background: linear-gradient(135deg, #EBC042 0%, #d4a83a 100%);
+                    color: #062351;
+                    padding: 14px 32px;
+                    border-radius: 50px;
+                    font-weight: 600;
+                    text-decoration: none;
+                    transition: all 0.3s ease;
+                    box-shadow: 0 4px 20px rgba(235, 192, 66, 0.3);
+                }
+                
+                .tuna-series-btn:hover {
+                    transform: translateY(-3px);
+                    box-shadow: 0 8px 30px rgba(235, 192, 66, 0.4);
+                    color: #062351;
+                }
+                
+                .tuna-series-btn i {
+                    transition: transform 0.3s ease;
+                }
+                
+                .tuna-series-btn:hover i {
+                    transform: translateX(5px);
+                }
+                
+                /* Video Wrapper */
+                .tuna-series-video {
+                    position: relative;
+                }
+                
+                .video-wrapper {
+                    position: relative;
+                    padding-top: 56.25%; /* 16:9 */
+                    border-radius: 20px;
+                    overflow: hidden;
+                    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+                    border: 3px solid rgba(235, 192, 66, 0.3);
+                }
+                
+                .video-wrapper iframe {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                }
+                
+                /* Responsive - Tablet */
+                @media (max-width: 992px) {
+                    .tuna-series-section {
+                        padding: 60px 0;
+                    }
+                    .tuna-series-content {
+                        padding-right: 0;
+                        text-align: center;
+                        margin-bottom: 40px;
+                    }
+                    .tuna-series-title {
+                        font-size: 2.8rem;
+                    }
+                }
+                
+                /* Responsive - Mobile */
+                @media (max-width: 768px) {
+                    .tuna-series-section {
+                        padding: 50px 0;
+                    }
+                    .tuna-series-title {
+                        font-size: 2.2rem;
+                    }
+                    .tuna-series-desc {
+                        font-size: 1rem;
+                    }
+                    .video-wrapper {
+                        border-radius: 16px;
+                    }
+                }
+                
+                /* Responsive - Small Mobile */
+                @media (max-width: 480px) {
+                    .tuna-series-section {
+                        padding: 40px 0;
+                    }
+                    .tuna-series-title {
+                        font-size: 1.8rem;
+                    }
+                    .tuna-series-btn {
+                        padding: 12px 24px;
+                        font-size: 0.9rem;
+                    }
+                }
+            </style>
+
 <!-- Featured Products Section - Minimalist -->
             <section class="products-minimal-section section-padding" id="products">
                 <div class="container">
