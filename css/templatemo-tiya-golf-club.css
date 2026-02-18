@@ -59,9 +59,9 @@ https://templatemo.com/tm-587-tiya-golf-club
   --menu-font-size:               14px;
   --btn-font-size:                14px;
 
-  --border-radius-large:          12px;
-  --border-radius-medium:         8px;
-  --border-radius-small:          4px;
+  --border-radius-large:          0;
+  --border-radius-medium:         0;
+  --border-radius-small:          0;
 
   --font-weight-normal:           400;
   --font-weight-medium:           500;
@@ -389,7 +389,7 @@ strong {
 .custom-btn {
   background: var(--bright-yellow);
   border: 2px solid transparent;
-  border-radius: 25px;
+  border-radius: 0;
   color: var(--navy-blue);
   font-size: var(--btn-font-size);
   font-weight: var(--font-weight-bold);
@@ -578,7 +578,7 @@ strong {
   padding: 15px 0;
   transition: all 0.3s;
   pointer-events: none;
-  border-radius: 8px;
+  border-radius: 0;
 }
 
 .navbar .dropdown-menu::before {
@@ -2617,7 +2617,7 @@ strong {
   background: var(--orange);
   color: var(--neutral-gray-900);
   padding: 14px 28px;
-  border-radius: var(--radius-sm);
+  border-radius: 0;
   text-decoration: none;
   font-weight: 600;
   font-size: 14px;
@@ -2639,7 +2639,7 @@ strong {
   background: transparent;
   color: #fff;
   padding: 14px 28px;
-  border-radius: var(--radius-sm);
+  border-radius: 0;
   border: 1px solid rgba(255,255,255,0.4);
   text-decoration: none;
   font-weight: 600;
@@ -3212,7 +3212,7 @@ strong {
   background: var(--orange);
   color: var(--neutral-gray-900);
   padding: 14px 28px;
-  border-radius: var(--radius-sm);
+  border-radius: 0;
   text-decoration: none;
   font-weight: 600;
   transition: all var(--transition-fast);
@@ -3233,7 +3233,7 @@ strong {
   background: transparent;
   color: #fff;
   padding: 14px 28px;
-  border-radius: var(--radius-sm);
+  border-radius: 0;
   border: 1px solid rgba(255, 255, 255, 0.3);
   text-decoration: none;
   font-weight: 600;
