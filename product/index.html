@@ -67,23 +67,15 @@
         "@context": "https://schema.org",
         "@type": "ItemList",
         "name": "Oceanex Marine Industries Seafood Products",
-        "description": "Premium Indonesian frozen seafood products catalog",
+        "description": "Premium Indonesian Tuna & Cephalopod products catalog",
         "url": "https://oceanexmarine.com/product/",
-        "numberOfItems": 14,
+        "numberOfItems": 5,
         "itemListElement": [
-            {"@type": "ListItem", "position": 1, "name": "Yellowfin Tuna", "url": "https://oceanexmarine.com/product/#fresh-tuna"},
-            {"@type": "ListItem", "position": 2, "name": "Baby Tuna", "url": "https://oceanexmarine.com/product/#baby-tuna"},
-            {"@type": "ListItem", "position": 3, "name": "Skipjack Tuna", "url": "https://oceanexmarine.com/product/#skipjack"},
-            {"@type": "ListItem", "position": 4, "name": "Red Snapper", "url": "https://oceanexmarine.com/product/#red-snapper"},
-            {"@type": "ListItem", "position": 5, "name": "Grouper", "url": "https://oceanexmarine.com/product/#grouper"},
-            {"@type": "ListItem", "position": 6, "name": "Spanish Mackerel", "url": "https://oceanexmarine.com/product/#spanish-mackerel"},
-            {"@type": "ListItem", "position": 7, "name": "Indian Mackerel", "url": "https://oceanexmarine.com/product/#indian-mackerel"},
-            {"@type": "ListItem", "position": 8, "name": "Sardine", "url": "https://oceanexmarine.com/product/#sardine"},
-            {"@type": "ListItem", "position": 9, "name": "Milkfish (Bandeng)", "url": "https://oceanexmarine.com/product/#milkfish"},
-            {"@type": "ListItem", "position": 10, "name": "Croaker", "url": "https://oceanexmarine.com/product/#croaker"},
-            {"@type": "ListItem", "position": 11, "name": "Scad", "url": "https://oceanexmarine.com/product/#scad"},
-            {"@type": "ListItem", "position": 12, "name": "Squid", "url": "https://oceanexmarine.com/product/#squid"},
-            {"@type": "ListItem", "position": 13, "name": "Octopus", "url": "https://oceanexmarine.com/product/#octopus"}
+            {"@type": "ListItem", "position": 1, "name": "Yellowfin Tuna", "url": "https://oceanexmarine.com/product/#yellowfin-tuna"},
+            {"@type": "ListItem", "position": 2, "name": "Skipjack Tuna", "url": "https://oceanexmarine.com/product/#skipjack-tuna"},
+            {"@type": "ListItem", "position": 3, "name": "Squid", "url": "https://oceanexmarine.com/product/#squid"},
+            {"@type": "ListItem", "position": 4, "name": "Octopus", "url": "https://oceanexmarine.com/product/#octopus"},
+            {"@type": "ListItem", "position": 5, "name": "Cuttlefish", "url": "https://oceanexmarine.com/product/#cuttlefish"}
         ]
     }
     </script>
@@ -137,10 +129,12 @@
         .product-card.open .btn-view-specs i{transform:rotate(45deg)}
         .product-specs{display:none;padding:20px 25px 25px;background:#f8f9fa;border-top:1px solid #eee}
         .product-card.open .product-specs{display:block}
-        .specs-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-bottom:20px}
+        .specs-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-bottom:15px}
         .spec-item{display:flex;flex-direction:column;gap:4px}
         .spec-label{font-size:.75rem;color:#888;text-transform:uppercase;letter-spacing:.5px}
         .spec-value{font-size:.9rem;color:var(--navy);font-weight:500}
+        .specs-note{font-size:.8rem;color:#666;margin:0 0 15px;padding:10px 12px;background:rgba(198,163,95,.1);border-left:3px solid var(--gold);display:flex;align-items:center;gap:8px}
+        .specs-note i{color:var(--gold);font-size:.9rem}
         .btn-quote{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:12px;background:var(--gold);color:#fff;border:none;border-radius:0;font-size:.9rem;font-weight:500;text-decoration:none;transition:all .3s}
         .btn-quote:hover{background:#b8975a;color:#fff}
         .products-cta{padding:80px 0;background:linear-gradient(135deg,var(--navy) 0%,#1a3a5c 100%);text-align:center}
@@ -164,54 +158,39 @@
     </section>
     <section class="products-section">
         <div class="container">
+            <!-- TUNA SERIES -->
             <div class="section-intro">
-                <h2>Explore Our Premium Selection</h2>
+                <h2>Tuna Series</h2>
+                <p>Premium tuna from Maluku & Papua fishing grounds</p>
             </div>
             <div class="products-grid" id="productsContainer">
-                <!-- Baby Tuna -->
-                <article class="product-card" data-category="fish">
-                    <div class="product-image">
-                        <img src="../images/products/baby-tuna.jpg" alt="Baby Tuna" loading="lazy">
-                    </div>
-                    <div class="product-body">
-                        <h3 data-translate="products.babyTuna">Baby Tuna</h3>
-                        <button class="btn-view-specs"><span data-translate="product.viewSpecs">View Specifications</span><i class="bi bi-plus"></i></button>
-                    </div>
-                    <div class="product-specs">
-                        <div class="specs-grid">
-                            <div class="spec-item"><span class="spec-label" data-translate="product.spec.sizeRange">Size Range</span><span class="spec-value">500g-2kg</span></div>
-                            <div class="spec-item"><span class="spec-label" data-translate="product.spec.processing">Processing</span><span class="spec-value">Whole, Gutted, Fillet</span></div>
-                            <div class="spec-item"><span class="spec-label" data-translate="product.spec.packaging">Packaging</span><span class="spec-value">IQF, Vacuum Sealed</span></div>
-                            <div class="spec-item"><span class="spec-label" data-translate="product.spec.storage">Storage</span><span class="spec-value">-18°C Frozen</span></div>
-                        </div>
-                        <a href="../index.html#section_5" class="btn-quote"><i class="bi bi-chat-quote"></i> <span data-translate="product.requestQuote">Request Quote</span></a>
-                    </div>
-                </article>
-
                 <!-- Yellowfin Tuna -->
-                <article class="product-card" data-category="fish">
+                <article class="product-card" data-category="tuna">
                     <div class="product-image">
                         <img src="../images/products/fresh-tuna.jpg" alt="Yellowfin Tuna" loading="lazy">
+                        <span class="product-badge">Tuna</span>
                     </div>
                     <div class="product-body">
-                        <h3 data-translate="products.yellowfinTuna">Yellowfin Tuna</h3>
-                        <button class="btn-view-specs"><span data-translate="product.viewSpecs">View Specifications</span><i class="bi bi-plus"></i></button>
+                        <h3>Yellowfin Tuna</h3>
+                        <button class="btn-view-specs"><span>View Specifications</span><i class="bi bi-plus"></i></button>
                     </div>
                     <div class="product-specs">
                         <div class="specs-grid">
                             <div class="spec-item"><span class="spec-label">Size Range</span><span class="spec-value">10-30kg, 30-50kg</span></div>
-                            <div class="spec-item"><span class="spec-label">Processing</span><span class="spec-value">Whole, Loin, Steak</span></div>
-                            <div class="spec-item"><span class="spec-label">Packaging</span><span class="spec-value">Vacuum Sealed</span></div>
+                            <div class="spec-item"><span class="spec-label">Processing</span><span class="spec-value">Whole, Loin, Saku, Steak, Cube</span></div>
+                            <div class="spec-item"><span class="spec-label">Grades</span><span class="spec-value">Sashimi, Grill, Export</span></div>
                             <div class="spec-item"><span class="spec-label">Storage</span><span class="spec-value">-60°C Ultra Frozen</span></div>
                         </div>
+                        <p class="specs-note"><i class="bi bi-info-circle"></i> Custom sizes & processing available upon request</p>
                         <a href="../index.html#section_5" class="btn-quote"><i class="bi bi-chat-quote"></i> Request Quote</a>
                     </div>
                 </article>
 
-                <!-- Skipjack Tuna (Cakalang) -->
-                <article class="product-card" data-category="fish">
+                <!-- Skipjack Tuna -->
+                <article class="product-card" data-category="tuna">
                     <div class="product-image">
                         <img src="../images/products/skipjack.jpg" alt="Skipjack Tuna" loading="lazy">
+                        <span class="product-badge">Tuna</span>
                     </div>
                     <div class="product-body">
                         <h3>Skipjack Tuna</h3>
@@ -220,178 +199,26 @@
                     <div class="product-specs">
                         <div class="specs-grid">
                             <div class="spec-item"><span class="spec-label">Size Range</span><span class="spec-value">1.5-3kg, 3-5kg</span></div>
-                            <div class="spec-item"><span class="spec-label">Processing</span><span class="spec-value">Whole Round, Loin</span></div>
-                            <div class="spec-item"><span class="spec-label">Packaging</span><span class="spec-value">IQF, Block Frozen</span></div>
+                            <div class="spec-item"><span class="spec-label">Processing</span><span class="spec-value">Whole Round, Loin, Steak</span></div>
                             <div class="spec-item"><span class="spec-label">Storage</span><span class="spec-value">-18°C Frozen</span></div>
                         </div>
+                        <p class="specs-note"><i class="bi bi-info-circle"></i> Custom sizes & processing available upon request</p>
                         <a href="../index.html#section_5" class="btn-quote"><i class="bi bi-chat-quote"></i> Request Quote</a>
                     </div>
                 </article>
+            </div>
 
-                <!-- Red Snapper (Kakap Merah) -->
-                <article class="product-card" data-category="fish">
-                    <div class="product-image">
-                        <img src="../images/products/red-snapper.jpg" alt="Red Snapper" loading="lazy">
-                    </div>
-                    <div class="product-body">
-                        <h3>Red Snapper</h3>
-                        <button class="btn-view-specs"><span>View Specifications</span><i class="bi bi-plus"></i></button>
-                    </div>
-                    <div class="product-specs">
-                        <div class="specs-grid">
-                            <div class="spec-item"><span class="spec-label">Size Range</span><span class="spec-value">300-500g, 500g-1kg</span></div>
-                            <div class="spec-item"><span class="spec-label">Processing</span><span class="spec-value">Whole, Gutted, Fillet</span></div>
-                            <div class="spec-item"><span class="spec-label">Packaging</span><span class="spec-value">IQF, Vacuum Sealed</span></div>
-                            <div class="spec-item"><span class="spec-label">Storage</span><span class="spec-value">-18°C Frozen</span></div>
-                        </div>
-                        <a href="../index.html#section_5" class="btn-quote"><i class="bi bi-chat-quote"></i> Request Quote</a>
-                    </div>
-                </article>
-
-                <!-- Grouper (Kerapu) -->
-                <article class="product-card" data-category="fish">
-                    <div class="product-image">
-                        <img src="../images/products/grouper.jpg" alt="Grouper" loading="lazy">
-                    </div>
-                    <div class="product-body">
-                        <h3>Grouper</h3>
-                        <button class="btn-view-specs"><span>View Specifications</span><i class="bi bi-plus"></i></button>
-                    </div>
-                    <div class="product-specs">
-                        <div class="specs-grid">
-                            <div class="spec-item"><span class="spec-label">Size Range</span><span class="spec-value">500g-1kg, 1-2kg</span></div>
-                            <div class="spec-item"><span class="spec-label">Processing</span><span class="spec-value">Whole, Fillet, Portion</span></div>
-                            <div class="spec-item"><span class="spec-label">Packaging</span><span class="spec-value">IQF, Vacuum Sealed</span></div>
-                            <div class="spec-item"><span class="spec-label">Storage</span><span class="spec-value">-18°C Frozen</span></div>
-                        </div>
-                        <a href="../index.html#section_5" class="btn-quote"><i class="bi bi-chat-quote"></i> Request Quote</a>
-                    </div>
-                </article>
-
-                <!-- Spanish Mackerel (Tenggiri) -->
-                <article class="product-card" data-category="fish">
-                    <div class="product-image">
-                        <img src="../images/products/spanish-mackerel.jpg" alt="Spanish Mackerel" loading="lazy">
-                    </div>
-                    <div class="product-body">
-                        <h3>Spanish Mackerel</h3>
-                        <button class="btn-view-specs"><span>View Specifications</span><i class="bi bi-plus"></i></button>
-                    </div>
-                    <div class="product-specs">
-                        <div class="specs-grid">
-                            <div class="spec-item"><span class="spec-label">Size Range</span><span class="spec-value">1-2kg, 2-4kg</span></div>
-                            <div class="spec-item"><span class="spec-label">Processing</span><span class="spec-value">Whole, Steak, Fillet</span></div>
-                            <div class="spec-item"><span class="spec-label">Packaging</span><span class="spec-value">IQF, Block Frozen</span></div>
-                            <div class="spec-item"><span class="spec-label">Storage</span><span class="spec-value">-18°C Frozen</span></div>
-                        </div>
-                        <a href="../index.html#section_5" class="btn-quote"><i class="bi bi-chat-quote"></i> Request Quote</a>
-                    </div>
-                </article>
-
-                <!-- Indian Mackerel (Kembung) -->
-                <article class="product-card" data-category="fish">
-                    <div class="product-image">
-                        <img src="../images/products/indian-mackerel.jpg" alt="Indian Mackerel" loading="lazy">
-                    </div>
-                    <div class="product-body">
-                        <h3>Indian Mackerel</h3>
-                        <button class="btn-view-specs"><span>View Specifications</span><i class="bi bi-plus"></i></button>
-                    </div>
-                    <div class="product-specs">
-                        <div class="specs-grid">
-                            <div class="spec-item"><span class="spec-label">Size Range</span><span class="spec-value">80-120g, 120-150g</span></div>
-                            <div class="spec-item"><span class="spec-label">Processing</span><span class="spec-value">Whole Round, Gutted</span></div>
-                            <div class="spec-item"><span class="spec-label">Packaging</span><span class="spec-value">IQF, Block Frozen</span></div>
-                            <div class="spec-item"><span class="spec-label">Storage</span><span class="spec-value">-18°C Frozen</span></div>
-                        </div>
-                        <a href="../index.html#section_5" class="btn-quote"><i class="bi bi-chat-quote"></i> Request Quote</a>
-                    </div>
-                </article>
-
-                <!-- Sardine (Lemuru) -->
-                <article class="product-card" data-category="fish">
-                    <div class="product-image">
-                        <img src="../images/products/sardine.jpg" alt="Sardine" loading="lazy">
-                    </div>
-                    <div class="product-body">
-                        <h3>Sardine</h3>
-                        <button class="btn-view-specs"><span>View Specifications</span><i class="bi bi-plus"></i></button>
-                    </div>
-                    <div class="product-specs">
-                        <div class="specs-grid">
-                            <div class="spec-item"><span class="spec-label">Size Range</span><span class="spec-value">50-80g, 80-100g</span></div>
-                            <div class="spec-item"><span class="spec-label">Processing</span><span class="spec-value">Whole Round, HGT</span></div>
-                            <div class="spec-item"><span class="spec-label">Packaging</span><span class="spec-value">Block Frozen, IQF</span></div>
-                            <div class="spec-item"><span class="spec-label">Storage</span><span class="spec-value">-18°C Frozen</span></div>
-                        </div>
-                        <a href="../index.html#section_5" class="btn-quote"><i class="bi bi-chat-quote"></i> Request Quote</a>
-                    </div>
-                </article>
-
-                <!-- Milkfish (Bandeng) -->
-                <article class="product-card" data-category="fish">
-                    <div class="product-image">
-                        <img src="../images/products/milkfish.jpg" alt="Milkfish" loading="lazy">
-                    </div>
-                    <div class="product-body">
-                        <h3>Milkfish</h3>
-                        <button class="btn-view-specs"><span>View Specifications</span><i class="bi bi-plus"></i></button>
-                    </div>
-                    <div class="product-specs">
-                        <div class="specs-grid">
-                            <div class="spec-item"><span class="spec-label">Size Range</span><span class="spec-value">300-500g, 500-800g</span></div>
-                            <div class="spec-item"><span class="spec-label">Processing</span><span class="spec-value">Whole, Boneless, Belly</span></div>
-                            <div class="spec-item"><span class="spec-label">Packaging</span><span class="spec-value">IQF, Vacuum Sealed</span></div>
-                            <div class="spec-item"><span class="spec-label">Storage</span><span class="spec-value">-18°C Frozen</span></div>
-                        </div>
-                        <a href="../index.html#section_5" class="btn-quote"><i class="bi bi-chat-quote"></i> Request Quote</a>
-                    </div>
-                </article>
-
-                <!-- Croaker (Gulama) -->
-                <article class="product-card" data-category="fish">
-                    <div class="product-image">
-                        <img src="../images/products/croaker.jpg" alt="Croaker" loading="lazy">
-                    </div>
-                    <div class="product-body">
-                        <h3>Croaker</h3>
-                        <button class="btn-view-specs"><span>View Specifications</span><i class="bi bi-plus"></i></button>
-                    </div>
-                    <div class="product-specs">
-                        <div class="specs-grid">
-                            <div class="spec-item"><span class="spec-label">Size Range</span><span class="spec-value">200-400g, 400-600g</span></div>
-                            <div class="spec-item"><span class="spec-label">Processing</span><span class="spec-value">Whole, Gutted, Fillet</span></div>
-                            <div class="spec-item"><span class="spec-label">Packaging</span><span class="spec-value">IQF, Block Frozen</span></div>
-                            <div class="spec-item"><span class="spec-label">Storage</span><span class="spec-value">-18°C Frozen</span></div>
-                        </div>
-                        <a href="../index.html#section_5" class="btn-quote"><i class="bi bi-chat-quote"></i> Request Quote</a>
-                    </div>
-                </article>
-
-                <!-- Scad (Layang) -->
-                <article class="product-card" data-category="fish">
-                    <div class="product-image">
-                        <img src="../images/products/scad.jpg" alt="Scad" loading="lazy">
-                    </div>
-                    <div class="product-body">
-                        <h3>Scad</h3>
-                        <button class="btn-view-specs"><span>View Specifications</span><i class="bi bi-plus"></i></button>
-                    </div>
-                    <div class="product-specs">
-                        <div class="specs-grid">
-                            <div class="spec-item"><span class="spec-label">Size Range</span><span class="spec-value">60-80g, 80-120g</span></div>
-                            <div class="spec-item"><span class="spec-label">Processing</span><span class="spec-value">Whole Round, Gutted</span></div>
-                            <div class="spec-item"><span class="spec-label">Packaging</span><span class="spec-value">Block Frozen, IQF</span></div>
-                            <div class="spec-item"><span class="spec-label">Storage</span><span class="spec-value">-18°C Frozen</span></div>
-                        </div>
-                        <a href="../index.html#section_5" class="btn-quote"><i class="bi bi-chat-quote"></i> Request Quote</a>
-                    </div>
-                </article>
-
-                <!-- Squid (Cumi-Cumi) -->
+            <!-- CEPHALOPOD SERIES -->
+            <div class="section-intro" style="margin-top: 60px;">
+                <h2>Cephalopod Series</h2>
+                <p>Squid, Octopus & Cuttlefish from Indonesian waters</p>
+            </div>
+            <div class="products-grid">
+                <!-- Squid -->
                 <article class="product-card" data-category="cephalopod">
                     <div class="product-image">
                         <img src="../images/products/squid.jpg" alt="Squid" loading="lazy">
+                        <span class="product-badge">Cephalopod</span>
                     </div>
                     <div class="product-body">
                         <h3>Squid</h3>
@@ -400,18 +227,19 @@
                     <div class="product-specs">
                         <div class="specs-grid">
                             <div class="spec-item"><span class="spec-label">Size Range</span><span class="spec-value">8-12cm, 12-16cm, 16-20cm</span></div>
-                            <div class="spec-item"><span class="spec-label">Processing</span><span class="spec-value">Whole, Tube, T&T, Rings</span></div>
-                            <div class="spec-item"><span class="spec-label">Packaging</span><span class="spec-value">IQF, Block Frozen</span></div>
+                            <div class="spec-item"><span class="spec-label">Processing</span><span class="spec-value">Whole Round, Tube, T&T, Rings</span></div>
                             <div class="spec-item"><span class="spec-label">Storage</span><span class="spec-value">-18°C Frozen</span></div>
                         </div>
+                        <p class="specs-note"><i class="bi bi-info-circle"></i> Custom sizes & processing available upon request</p>
                         <a href="../index.html#section_5" class="btn-quote"><i class="bi bi-chat-quote"></i> Request Quote</a>
                     </div>
                 </article>
 
-                <!-- Octopus (Gurita) -->
+                <!-- Octopus -->
                 <article class="product-card" data-category="cephalopod">
                     <div class="product-image">
                         <img src="../images/products/octopus.jpg" alt="Octopus" loading="lazy">
+                        <span class="product-badge">Cephalopod</span>
                     </div>
                     <div class="product-body">
                         <h3>Octopus</h3>
@@ -421,9 +249,30 @@
                         <div class="specs-grid">
                             <div class="spec-item"><span class="spec-label">Size Range</span><span class="spec-value">500g-1kg, 1-2kg, 2-4kg</span></div>
                             <div class="spec-item"><span class="spec-label">Processing</span><span class="spec-value">Whole, Cleaned, Tentacles</span></div>
-                            <div class="spec-item"><span class="spec-label">Packaging</span><span class="spec-value">IQF, Block Frozen</span></div>
                             <div class="spec-item"><span class="spec-label">Storage</span><span class="spec-value">-18°C Frozen</span></div>
                         </div>
+                        <p class="specs-note"><i class="bi bi-info-circle"></i> Custom sizes & processing available upon request</p>
+                        <a href="../index.html#section_5" class="btn-quote"><i class="bi bi-chat-quote"></i> Request Quote</a>
+                    </div>
+                </article>
+
+                <!-- Cuttlefish -->
+                <article class="product-card" data-category="cephalopod">
+                    <div class="product-image">
+                        <img src="../images/products/squid.jpg" alt="Cuttlefish" loading="lazy">
+                        <span class="product-badge">Cephalopod</span>
+                    </div>
+                    <div class="product-body">
+                        <h3>Cuttlefish</h3>
+                        <button class="btn-view-specs"><span>View Specifications</span><i class="bi bi-plus"></i></button>
+                    </div>
+                    <div class="product-specs">
+                        <div class="specs-grid">
+                            <div class="spec-item"><span class="spec-label">Size Range</span><span class="spec-value">100-200g, 200-500g</span></div>
+                            <div class="spec-item"><span class="spec-label">Processing</span><span class="spec-value">Whole, Cleaned, Fillet</span></div>
+                            <div class="spec-item"><span class="spec-label">Storage</span><span class="spec-value">-18°C Frozen</span></div>
+                        </div>
+                        <p class="specs-note"><i class="bi bi-info-circle"></i> Custom sizes & processing available upon request</p>
                         <a href="../index.html#section_5" class="btn-quote"><i class="bi bi-chat-quote"></i> Request Quote</a>
                     </div>
                 </article>
