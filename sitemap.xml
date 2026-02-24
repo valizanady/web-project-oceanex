@@ -1,32 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schem        <lastmod>2026-01-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
-    <!-- AI-specific files for crawler discovery -->
-    <url>
-        <loc>https://oceanexmarine.com/ai.txt</loc>
-        <lastmod>2026-01-28</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://oceanexmarine.com/knowledge-graph.json</loc>
-        <lastmod>2026-01-28</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://oceanexmarine.com/.well-known/ai-plugin.json</loc>
-        <lastmod>2026-01-28</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-</urlset>emap/0.9"
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -43,12 +16,12 @@
         <xhtml:link rel="alternate" hreflang="ko" href="https://oceanexmarine.com/?lang=ko"/>
         <xhtml:link rel="alternate" hreflang="vi" href="https://oceanexmarine.com/?lang=vi"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://oceanexmarine.com/"/>
-        <lastmod>2026-01-27</lastmod>
+        <lastmod>2026-02-24</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
         <image:image>
             <image:loc>https://oceanexmarine.com/images/logo2.png</image:loc>
-            <image:title>Oceanex Marine Industries - Indonesian Seafood Supplier | 印尼海鲜供应商 | インドネシア水産サプライヤー | 인도네시아 해산물 공급업체 | Nhà cung cấp hải sản Indonesia</image:title>
+            <image:title>Oceanex Marine Industries - Indonesian Seafood Supplier</image:title>
             <image:caption>Leading Indonesian seafood exporter - Export to Vietnam, Japan, China, Korea</image:caption>
         </image:image>
     </url>
@@ -67,7 +40,7 @@
         <priority>0.9</priority>
     </url>
 
-    <!-- Products Catalog - Seafood Export -->
+    <!-- Products Catalog - Tuna & Cephalopod -->
     <url>
         <loc>https://oceanexmarine.com/product/</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://oceanexmarine.com/product/"/>
@@ -76,41 +49,82 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://oceanexmarine.com/product/?lang=jp"/>
         <xhtml:link rel="alternate" hreflang="ko" href="https://oceanexmarine.com/product/?lang=ko"/>
         <xhtml:link rel="alternate" hreflang="vi" href="https://oceanexmarine.com/product/?lang=vi"/>
-        <lastmod>2026-01-27</lastmod>
+        <lastmod>2026-02-19</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.95</priority>
         <image:image>
             <image:loc>https://oceanexmarine.com/images/products/fresh-tuna.jpg</image:loc>
-            <image:title>Yellowfin Tuna - 冷冻金枪鱼 - 冷凍マグロ - 냉동 참치 - Cá ngừ đông lạnh</image:title>
+            <image:title>Yellowfin Tuna - Premium Indonesian Tuna</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://oceanexmarine.com/images/products/red-snapper.jpg</image:loc>
-            <image:title>Red Snapper - 红鲷鱼 - タイ - 도미 - Cá hồng</image:title>
+            <image:loc>https://oceanexmarine.com/images/products/skipjack.jpg</image:loc>
+            <image:title>Skipjack Tuna - Sustainable Fishing</image:title>
         </image:image>
         <image:image>
             <image:loc>https://oceanexmarine.com/images/products/squid.jpg</image:loc>
-            <image:title>Squid - 鱿鱼 - イカ - 오징어 - Mực</image:title>
+            <image:title>Squid - Indonesian Cephalopod</image:title>
         </image:image>
         <image:image>
             <image:loc>https://oceanexmarine.com/images/products/octopus.jpg</image:loc>
-            <image:title>Octopus - 章鱼 - タコ - 문어 - Bạch tuộc</image:title>
+            <image:title>Octopus - Premium Quality</image:title>
         </image:image>
     </url>
 
-    <!-- News & Updates -->
+    <!-- News & Updates Page -->
     <url>
         <loc>https://oceanexmarine.com/news</loc>
-        <lastmod>2026-01-27</lastmod>
+        <lastmod>2026-02-24</lastmod>
         <changefreq>daily</changefreq>
-        <priority>0.7</priority>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- News Article: Blue Gold Tuna - Eastern Indonesia (Latest) -->
+    <url>
+        <loc>https://oceanexmarine.com/news-blue-gold-tuna.html</loc>
+        <lastmod>2026-02-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+        <image:image>
+            <image:loc>https://oceanexmarine.com/images/news/blue-gold-tuna-eastern-indonesia.jpg</image:loc>
+            <image:title>Eastern Indonesia Blue Gold Tuna - Maluku Papua Fishing Grounds</image:title>
+            <image:caption>Premium tuna from Eastern Indonesia's sustainable fisheries - Maluku, North Maluku, and Papua</image:caption>
+        </image:image>
+    </url>
+
+    <!-- News Article: IJEPA Tuna Tariff to Japan -->
+    <url>
+        <loc>https://oceanexmarine.com/news-ijepa-tuna-tariff.html</loc>
+        <lastmod>2026-01-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://oceanexmarine.com/images/news-cover.jpg</image:loc>
+            <image:title>0% Import Tariff on Tuna to Japan - IJEPA 2024</image:title>
+            <image:caption>Indonesia-Japan Economic Partnership Agreement benefits tuna exporters</image:caption>
+        </image:image>
     </url>
 
     <!-- Contact Page -->
     <url>
         <loc>https://oceanexmarine.com/#section_5</loc>
-        <lastmod>2026-01-27</lastmod>
+        <lastmod>2026-02-24</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- AI-specific files for crawler discovery -->
+    <url>
+        <loc>https://oceanexmarine.com/ai.txt</loc>
+        <lastmod>2026-01-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://oceanexmarine.com/knowledge-graph.json</loc>
+        <lastmod>2026-01-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
     </url>
 
 </urlset>
